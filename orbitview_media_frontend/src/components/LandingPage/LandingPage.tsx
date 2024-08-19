@@ -1,4 +1,5 @@
 import NavBar from "../NavBar/NavBar"
+import Footer from "../Footer/Footer"
 
 const LandingPage = () => {
   return (
@@ -7,6 +8,7 @@ const LandingPage = () => {
     <div className='container'>
       <h1>Hello world</h1>
     </div>
+    <Footer></Footer>
     </>
   )
 }

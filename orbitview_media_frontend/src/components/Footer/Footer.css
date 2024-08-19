@@ -1,0 +1,45 @@
+footer {
+  font-family: "Roboto", sans-serif;
+}
+
+footer h5 {
+  font-weight: bold;
+  text-align: left;
+}
+
+footer p,
+a {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.connect-with-us {
+    text-align: center;
+}
+
+.about-para {
+  text-align: left;
+}
+
+.social-logo {
+  height: 40px;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+footer .btn-outline-light:hover {
+  background-color: #fff;
+  color: #000;
+}
