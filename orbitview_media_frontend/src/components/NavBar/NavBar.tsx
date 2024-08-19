@@ -1,8 +1,11 @@
 import "./NavBar.css";
 import "../../fonts/Poppins.css";
-import OVM_logo from "../../../public/OrbitView_Media-removebg-preview.png";
+import OVM_logo from "../../assets/OrbitView_Media-removebg-preview.png";
 
 const NavBar = () => {
+
+  
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div className="container">
