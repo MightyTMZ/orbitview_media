@@ -1,7 +1,9 @@
 import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
+import FAQs from "../FAQs/FAQs";
 import OVM_logo from "../../assets/OrbitView_Media-removebg-preview.png";
 import "./LandingPage.css";
+
 
 const LandingPage = () => {
   return (
@@ -16,7 +18,7 @@ const LandingPage = () => {
           <p className="lead poppins-thin">
             Expanding Horizons, Elevating Perspectives
           </p>
-          <img src={OVM_logo} alt="OrbitView Media logo" height={100}/>
+          <img src={OVM_logo} alt="OrbitView Media logo" height={100} />
 
           {/* Main Content with Icons */}
           <div className="content-box container mt-5">
@@ -47,8 +49,10 @@ const LandingPage = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div><FAQs/>
       </div>
+      
+
       <Footer></Footer>
     </>
   );

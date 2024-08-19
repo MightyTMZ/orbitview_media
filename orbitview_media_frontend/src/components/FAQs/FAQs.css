@@ -1,0 +1,31 @@
+.faq-section {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.faq-section h2 {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.accordion-button {
+  background: #003d66;
+  color: #ffffff;
+  transition: background-color 0.1s ease, color 0.1s ease, font-weight 0.1s ease;
+}
+
+.accordion-button:hover {
+  background: #005b99;
+  font-weight: bold;
+  color: white;
+}
+
+.accordion-item {
+  border: none;
+}
+
+.accordion-body {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+}
