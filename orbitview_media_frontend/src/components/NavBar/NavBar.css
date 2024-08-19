@@ -1,0 +1,22 @@
+.navbar {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.nav-link {
+  margin-right: 20px;
+  color: rgba(255, 255, 255, 0.8) !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #fff !important;
+}
+
+.navbar-nav .nav-item:last-child .nav-link {
+  margin-right: 0;
+}
