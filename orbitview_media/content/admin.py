@@ -28,7 +28,6 @@ class ArticleAdmin(admin.ModelAdmin):
         'title',
         'slug',
         'subtitle',
-        'authors',
         'created_at',
         'updated_at',
         'is_published',  # used to adjust the visibility to the users

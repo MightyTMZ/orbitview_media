@@ -31,7 +31,7 @@ class Article(models.Model):
     # Since slug comes from title, the slug must also be unique
     subtitle = models.CharField(max_length=355, default="") # derived idea from Substack
     slug = models.SlugField(default="-", editable=False, max_length=250)
-    authors = models.ManyToManyField(Author, related_name="authors")
+    authors = models.ManyToManyField(Author)
     created_at = models.DateTimeField()
     updated_at = models.DateTimeField(null=True, blank=True)
     is_published = models.BooleanField(default=False)

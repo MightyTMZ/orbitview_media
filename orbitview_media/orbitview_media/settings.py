@@ -39,6 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'analytics', 
+    'content', 
+    'events', 
+    'subscriptions', 
+    'users'
 ]
 
 MIDDLEWARE = [
@@ -71,6 +77,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'orbitview_media.wsgi.application'
 
+AUTH_USER_MODEL = 'users.CustomUser'
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
