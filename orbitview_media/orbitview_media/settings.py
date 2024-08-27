@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 from dotenv import load_dotenv
+from datetime import timedelta
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -40,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'djoser',
     'analytics', 
     'content', 
     'events', 
@@ -47,9 +49,12 @@ INSTALLED_APPS = [
     'users'
 ]
 
+AUTH_USER_MODEL = 'users.CustomUser'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -77,7 +82,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'orbitview_media.wsgi.application'
 
-AUTH_USER_MODEL = 'users.CustomUser'
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
@@ -134,3 +138,35 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+REST_FRAMEWORK = {
+    'COERCE_DECIMAL_TO_STRING': False,
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated'
+    ]
+}
+
+SIMPLE_JWT = {
+    'AUTH_HEADER_TYPES': ('JWT',),    
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=5),
+    # every time the user sends an access token to gain access to confidential content
+    # if that request fails, use the refresh token to gain a new access token
+
+    # Login --> creates new refresh token and stores in HTTP-only cookie
+    # Logout --> revoke/delete the refresh token stored in the HTTP-only cookie
+
+}
+
+
+DJOSER = {
+    "SERIALIZERS": {
+        "user_create": 'users.serializers.UserCreateSerializer', 
+        'current_user': 'users.serializers.UserSerializer',
+    }
+}
+
+
+
