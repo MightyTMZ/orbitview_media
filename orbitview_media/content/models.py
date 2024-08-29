@@ -1,3 +1,4 @@
+from typing import Iterable
 from django.db import models
 from django.utils.text import slugify
 from datetime import timedelta
@@ -28,6 +29,10 @@ class Author(models.Model):
 
 
 class Article(models.Model):
+    @property
+    def created_at_date(self):
+        return self.created_at.date()
+
     title = models.CharField(max_length=255, unique=True)
     # Since slug comes from title, the slug must also be unique
     subtitle = models.CharField(max_length=355, default="") # derived idea from Substack
@@ -42,35 +47,15 @@ class Article(models.Model):
     # along with the Substack, Medium, or other APIs, users can read articles on our main website
 
     def __str__(self) -> str:
-        article_authors = self.authors
-        author_str = f"{article_authors[0].first_name} {article_authors[0].last_name}"
-
-        if len(article_authors) == 1:
-            return f"'{self.title}'by {author_str}"
-        else:
-            authors_str = ""
-            for author in article_authors:
-                authors_str += f"{author.first_name} {author.last_name}, "
-
-            return f"'{self.title}' by {author_str}"
-
-        
-
-    def save(self, *args, **kwargs):
-        self.slug = slugify(self.title)
-
-        if self.updated_at is not None and self.created_at is not None:
-            if self.updated_at - self.created_at < timedelta(minutes=10):
-                self.updated_at = self.created_at
-                super().save(update_fields=['updated_at'])
-
-        super().save(*args, **kwargs)
+        return self.title
 
         # Django is very picky when it comes to datetime, so we must ensure that minute differences in \
         # creation/update is not a problem
 
     def get_article_url(self):
         return f'/{self.created_at.date()}/{self.slug}/'
+    
+    def save(self, force_insert: bool = ..., force_update: bool = ..., using: str | None = ..., update_fields: Iterable[str] | None = ...) -> None:
+        self.slug = slugify(self.title)
+        super(Article, self).save()
 
-    class Meta:
-        ordering = ["-created_at"]

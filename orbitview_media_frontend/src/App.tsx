@@ -1,6 +1,9 @@
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import LandingPage from "./components/LandingPage/LandingPage";
 import TechonomicsLandingPage from "./components/Techonomics/Techonomics";
+import Article from "./components/Article/Article";
+import LoginPage from "./screens/Login/LoginPage";
+import SignUpPage from "./screens/SignUp/SignUpPage";
 
 function App() {
   return (
@@ -15,6 +18,12 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/techonomics" element={<TechonomicsLandingPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignUpPage />} />
+          <Route
+            path="/articles/:created_at_date/:slug"
+            element={<Article />}
+          />
           {/*
         <Route path="/home" element={<LandingPage />} />
         <Route path="/portfolio/projects" element={<ProjectsRoutePage />} />

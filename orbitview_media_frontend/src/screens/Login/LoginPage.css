@@ -1,0 +1,95 @@
+/* LoginPage.css */
+
+/* Overall Container */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #003d66, #005b99);
+}
+
+/* Login Box */
+.login-box {
+  background-color: #ffffff;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #003d66;
+}
+
+.login-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #666666;
+}
+
+/* Input Groups */
+.input-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  font-size: 1rem;
+}
+
+.input-group input:focus {
+  border-color: #005b99;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 91, 153, 0.3);
+}
+
+/* Login Button */
+.login-button {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 5px;
+  background-color: #005b99;
+  color: #ffffff;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #004080;
+}
+
+/* Footer Links */
+.login-footer {
+  margin-top: 1.5rem;
+}
+
+.footer-link {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #005b99;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #003d66;
+  text-decoration: underline;
+}

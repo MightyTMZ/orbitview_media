@@ -1,9 +1,10 @@
 import "./NavBar.css";
 import "../../fonts/Poppins.css";
 import OVM_logo from "../../assets/OrbitView_Media-removebg-preview.png";
+import AccountInfo from "../AccountInfo/AccountInfo";
 
 const NavBar = () => {
-
+  let isAuthenticated = localStorage.getItem('isAuthenticated');
   
 
   return (
@@ -31,42 +32,70 @@ const NavBar = () => {
         {/* Navbar links */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto poppins">
-            
-            <li className="nav-item">
-              <a className="nav-link" href="#techonomics">
-                Techonomics
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDarkDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Content
               </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#pathways">
-                Pathways
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#engineering">
-                Engineering
-              </a>
+              <ul
+                className="dropdown-menu dropdown-menu-dark"
+                aria-labelledby="navbarDarkDropdownMenuLink"
+              >
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Techonomics
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Engineering
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Pathways
+                  </a>
+                </li>
+              </ul>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#events">
                 Events
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#about">
-                Who We Are
-              </a>
-            </li>
+            
             <li className="nav-item">
               <a className="nav-link" href="#join">
                 Join Us
               </a>
             </li>
-            <li className="nav-item">
+            {/*<li className="nav-item">
               <a className="nav-link" href="#contact">
                 Contact
               </a>
-            </li>
+            </li>*/}
+            {isAuthenticated ? (
+              <AccountInfo />
+            ) : (
+              <>
+              <li className="nav-item">
+                <a className="nav-link" href="#login">
+                  Log In
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#signup">
+                  Sign up
+                </a>
+              </li>
+              </>
+            )}
           </ul>
         </div>
       </div>
