@@ -1,5 +1,6 @@
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import LandingPage from "./components/LandingPage/LandingPage";
+import TechonomicsLandingPage from "./components/Techonomics/Techonomics";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         ></link>
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/techonomics" element={<TechonomicsLandingPage />} />
           {/*
         <Route path="/home" element={<LandingPage />} />
         <Route path="/portfolio/projects" element={<ProjectsRoutePage />} />

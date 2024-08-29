@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils.text import slugify
 from datetime import timedelta
+from ckeditor.fields import RichTextField
 
 
 class Annoucement(models.Model):
@@ -31,6 +32,7 @@ class Article(models.Model):
     # Since slug comes from title, the slug must also be unique
     subtitle = models.CharField(max_length=355, default="") # derived idea from Substack
     slug = models.SlugField(default="-", editable=False, max_length=250)
+    content = RichTextField()
     authors = models.ManyToManyField(Author)
     created_at = models.DateTimeField()
     updated_at = models.DateTimeField(null=True, blank=True)
@@ -72,50 +74,3 @@ class Article(models.Model):
 
     class Meta:
         ordering = ["-created_at"]
-
-
-class TextBlock(models.Model):
-    article = models.ForeignKey(Article, on_delete=models.CASCADE, related_name='text_blocks')
-    content = models.TextField()
-    type = models.CharField(max_length=50, default="text block")
-    order = models.PositiveIntegerField(default=0)
-
-    def __str__(self):
-        return f"{self.order} - {self.content[::25]} - {self.article}"
-
-
-class HeadingBlock(models.Model):
-    article = models.ForeignKey(Article, on_delete=models.CASCADE, related_name='heading_blocks')
-    heading = models.CharField(max_length=255)
-    type = models.CharField(max_length=50, default="heading block")
-    order = models.PositiveIntegerField(default=0)
-
-    def __str__(self):
-        return f"{self.order} - {self.heading} - {self.article}"
-
-
-class ImageBlock(models.Model):
-    article = models.ForeignKey(Article, on_delete=models.CASCADE, related_name='image_blocks')
-    image = models.ImageField(upload_to='articles/images/%Y/%m/%d/')
-    caption = models.CharField(max_length=1500, blank=True)
-    type = models.CharField(max_length=50, default="image block")
-    order = models.PositiveIntegerField(default=0)
-
-    def __str__(self):
-        return f"{self.order} - {self.type} - {self.article}"
-
-
-class Link(models.Model):
-    url = models.CharField(max_length=2083)
-    img_icon_url = models.CharField(max_length=2083)
-    article = models.ForeignKey(Article, on_delete=models.CASCADE, related_name="external_links")
-
-    def __str__(self) -> str:
-        return self.url
-
-
-class Media(models.Model):
-    title = models.CharField(max_length=255)
-    file = models.FileField(upload_to='uploads/')
-    description = models.TextField(blank=True, null=True)
-    uploaded_at = models.DateTimeField(auto_now_add=True)

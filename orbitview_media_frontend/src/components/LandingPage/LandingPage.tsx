@@ -4,7 +4,6 @@ import FAQs from "../FAQs/FAQs";
 import OVM_logo from "../../assets/OrbitView_Media-removebg-preview.png";
 import "./LandingPage.css";
 
-
 const LandingPage = () => {
   return (
     <>
@@ -49,9 +48,9 @@ const LandingPage = () => {
               </div>
             </div>
           </div>
-        </div><FAQs/>
+        </div>
+        <FAQs />
       </div>
-      
 
       <Footer></Footer>
     </>
