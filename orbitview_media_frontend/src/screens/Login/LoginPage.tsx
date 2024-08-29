@@ -9,6 +9,7 @@ const LoginPage = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [invalidCredentials, setInvalidCredentials] = useState(false)
 
   const handleLogin = async (event: any) => {
     event.preventDefault();
@@ -23,16 +24,18 @@ const LoginPage = () => {
         credentials: 'include', // Stores the refresh token in the HTTP-only cookie
       });
 
-      if (!response.ok) {
+      if (!response.ok) {        
+        setInvalidCredentials(true);
         throw new Error('Login failed! Please check your credentials.');
       }
 
       const data = await response.json();
       localStorage.setItem("accessToken", "");
       localStorage.setItem("accessToken", data.access);
-      console.log(localStorage.getItem("accessToken"));
+      // console.log(localStorage.getItem("accessToken"));
       localStorage.setItem("isAuthenticated", "true");
-      window.location.href = '/'
+      window.location.href = '/';
+      setInvalidCredentials(false);
       
       // Redirect to a protected page or update UI to show user is logged in
     } catch (error: any) {
@@ -75,6 +78,13 @@ const LoginPage = () => {
               Login
             </button>
           </form>
+          {invalidCredentials ? (
+              <p className="text-danger">
+              Invalid username or password
+            </p>
+            ) : (
+              <></>
+            )}
           <div className="login-footer">
             <a href="/forgot-password" className="footer-link">
               Forgot Password?
