@@ -4,6 +4,7 @@ import TechonomicsLandingPage from "./components/Techonomics/Techonomics";
 import Article from "./components/Article/Article";
 import LoginPage from "./screens/Login/LoginPage";
 import SignUpPage from "./screens/SignUp/SignUpPage";
+import ActivateAccount from "./screens/ActivateAccount/ActivateAccount";
 import EditProfile from "./components/EditProfile/EditProfile";
 
 function App() {
@@ -19,21 +20,16 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/techonomics" element={<TechonomicsLandingPage />} />
-          <Route path="/login" element={<LoginPage />} />
+          {/* <Route path="/login" element={<LoginPage />} /> 
           <Route path="/signup" element={<SignUpPage />} />
-          <Route path="/user/profile" element={<EditProfile />} />
+          <Route path="/activate/:uid/:token" element={<ActivateAccount />} />
+          <Route path="/user/profile" element={<EditProfile />} />*/}
+          {/* Up until we figure out the SMTP, we cannot do user profiles */}
           <Route
             path="/articles/:created_at_date/:slug"
             element={<Article />}
           />
-          {/*
-        <Route path="/home" element={<LandingPage />} />
-        <Route path="/portfolio/projects" element={<ProjectsRoutePage />} />
-        <Route path="/portfolio/projects/:id" element={<ProjectDetails />} />
-        <Route path="/certificates" element={<CertificatesPage />} />
-        <Route path="/connect-with-me" element={<ConnectWithMe />} />
-        <Route path="/education" element={<Education />} />
-        <Route path="/resume" element={<Resume />} />*/}
+          
         </Routes>
       </Router>
     </>

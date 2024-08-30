@@ -1,0 +1,30 @@
+/* ActivateAccount.css */
+
+.activate-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.activate-container h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+.activate-container .message {
+  font-size: 1rem;
+  color: #333;
+}
+
+.activate-container .success {
+  color: green;
+}
+
+.activate-container .error {
+  color: red;
+}

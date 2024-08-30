@@ -2,13 +2,14 @@ import { Fragment, useState } from "react";
 import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
 import "./LoginPage.css";
-import { redirect } from "react-router-dom";
+// import { redirect } from "react-router-dom";
 
 const LoginPage = () => {
   
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  console.log(error);
   const [invalidCredentials, setInvalidCredentials] = useState(false)
 
   const handleLogin = async (event: any) => {
