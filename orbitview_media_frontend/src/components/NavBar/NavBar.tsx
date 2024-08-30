@@ -1,10 +1,10 @@
 import "./NavBar.css";
 import "../../fonts/Poppins.css";
 import OVM_logo from "../../assets/OrbitView_Media-removebg-preview.png";
-import AccountInfo from "../AccountInfo/AccountInfo";
+// import AccountInfo from "../AccountInfo/AccountInfo";
 
 const NavBar = () => {
-  let isAuthenticated = localStorage.getItem('isAuthenticated');
+  // let isAuthenticated = localStorage.getItem('isAuthenticated');
   
 
   return (
@@ -75,12 +75,12 @@ const NavBar = () => {
                 Join Us
               </a>
             </li>
-            {/*<li className="nav-item">
+            <li className="nav-item">
               <a className="nav-link" href="#contact">
                 Contact
               </a>
-            </li>*/}
-            {isAuthenticated ? (
+            </li>
+            {/*{isAuthenticated ? (
               <AccountInfo />
             ) : (
               <>
@@ -95,7 +95,7 @@ const NavBar = () => {
                 </a>
               </li>
               </>
-            )}
+            )}*/}
           </ul>
         </div>
       </div>

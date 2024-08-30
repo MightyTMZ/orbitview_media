@@ -2,10 +2,10 @@ import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import LandingPage from "./components/LandingPage/LandingPage";
 import TechonomicsLandingPage from "./components/Techonomics/Techonomics";
 import Article from "./components/Article/Article";
-import LoginPage from "./screens/Login/LoginPage";
-import SignUpPage from "./screens/SignUp/SignUpPage";
-import ActivateAccount from "./screens/ActivateAccount/ActivateAccount";
-import EditProfile from "./components/EditProfile/EditProfile";
+// import LoginPage from "./screens/Login/LoginPage";
+// import SignUpPage from "./screens/SignUp/SignUpPage";
+// import ActivateAccount from "./screens/ActivateAccount/ActivateAccount";
+// import EditProfile from "./components/EditProfile/EditProfile";
 
 function App() {
   return (
