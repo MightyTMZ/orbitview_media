@@ -67,7 +67,7 @@ const EditProfile = () => {
         throw new Error("Failed to update profile!");
       }
 
-      const data = await response.json();
+      // const data = await response.json();
       setUpdatedSuccess(false)
       setTimeout(handleSubmit, 500)
       setUpdatedSuccess(true);
