@@ -32,9 +32,10 @@ ALLOWED_HOSTS = []
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # Add your frontend origin here
+    "https://orbitview-media.vercel.app",  # Add your frontend origin here
 ]
 
-CORS_ALLOW_CREDENTIALS = True  # Allow cookies to be included in requests
+# CORS_ALLOW_CREDENTIALS = True  # Allow cookies to be included in requests
 
 CORS_ALLOW_METHODS = [
     "DELETE",
