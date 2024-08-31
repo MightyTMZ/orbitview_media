@@ -3,6 +3,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import generics
 from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.filters import SearchFilter
 from django.shortcuts import get_object_or_404
 from .models import *
@@ -12,7 +13,7 @@ from .serializers import *
 class ArticleList(generics.ListAPIView):
     queryset = Article.objects.all().order_by("-updated_at")
     serializer_class = ArticleSerializer
-    # add permission class here
+    permission_classes = [IsAuthenticated]
     filter_backends = [DjangoFilterBackend, SearchFilter]
     search_fields = ['title', 'content', 'category__title', 'authors__first_name', 'authors__last_name']
 
@@ -28,6 +29,12 @@ class ArticleDetail(generics.RetrieveAPIView):
 
         # Use __date to compare the date part only
         return get_object_or_404(Article, created_at__date=created_at_date, slug=slug)
+    
 
+class FirstArticlePreviews(generics.RetrieveAPIView):
+    queryset = Article.objects.all()[0:3]
+    permission_classes = [] # no permission classes
+    # gives unauthenticated users a preview of articles
+    
 
     

@@ -1,11 +1,10 @@
 import "./NavBar.css";
 import "../../fonts/Poppins.css";
 import OVM_logo from "../../assets/OrbitView_Media-removebg-preview.png";
-// import AccountInfo from "../AccountInfo/AccountInfo";
+import AccountInfo from "../AccountInfo/AccountInfo";
 
 const NavBar = () => {
-  // let isAuthenticated = localStorage.getItem('isAuthenticated');
-  
+  let isAuthenticated = localStorage.getItem('isAuthenticated');
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -48,17 +47,17 @@ const NavBar = () => {
                 aria-labelledby="navbarDarkDropdownMenuLink"
               >
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/#/techonomics">
                     Techonomics
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/#/engineering">
                     Engineering
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/#/pathways">
                     Pathways
                   </a>
                 </li>
@@ -69,7 +68,7 @@ const NavBar = () => {
                 Events
               </a>
             </li>
-            
+
             <li className="nav-item">
               <a className="nav-link" href="#join">
                 Join Us
@@ -80,7 +79,7 @@ const NavBar = () => {
                 Contact
               </a>
             </li>
-            {/*{isAuthenticated ? (
+            {isAuthenticated ? (
               <AccountInfo />
             ) : (
               <>
@@ -95,7 +94,7 @@ const NavBar = () => {
                 </a>
               </li>
               </>
-            )}*/}
+            )}
           </ul>
         </div>
       </div>

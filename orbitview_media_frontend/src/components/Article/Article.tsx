@@ -9,8 +9,7 @@ const Article: React.FC = () => {
   const { created_at_date, slug } = useParams();
   const [article, setArticle] = useState<any>(null);
 
-  const accessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI0OTA2MDQyLCJpYXQiOjE3MjQ4OTg4NDIsImp0aSI6ImQ5YTI5Mjc4OWQ2ZTRmMWE4YjA3NjFlNWEyMmM2N2VjIiwidXNlcl9pZCI6MX0.cpslCepVh1a9rJxHwARvxbU32aQfoJ8wpIeRS-1jujI"
-  // in the future, you would load this from the HTTP-only cookie but here we hard coded it
+  const accessToken = localStorage.getItem("accessToken")
 
   const headers = {
     'Authorization': `JWT ${accessToken}`,

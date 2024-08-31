@@ -1,0 +1,15 @@
+.container {
+  margin-top: 50px;
+}
+
+.row {
+  align-items: center;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+.form-select {
+  margin-bottom: 10px;
+}

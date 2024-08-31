@@ -22,9 +22,8 @@ admin.site.site_header = "OrbitView Media Administration"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('auth/', include('djoser.urls')),
-    # path('auth/', include('djoser.urls.jwt')),
-    # We will temporarily disable user login ability
+    path('auth/', include('djoser.urls')),
+    path('auth/', include('djoser.urls.jwt')),
     path("content/", include("content.urls")),
     path("__debug__", include(debug_toolbar.urls))
 ]

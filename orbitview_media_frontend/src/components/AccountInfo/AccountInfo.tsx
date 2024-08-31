@@ -2,13 +2,13 @@ import { useState, useEffect, Fragment } from "react";
 import "./AccountInfo.css";
 
 const AccountInfo = () => {
-  const [firstName, setFirstName] = useState("-");
-  const [lastName, setLastName] = useState("-");
-  const [email, setEmail] = useState("-");
+  // const [firstName, setFirstName] = useState("-");
+  // const [lastName, setLastName] = useState("-");
+  // const [email, setEmail] = useState("-");
   const [profilePictureURL, setProfilePictureURL] = useState(
     "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png"
   );
-  const [memberShipTier, setMemberShipTier] = useState("-");
+  // const [memberShipTier, setMemberShipTier] = useState("-");
 
   useEffect(() => {
     const fetchUserData = async () => {
@@ -32,11 +32,11 @@ const AccountInfo = () => {
           console.log(data);
 
           // Update state with the fetched user data
-          setFirstName(data.first_name);
-          setLastName(data.last_name);
-          setEmail(data.email);
+          // setFirstName(data.first_name);
+          // setLastName(data.last_name);
+          // setEmail(data.email);
           setProfilePictureURL(data.profile_pic);
-          setMemberShipTier(data.membership_tier);
+          // setMemberShipTier(data.membership_tier);
         } catch (error: any) {
           console.error("Error during fetching user data:", error);
         }
@@ -78,13 +78,8 @@ const AccountInfo = () => {
           aria-labelledby="navbarDarkDropdownMenuLink"
         >
           <li>
-            <a className="dropdown-item" href="#">
+            <a className="dropdown-item" href="/#/user/profile">
               Profile
-            </a>
-          </li>
-          <li>
-            <a className="dropdown-item" href="#">
-              Settings
             </a>
           </li>
           <li>
