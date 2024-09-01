@@ -23,12 +23,12 @@ load_dotenv()
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv("SECRET_KEY")
+SECRET_KEY = "django-insecure-h31vso32*$^@&fshj4r87hndkjfdhf90]]320324-2rfuyskjfjkfdsklfs"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["orbitviewmedia.pythonanywhere.com"]
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # Add your frontend origin here
@@ -69,16 +69,16 @@ INSTALLED_APPS = [
     'djoser',
     'corsheaders',
     'ckeditor',
-    'analytics', 
-    'content', 
-    'events', 
-    'subscriptions', 
+    'analytics',
+    'content',
+    'events',
+    'subscriptions',
     'users'
 ]
 
 AUTH_USER_MODEL = 'users.CustomUser'
 
-MIDDLEWARE = [    
+MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -115,12 +115,12 @@ WSGI_APPLICATION = 'orbitview_media.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': os.getenv("DB_ENGINE"),
-        'NAME': os.getenv("DB_NAME"),
-        'PORT': os.getenv("DB_PORT"), 
-        'HOST': os.getenv("DB_HOST"),
-        'USER': os.getenv("DB_USER"),
-        'PASSWORD': os.getenv("DB_PASSWORD")
+        'ENGINE': "django.db.backends.mysql",
+        'NAME': "orbitviewmedia$orbitview",
+        'PORT': 3306,
+        'HOST': "orbitviewmedia.mysql.pythonanywhere-services.com",
+        'USER': "orbitviewmedia",
+        'PASSWORD': "fmek328_bS5ZQP#"
     }
 }
 
@@ -159,7 +159,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'static/'
+'''specific for PythonAnywhere'''
+
+STATIC_URL = '/static/'
+STATIC_ROOT = '/home/orbitviewmedia/orbitview_media/orbitview_media/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
@@ -173,7 +176,7 @@ REST_FRAMEWORK = {
     ),
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated'
-    ], 
+    ],
     'USER_CREATE_PASSWORD_RETYPE': True,
     'SEND_ACTIVATION_EMAIL': True,
     'ACTIVATION_URL': 'auth/activate/{uid}/{token}/',
@@ -188,7 +191,7 @@ REST_FRAMEWORK = {
 }
 
 SIMPLE_JWT = {
-    'AUTH_HEADER_TYPES': ('JWT',),    
+    'AUTH_HEADER_TYPES': ('JWT',),
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=120), # CHANGE THIS BEFORE PRODUCTION
     # every time the user sends an access token to gain access to confidential content
     # if that request fails, use the refresh token to gain a new access token
@@ -201,7 +204,7 @@ SIMPLE_JWT = {
 
 DJOSER = {
     "SERIALIZERS": {
-        "user_create": 'users.serializers.UserCreateSerializer', 
+        "user_create": 'users.serializers.UserCreateSerializer',
         'current_user': 'users.serializers.UserSerializer',
     }
 }
