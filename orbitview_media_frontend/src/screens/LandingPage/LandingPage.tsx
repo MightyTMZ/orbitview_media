@@ -1,6 +1,6 @@
-import NavBar from "../NavBar/NavBar";
-import Footer from "../Footer/Footer";
-import FAQs from "../FAQs/FAQs";
+import NavBar from "../../components/NavBar/NavBar";
+import Footer from "../../components/Footer/Footer";
+import FAQs from "../../components/FAQs/FAQs";
 import OVM_logo from "../../assets/OrbitView_Media-removebg-preview.png";
 import "./LandingPage.css";
 

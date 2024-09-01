@@ -116,11 +116,11 @@ WSGI_APPLICATION = 'orbitview_media.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': "django.db.backends.mysql",
-        'NAME': "orbitviewmedia$orbitview",
-        'PORT': 3306,
-        'HOST': "orbitviewmedia.mysql.pythonanywhere-services.com",
-        'USER': "orbitviewmedia",
-        'PASSWORD': "fmek328_bS5ZQP#"
+        'NAME': os.getenv("DB_NAME"),
+        'PORT': os.getenv("DB_PORT"),
+        'HOST': os.getenv("DB_HOST"),
+        'USER': os.getenv("DB_USER"),
+        'PASSWORD': os.getenv("DB_PASSWORD")
     }
 }
 

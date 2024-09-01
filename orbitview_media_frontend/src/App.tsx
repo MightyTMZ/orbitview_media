@@ -1,7 +1,7 @@
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
-import LandingPage from "./components/LandingPage/LandingPage";
-import TechonomicsLandingPage from "./components/Techonomics/Techonomics";
-import PathwaysLandingPage from "./components/Pathways/Pathways";
+import LandingPage from "./screens/LandingPage/LandingPage";
+import TechonomicsLandingPage from "./screens/Techonomics/Techonomics";
+import PathwaysLandingPage from "./screens/Pathways/Pathways";
 import EngineeringLandingPage from "./components/Engineering/Engineering";
 import Article from "./components/Article/Article";
 import LoginPage from "./screens/Login/LoginPage";

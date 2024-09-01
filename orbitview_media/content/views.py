@@ -51,3 +51,11 @@ class ArticleContentPreview(generics.RetrieveAPIView):
     
 
     
+class PreviewArticleList(generics.ListAPIView):
+    queryset = Article.objects.all().order_by("-updated_at")
+    serializer_class = PreviewArticleSerializer
+    permission_classes = []
+    filter_backends = [DjangoFilterBackend, SearchFilter]
+    search_fields = ['title', 'content', 'category__title', 'authors__first_name', 'authors__last_name']
+
+    
