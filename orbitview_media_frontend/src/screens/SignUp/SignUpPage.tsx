@@ -22,8 +22,10 @@ const SignUp: React.FC = () => {
       return;
     }
 
+    const backendServerAddress = "https://orbitviewmedia.pythonanywhere.com";
+
     try {
-      const response = await fetch("http://127.0.0.1:8000/auth/users/", {
+      const response = await fetch(`${backendServerAddress}/auth/users/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

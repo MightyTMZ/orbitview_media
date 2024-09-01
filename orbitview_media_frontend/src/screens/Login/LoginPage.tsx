@@ -15,8 +15,11 @@ const LoginPage = () => {
   const handleLogin = async (event: any) => {
     event.preventDefault();
 
+    const backendServerAddress = "https://orbitviewmedia.pythonanywhere.com";
+
+
     try {
-      const response = await fetch('http://127.0.0.1:8000/auth/jwt/create/', {
+      const response = await fetch(`${backendServerAddress}/auth/jwt/create/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -14,9 +14,11 @@ const AccountInfo = () => {
     const fetchUserData = async () => {
       const accessToken = localStorage.getItem("accessToken");
 
+      const backendServerAddress = "https://orbitviewmedia.pythonanywhere.com";
+
       if (accessToken) {
         try {
-          const response = await fetch("http://127.0.0.1:8000/auth/users/me/", {
+          const response = await fetch(`${backendServerAddress}/auth/users/me/`, {
             method: "GET",
             headers: {
               "Content-Type": "application/json",
