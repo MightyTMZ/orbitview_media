@@ -5,3 +5,4 @@ __pycache__
 test_tokens.txt
 smtp-info.txt
 email_debug.py
+python-anywhere-settings.py

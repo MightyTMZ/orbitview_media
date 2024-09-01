@@ -21,7 +21,7 @@ class ArticleList(generics.ListAPIView):
 class ArticleDetail(generics.RetrieveAPIView):
     queryset = Article.objects.all()
     serializer_class = ArticleSerializer
-    # permission_classes = [IsAdminOrReadOnly]
+    permission_classes = [IsAuthenticated]
 
     def get_object(self):
         created_at_date = self.kwargs['created_at_date']
@@ -35,6 +35,19 @@ class FirstArticlePreviews(generics.RetrieveAPIView):
     queryset = Article.objects.all()[0:3]
     permission_classes = [] # no permission classes
     # gives unauthenticated users a preview of articles
+
+
+class ArticleContentPreview(generics.RetrieveAPIView):
+    queryset = Article.objects.all()
+    serializer_class = PreviewArticleSerializer
+    permission_classes = [] # since we are giving the users a preview of the articles, we must not enable any permission classes to view these
+
+    def get_object(self):
+        created_at_date = self.kwargs['created_at_date']
+        slug = self.kwargs['slug']
+
+        article = get_object_or_404(Article, created_at__date=created_at_date, slug=slug)
+        return article
     
 
     

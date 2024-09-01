@@ -38,9 +38,10 @@ class Article(models.Model):
     subtitle = models.CharField(max_length=355, default="") # derived idea from Substack
     slug = models.SlugField(default="-", editable=False, max_length=250)
     content = RichTextField()
+    preview_content = RichTextField(default="")
     authors = models.ManyToManyField(Author)
-    created_at = models.DateTimeField()
-    updated_at = models.DateTimeField(null=True, blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True, null=True, blank=True) # to determine if it requires an update, the decision will be made on the frontend and not have to undergo a lot of logic here
     is_published = models.BooleanField(default=False)
     featured_image = models.ImageField(upload_to='articles/%Y/%m/%d/', blank=True, null=True)
 

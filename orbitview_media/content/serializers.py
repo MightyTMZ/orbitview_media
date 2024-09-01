@@ -43,3 +43,22 @@ class AnnoucementSerializer(serializers.ModelSerializer):
         ]
 
 
+
+class PreviewArticleSerializer(serializers.ModelSerializer):
+    authors = AuthorSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = Article
+        fields = [
+            'title',
+            'slug',
+            'subtitle',
+            'authors',
+            'preview_content',
+            'created_at',
+            'updated_at',
+            'is_published',  # used to adjust the visibility to the users
+            'featured_image'
+        ]
+
+
