@@ -4,10 +4,12 @@ import TechonomicsLandingPage from "./screens/Techonomics/Techonomics";
 import PathwaysLandingPage from "./screens/Pathways/Pathways";
 import EngineeringLandingPage from "./components/Engineering/Engineering";
 import Article from "./components/Article/Article";
-import LoginPage from "./screens/Login/LoginPage";
-import SignUpPage from "./screens/SignUp/SignUpPage";
+// import LoginPage from "./screens/Login/LoginPage";
+// import SignUpPage from "./screens/SignUp/SignUpPage";
 // import ActivateAccount from "./screens/ActivateAccount/ActivateAccount";
-import EditProfile from "./components/EditProfile/EditProfile";
+// import EditProfile from "./components/EditProfile/EditProfile";
+import ContactPage from "./screens/Contact/Contact";
+
 
 function App() {
   return (
@@ -24,9 +26,10 @@ function App() {
           <Route path="/techonomics" element={<TechonomicsLandingPage />} />
           <Route path="/pathways" element={<PathwaysLandingPage />} />
           <Route path="/engineering" element={<EngineeringLandingPage />} />
-          <Route path="/login" element={<LoginPage />} />
+          {/*<Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignUpPage />} />
-          <Route path="/user/profile" element={<EditProfile />} />
+          <Route path="/user/profile" element={<EditProfile />} /> */}
+          <Route path="/contact" element={<ContactPage />} />
           {/* 
           <Route path="/activate/:uid/:token" element={<ActivateAccount />} />
           */}

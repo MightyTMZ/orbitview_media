@@ -21,9 +21,6 @@ function Footer() {
               <a href="#about" className="text-light text-decoration-none">About Us</a>
             </p>
             <p>
-              <a href="#team" className="text-light text-decoration-none">Meet the Team</a>
-            </p>
-            <p>
               <a href="#events" className="text-light text-decoration-none">Events</a>
             </p>
             <p>
@@ -34,16 +31,13 @@ function Footer() {
           {/* Social Media Links */}
           <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
             <h5 className="text-uppercase mb-4 font-weight-bold poppins connect-with-us">Connect with Us</h5>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="social-logo text-light me-4">
+            <a href="https://www.instagram.com/orbitview_media/" target="_blank" rel="noopener noreferrer" className="social-logo text-light me-4">
               <i className="fab fa-instagram"></i>
             </a>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="social-logo text-light me-4">
-              <i className="fab fa-facebook"></i>
-            </a>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="social-logo text-light me-4">
+            <a href="https://x.com/OrbitViewMedia" target="_blank" rel="noopener noreferrer" className="social-logo text-light me-4">
               <i className="fab fa-twitter"></i>
             </a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="social-logo text-light">
+            <a href="https://www.linkedin.com/company/orbitview-media/" target="_blank" rel="noopener noreferrer" className="social-logo text-light">
               <i className="fab fa-linkedin"></i>
             </a>
           </div>
