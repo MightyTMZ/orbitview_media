@@ -42,15 +42,15 @@ const LandingPage = () => {
                 className="col-md-2 text-center welcome-widget"
                 onClick={() => navigate("/techonomics")}
               >
-                <i className="fas fa-laptop-code fa-3x mb-2"></i>
+                <i className="fas fa-chart-line fa-3x mb-2"></i>
                 <h6>Technomics</h6>
               </div>
               <div
                 className="col-md-2 text-center welcome-widget"
-                onClick={() => navigate("/pathways")}
+                onClick={() => navigate("/pathnetwork")}
               >
-                <i className="fas fa-graduation-cap fa-3x mb-2"></i>
-                <h6>Pathways</h6>
+                <i className="fas fa-project-diagram fa-3x mb-2"></i>{" "}
+                <h6>PathNetwork</h6>
               </div>
               <div
                 className="col-md-2 text-center welcome-widget"
