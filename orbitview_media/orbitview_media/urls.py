@@ -25,5 +25,6 @@ urlpatterns = [
     path('auth/', include('djoser.urls')),
     path('auth/', include('djoser.urls.jwt')),
     path("content/", include("content.urls")),
+    path("users/", include("users.urls")), # nothing confidential, only here due to the waitlist
     path("__debug__", include(debug_toolbar.urls))
 ]
