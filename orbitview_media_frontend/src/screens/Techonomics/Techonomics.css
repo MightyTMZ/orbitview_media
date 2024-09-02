@@ -66,3 +66,22 @@
   margin-bottom: 0.5rem;
   color: #333;
 }
+
+@media screen and (max-width: 900px) {
+  .ovt-hero-title {
+    font-size: 3.5rem;
+  }
+  .ovt-hero-description {
+    font-size: 1rem;
+  }
+  .ovt-hero-subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ovt-hero-description {
+    font-size: 0.8rem;
+    padding: 30px;
+  }
+}

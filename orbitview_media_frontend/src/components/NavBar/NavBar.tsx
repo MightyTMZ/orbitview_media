@@ -58,8 +58,8 @@ const NavBar = () => {
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/#/pathways">
-                    Pathways
+                  <a className="dropdown-item" href="/#/pathnetwork">
+                    PathNetwork
                   </a>
                 </li>
               </ul>

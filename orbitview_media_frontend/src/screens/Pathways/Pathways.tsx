@@ -5,7 +5,7 @@ import "../../fonts/Poppins.css"
 import "./Pathways.css";
 
 const PathwaysLandingPage = () => {
-  let pageName = "Pathways";
+  let pageName = "PathNetwork";
 
   document.title = `${pageName} - OrbitView Media`
 
@@ -16,7 +16,7 @@ const PathwaysLandingPage = () => {
         {/* Hero Section */}
         <section className="ovp-hero-section text-start">
           <div className="ovp-hero-content container">
-            <h1 className="ovp-hero-title">OrbitView Pathways</h1>
+            <h1 className="ovp-hero-title">OrbitView PathNetwork</h1>
             <p className="ovp-hero-subtitle">
               Where career guidance and growth opportunities come to you!
             </p>
@@ -33,7 +33,7 @@ const PathwaysLandingPage = () => {
         {/* About Section */}
         <section className="ovp-about-section">
           <div className="ovp-about-content">
-            <h2 className="ovp-section-title">About Pathways</h2>
+            <h2 className="ovp-section-title">About PathNetworks</h2>
             <p className="ovp-section-description">
               Our tailored guidance and expert insights, you can confidently
               navigate your growth path and unlock new opportunities for

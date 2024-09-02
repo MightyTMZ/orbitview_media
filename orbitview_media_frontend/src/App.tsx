@@ -26,7 +26,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/techonomics" element={<TechonomicsLandingPage />} />
-          <Route path="/pathways" element={<PathwaysLandingPage />} />
+          <Route path="/pathnetwork" element={<PathwaysLandingPage />} />
           <Route path="/engineering" element={<EngineeringLandingPage />} />
           {/*<Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignUpPage />} />

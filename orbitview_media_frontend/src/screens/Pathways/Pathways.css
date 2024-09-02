@@ -4,7 +4,7 @@
   padding-bottom: 3rem;
   padding-top: 3rem;
   display: flex;
-  
+
   color: white;
   text-align: left;
 }
@@ -34,7 +34,6 @@
 
 .ovp-about-content {
   max-width: 800px;
-
 }
 
 .ovp-section-title {
@@ -63,4 +62,26 @@
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
   color: #333;
+}
+
+@media screen and (max-width: 900px) {
+  .ovp-hero-title {
+    font-size: 3.5rem;
+    padding: 30px;
+  }
+  .ovp-hero-description {
+    font-size: 1rem;
+    padding: 30px;
+  }
+  .ovp-hero-subtitle {
+    font-size: 1.2rem;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ovp-hero-description {
+    font-size: 0.8rem;
+    padding: 30px;
+  }
 }
