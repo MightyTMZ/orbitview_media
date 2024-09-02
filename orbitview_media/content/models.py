@@ -43,7 +43,7 @@ class Article(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True, null=True, blank=True) # to determine if it requires an update, the decision will be made on the frontend and not have to undergo a lot of logic here
     is_published = models.BooleanField(default=False)
-    featured_image = models.ImageField(upload_to='articles/%Y/%m/%d/', blank=True, null=True)
+    featured_image = models.CharField(max_length=2083, blank=True, null=True)
 
     # along with the Substack, Medium, or other APIs, users can read articles on our main website
 

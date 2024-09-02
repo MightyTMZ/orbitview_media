@@ -17,3 +17,9 @@ class CustomUser(AbstractUser):
     default_pfp_url = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png"
     profile_pic = models.CharField(max_length=2083, default=default_pfp_url)
 
+
+
+class WaitlistMember(models.Model):
+    first_name = models.CharField(max_length=255)
+    last_name = models.CharField(max_length=255, null=True, blank=True)
+    email = models.EmailField(unique=True)
