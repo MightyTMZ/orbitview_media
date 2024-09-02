@@ -3,11 +3,16 @@ import Footer from "../../components/Footer/Footer";
 import FAQs from "../../components/FAQs/FAQs";
 import OVM_logo from "../../assets/OrbitView_Media-removebg-preview.png";
 import "./LandingPage.css";
+import { useNavigate } from "react-router-dom";
 
 const LandingPage = () => {
   let pageName = "Home";
 
-  document.title = `${pageName} - OrbitView Media`
+  document.title = `${pageName} - OrbitView Media`;
+
+  const navigate = useNavigate();
+
+  const faqs = document.getElementById("faqs");
 
   return (
     <>
@@ -26,27 +31,45 @@ const LandingPage = () => {
           {/* Main Content with Icons */}
           <div className="content-box container mt-5">
             <div className="row justify-content-center">
-              <div className="col-md-2 text-center">
+              <div
+                className="col-md-2 text-center welcome-widget"
+                onClick={() => faqs?.scrollIntoView({ behavior: "smooth" })}
+              >
                 <i className="fas fa-info-circle fa-3x mb-2"></i>
                 <h6>About Us</h6>
               </div>
-              <div className="col-md-2 text-center">
+              <div
+                className="col-md-2 text-center welcome-widget"
+                onClick={() => navigate("/techonomics")}
+              >
                 <i className="fas fa-laptop-code fa-3x mb-2"></i>
                 <h6>Technomics</h6>
               </div>
-              <div className="col-md-2 text-center">
+              <div
+                className="col-md-2 text-center welcome-widget"
+                onClick={() => navigate("/pathways")}
+              >
                 <i className="fas fa-graduation-cap fa-3x mb-2"></i>
                 <h6>Pathways</h6>
               </div>
-              <div className="col-md-2 text-center">
+              <div
+                className="col-md-2 text-center welcome-widget"
+                onClick={() => navigate("/engineering")}
+              >
                 <i className="fas fa-cogs fa-3x mb-2"></i>
                 <h6>Engineering</h6>
               </div>
-              <div className="col-md-2 text-center">
+              <div
+                className="col-md-2 text-center welcome-widget"
+                onClick={() => navigate("/events")}
+              >
                 <i className="fas fa-calendar-alt fa-3x mb-2"></i>
                 <h6>Events and Calendar</h6>
               </div>
-              <div className="col-md-2 text-center">
+              <div
+                className="col-md-2 text-center welcome-widget"
+                onClick={() => navigate("/join")}
+              >
                 <i className="fas fa-users fa-3x mb-2"></i>
                 <h6>Join Us Today!</h6>
               </div>

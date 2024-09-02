@@ -2,7 +2,7 @@ import "./FAQs.css";
 
 const FAQs = () => {
   return (
-    <div className="faq-section container poppins mb-5">
+    <div className="faq-section container poppins mb-5" id="faqs">
       <h2 className="text-center mb-4">Frequently Asked Questions</h2>
 
       <div className="accordion" id="faqAccordion">

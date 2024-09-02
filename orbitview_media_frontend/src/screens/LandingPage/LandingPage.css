@@ -69,3 +69,7 @@
 .social-icons a:hover {
   color: #ffffff;
 }
+
+.welcome-widget:hover {
+  opacity: 0.8;
+}
