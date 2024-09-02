@@ -1,6 +1,8 @@
 import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
 import SubstackFeed from "./OVPSubstack";
+import careernetwork1 from "../../assets/career.png"
+import careernetwork2 from "../../assets/career-pathway.png"
 import "../../fonts/Poppins.css"
 import "./Pathways.css";
 
@@ -40,6 +42,8 @@ const PathwaysLandingPage = () => {
               success. Join us today!
             </p>
           </div>
+          <img src={careernetwork1} className="career-img" alt="The power of career networks"  height={100}/>
+          <img src={careernetwork2} className="career-img" alt="The power of career networks" height={100}/>
         </section>
         {/* Future Content Sections */}
         <section className="ovp-upcoming-content">

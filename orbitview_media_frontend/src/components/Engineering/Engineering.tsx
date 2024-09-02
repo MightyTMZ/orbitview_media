@@ -1,6 +1,7 @@
 import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
 import SubstackFeed from "./OVESubstack";
+import engineering1 from "../../assets/prototype.png"
 import "../../fonts/Poppins.css"
 import "./Engineering.css";
 
@@ -41,6 +42,7 @@ const EngineeringLandingPage = () => {
               research, and in-depth insights from top-tier experts.
             </p>
           </div>
+          <img src={engineering1} alt="The future of engineering" height={100}/>
         </section>
         {/* Future Content Sections */}
         <section className="ovp-upcoming-content">

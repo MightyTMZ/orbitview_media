@@ -1,6 +1,7 @@
 import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
 import SubstackFeed from "./OVTSubstack";
+import techonomics1 from "../../assets/technology.png";
 import "../../fonts/Poppins.css"
 import "./Techonomics.css";
 
@@ -38,6 +39,7 @@ const TechonomicsLandingPage = () => {
               shape the future.
             </p>
           </div>
+          <img src={techonomics1} alt="The future of techology + economics (techonomics)" height={100}/>
         </section>
         {/* Future Content Sections */}
         <section className="ovt-upcoming-content">
