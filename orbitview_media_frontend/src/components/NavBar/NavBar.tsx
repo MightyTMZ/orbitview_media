@@ -4,7 +4,6 @@ import OVM_logo from "../../assets/OrbitView_Media-removebg-preview.png";
 // import AccountInfo from "../AccountInfo/AccountInfo";
 // temporarily shut down for the MVP
 
-
 const NavBar = () => {
   // let isAuthenticated = localStorage.getItem('isAuthenticated');
 
@@ -12,7 +11,7 @@ const NavBar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div className="container">
         {/* Logo/Brand */}
-        <a className="navbar-brand poppins-bold" href="#home">
+        <a className="navbar-brand poppins-bold" href="#">
           <img src={OVM_logo} alt="Logo" className="mr-2" height={45} />
           <span className="ml-2">OrbitView Media</span>
         </a>
