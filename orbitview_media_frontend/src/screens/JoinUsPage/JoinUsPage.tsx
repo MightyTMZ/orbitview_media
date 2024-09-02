@@ -13,25 +13,25 @@ const JoinUsPage: React.FC = () => {
 
   const backendServerAddress = "https://orbitviewmedia.pythonanywhere.com";
 
+  // https://orbitviewmedia.pythonanywhere.com/users/waitlist/
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const response = fetch(`${backendServerAddress}`, {
+    fetch(`${backendServerAddress}/users/waitlist/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        email,
-        firstName,
-        lastName,
+        email: email,
+        first_name: firstName,
+        last_name: lastName,
       }),
     });
-    
-    // response will definitely fail for sure but we need to create a waitlist model in the backend
 
-    console.log(response);
     setSubmitted(true);
   };
+
 
   return (
     <>

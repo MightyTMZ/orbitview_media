@@ -7,6 +7,7 @@ from .serializers import *
 
 
 class WaitlistMemberList(APIView):
+    permission_classes = []
     def post(self, request):
         serializer = WaitlistMemberSerializer(data=request.data)
         if serializer.is_valid():
