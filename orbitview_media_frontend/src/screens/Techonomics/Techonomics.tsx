@@ -1,13 +1,14 @@
 import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
 import SubstackFeed from "./OVTSubstack";
+import "../../fonts/Poppins.css"
 import "./Techonomics.css";
 
 const TechonomicsLandingPage = () => {
   return (
     <>
       <NavBar />
-      <div className="techonomics-page">
+      <div className="techonomics-page poppins">
         {/* Hero Section */}
         <section className="ovt-hero-section">
           <div className="ovt-hero-content">

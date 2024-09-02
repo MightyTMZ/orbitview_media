@@ -1,13 +1,14 @@
 import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
 import SubstackFeed from "./OVPSubstack";
+import "../../fonts/Poppins.css"
 import "./Pathways.css";
 
 const PathwaysLandingPage = () => {
   return (
     <>
       <NavBar />
-      <div className="pathways-page">
+      <div className="pathways-page poppins">
         {/* Hero Section */}
         <section className="ovp-hero-section text-start">
           <div className="ovp-hero-content container">

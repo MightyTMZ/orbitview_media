@@ -1,13 +1,14 @@
 import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
 import SubstackFeed from "./OVESubstack";
+import "../../fonts/Poppins.css"
 import "./Engineering.css";
 
 const EngineeringLandingPage = () => {
   return (
     <>
       <NavBar />
-      <div className="pathways-page">
+      <div className="pathways-page poppins">
         {/* Hero Section */}
         <section className="ovp-hero-section text-start">
           <div className="ovp-hero-content">

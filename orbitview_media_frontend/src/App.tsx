@@ -10,6 +10,7 @@ import Article from "./components/Article/Article";
 // import EditProfile from "./components/EditProfile/EditProfile";
 import ContactPage from "./screens/Contact/Contact";
 import EventPage from "./screens/Events/Events";
+import JoinUsPage from "./screens/JoinUsPage/JoinUsPage";
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
           <Route path="/user/profile" element={<EditProfile />} /> */}
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/events" element={<EventPage />} />
+          <Route path="/join" element={<JoinUsPage />} />
           {/* 
           <Route path="/activate/:uid/:token" element={<ActivateAccount />} />
           */}
