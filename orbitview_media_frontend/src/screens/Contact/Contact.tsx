@@ -2,13 +2,14 @@ import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Contact.css";
+import "../../fonts/Poppins.css";
 
 
 const ContactPage = () => {
   return (
     <>
     <NavBar/>
-        <div className="contact-page-container">
+        <div className="contact-page-container poppins">
           <div className="container text-center mt-5">
             <h1 className="mb-4 display-4 text-primary">Contact OrbitView Media</h1>
             <p className="lead mb-5">
