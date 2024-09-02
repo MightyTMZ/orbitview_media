@@ -28,6 +28,10 @@ const events: Event[] = [
 ];
 
 const EventPage: React.FC = () => {
+  let pageName = "Events";
+
+  document.title = `${pageName} - OrbitView Media`
+
   const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
 
   const handleShowModal = (event: Event) => {

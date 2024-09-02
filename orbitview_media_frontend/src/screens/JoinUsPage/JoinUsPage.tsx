@@ -6,6 +6,11 @@ import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
 
 const JoinUsPage: React.FC = () => {
+
+  let pageName = "Join us";
+
+  document.title = `${pageName} - OrbitView Media`
+
   const [firstName, setFirstName] = useState<string>("");
   const [lastName, setLastName] = useState<string>("");
   const [email, setEmail] = useState<string>("");

@@ -5,6 +5,10 @@ import "../../fonts/Poppins.css"
 import "./Techonomics.css";
 
 const TechonomicsLandingPage = () => {
+  let pageName = "Techonomics";
+
+  document.title = `${pageName} - OrbitView Media`
+
   return (
     <>
       <NavBar />

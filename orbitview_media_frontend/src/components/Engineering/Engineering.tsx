@@ -5,6 +5,11 @@ import "../../fonts/Poppins.css"
 import "./Engineering.css";
 
 const EngineeringLandingPage = () => {
+
+  let pageName = "Engineering";
+
+  document.title = `${pageName} - OrbitView Media` 
+
   return (
     <>
       <NavBar />

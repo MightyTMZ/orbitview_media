@@ -43,7 +43,10 @@ const Article: React.FC = () => {
   let authors = article.authors;
   let content = article.content;
   let createdAt = article.created_at_date;
-  console.log(content)
+
+  let pageName = `${title}`;
+
+  document.title = `${pageName} - OrbitView Media`
 
   return (
     <>

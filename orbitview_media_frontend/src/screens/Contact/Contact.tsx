@@ -6,6 +6,11 @@ import "../../fonts/Poppins.css";
 
 
 const ContactPage = () => {
+
+  let pageName = "Contact";
+
+  document.title = `${pageName} - OrbitView Media`
+
   return (
     <>
     <NavBar/>

@@ -5,6 +5,10 @@ import OVM_logo from "../../assets/OrbitView_Media-removebg-preview.png";
 import "./LandingPage.css";
 
 const LandingPage = () => {
+  let pageName = "Home";
+
+  document.title = `${pageName} - OrbitView Media`
+
   return (
     <>
       <NavBar />
