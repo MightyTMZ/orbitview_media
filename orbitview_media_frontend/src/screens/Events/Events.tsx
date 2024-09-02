@@ -23,7 +23,7 @@ const events: Event[] = [
     time: "10:00 AM - 4:00 PM",
     location: "Virtual",
     link: "https://www.eventbrite.ca/e/ai-agents-swarmzeroai-x-orbitview-media-tickets-999774702047",
-    description: "Unlock an insider advantage to ",
+    description: "Unlock an insider advantage to the future of AI where agents can help automate your tasks or make you earn passive income, while acting autonomously and free from human assistance. ",
   },
 ];
 
