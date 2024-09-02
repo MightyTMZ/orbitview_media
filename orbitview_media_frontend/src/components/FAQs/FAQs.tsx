@@ -28,7 +28,7 @@ const FAQs = () => {
           >
             <div className="accordion-body">
               OrbitView Media is a media entity focused on technology,
-              economics, career development, and post-secondary pathways. We
+              economics, career development, and professional excellence. We
               host events and collaborate with influencers and organizations to
               create impactful content.
             </div>
@@ -57,7 +57,7 @@ const FAQs = () => {
           >
             <div className="accordion-body">
               We produce content related to technology, economics, career
-              guidance, and pathways to post-secondary education. Our content
+              guidance, and pathways to professional excellence. Our content
               includes articles, infographics, videos, and event coverage to
               help our audience learn and stay informed.
             </div>
@@ -86,8 +86,7 @@ const FAQs = () => {
           >
             <div className="accordion-body">
               You can join the team by filling out a form on our "Join Us" page.
-              Once completed, you will be added to our Discord where you can
-              collaborate, contribute, and stay updated on all team activities.
+              Once completed, you will be added to our waitlist where you will be notified when our amazing content gets released.
             </div>
           </div>
         </div>
