@@ -22,15 +22,16 @@ const events: Event[] = [
     date: "2024-09-07",
     time: "10:00 AM - 4:00 PM",
     location: "Virtual",
-    link: "https://www.eventbrite.ca/e/ai-agents-swarmzeroai-x-orbitview-media-tickets-999774702047",
-    description: "Unlock an insider advantage to the future of AI where agents can help automate your tasks or make you earn passive income, while acting autonomously and free from human assistance. ",
+    link: "https://lu.ma/vvxujecl",
+    description:
+      "Unlock an insider advantage to the future of AI where agents can help automate your tasks or make you earn passive income, while acting autonomously and free from human assistance. ",
   },
 ];
 
 const EventPage: React.FC = () => {
   let pageName = "Events";
 
-  document.title = `${pageName} - OrbitView Media`
+  document.title = `${pageName} - OrbitView Media`;
 
   const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
 
