@@ -18,7 +18,7 @@ interface Event {
 const events: Event[] = [
   {
     id: 1,
-    title: "AI Agents: SwarmZero.ai",
+    title: "Decentralized AI Agents: SwarmZero.ai",
     date: "2024-09-07",
     time: "10:00 AM - 4:00 PM",
     location: "Virtual",
