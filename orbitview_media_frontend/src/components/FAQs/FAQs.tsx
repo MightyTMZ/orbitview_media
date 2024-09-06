@@ -27,10 +27,10 @@ const FAQs = () => {
             data-bs-parent="#faqAccordion"
           >
             <div className="accordion-body">
-              OrbitView Media is a media entity focused on technology,
-              economics, career development, and professional excellence. We
-              host events and collaborate with influencers and organizations to
-              create impactful content.
+              From inspirational, informative content to workshops, our main
+              goal is to push you further towards you goals and action. We
+              primarily focus on the content areas of technology, economics,
+              career development, and professional excellence.
             </div>
           </div>
         </div>
@@ -85,8 +85,9 @@ const FAQs = () => {
             data-bs-parent="#faqAccordion"
           >
             <div className="accordion-body">
-              You can join the team by filling out a form on our "Join Us" page.
-              Once completed, you will be added to our waitlist where you will be notified when our amazing content gets released.
+              You can join the OrbitView family by filling out a form on our
+              "Join Us" page. Once completed, you will be added to our waitlist
+              where you will be notified when our amazing content gets released.
             </div>
           </div>
         </div>
@@ -112,7 +113,7 @@ const FAQs = () => {
             data-bs-parent="#faqAccordion"
           >
             <div className="accordion-body">
-              By joining our team, you’ll have the opportunity to collaborate
+              By joining our family, you’ll have the opportunity to collaborate
               with a dynamic group of creators, participate in events, and gain
               experience in content creation, media, and technology. Plus,
               you'll be part of a community focused on learning and growth.
@@ -141,7 +142,7 @@ const FAQs = () => {
             data-bs-parent="#faqAccordion"
           >
             <div className="accordion-body">
-              You can subscribe to our newsletter for regular updates, follow us
+              You can subscribe to our newsletter (coming soon) for regular updates, follow us
               on social media, or check out our events calendar on the website
               to stay informed about the latest content and happenings.
             </div>
