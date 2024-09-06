@@ -24,7 +24,7 @@ const LandingPage = () => {
             OrbitView Media
           </h1>
           <p className="lead poppins-thin">
-            Expanding Horizons, Elevating Perspectives
+            Turbocharging ideasand actions!
           </p>
           <img src={OVM_logo} alt="OrbitView Media logo" height={100} />
 
