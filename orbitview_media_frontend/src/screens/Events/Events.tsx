@@ -50,7 +50,7 @@ const EventPage: React.FC = () => {
   return (
     <>
       <NavBar></NavBar>
-      <div className="container mt-5 poppins">
+      <main className="container mt-5 poppins">
         <h1 className="text-center mb-4">Upcoming Events</h1>
         <p className="lead text-center">
           Stay updated with our latest events and workshops
@@ -144,7 +144,7 @@ const EventPage: React.FC = () => {
             </div>
           </div>
         </div>
-      </div>
+      </main>
       <Footer></Footer>
     </>
   );

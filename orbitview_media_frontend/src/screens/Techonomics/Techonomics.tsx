@@ -13,7 +13,7 @@ const TechonomicsLandingPage = () => {
   return (
     <>
       <NavBar />
-      <div className="techonomics-page poppins">
+      <main className="techonomics-page poppins">
         {/* Hero Section */}
         <section className="ovt-hero-section">
           <div className="ovt-hero-content">
@@ -45,7 +45,7 @@ const TechonomicsLandingPage = () => {
         <section className="ovt-upcoming-content">
           <SubstackFeed></SubstackFeed>
         </section>
-      </div>
+      </main>
       <Footer />
     </>
   );

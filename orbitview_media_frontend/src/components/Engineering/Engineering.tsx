@@ -14,7 +14,7 @@ const EngineeringLandingPage = () => {
   return (
     <>
       <NavBar />
-      <div className="pathways-page poppins">
+      <main className="pathways-page poppins">
         {/* Hero Section */}
         <section className="ovp-hero-section text-start">
           <div className="ovp-hero-content">
@@ -48,7 +48,7 @@ const EngineeringLandingPage = () => {
         <section className="ovp-upcoming-content">
           <SubstackFeed></SubstackFeed>
         </section>
-      </div>
+      </main>
       <Footer />
     </>
   );

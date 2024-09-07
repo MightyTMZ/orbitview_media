@@ -17,7 +17,7 @@ const LandingPage = () => {
   return (
     <>
       <NavBar />
-      <div className="landing-page">
+      <main className="landing-page">
         {/* Hero Section */}
         <div className="hero-section text-center">
           <h1 className="display-4" id="main-heading">
@@ -77,7 +77,7 @@ const LandingPage = () => {
           </div>
         </div>
         <FAQs />
-      </div>
+      </main>
 
       <Footer></Footer>
     </>
