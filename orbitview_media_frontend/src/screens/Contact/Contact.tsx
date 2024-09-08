@@ -69,6 +69,16 @@ const ContactPage = () => {
                       <li>
                         <a
                           className="dropdown-item"
+                          href="https://www.instagram.com/orbitview_media/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          OrbitView Media (main)
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="dropdown-item"
                           href="https://www.instagram.com/orbitviewtechonomics"
                           target="_blank"
                           rel="noopener noreferrer"
@@ -98,7 +108,7 @@ const ContactPage = () => {
                       </li>
                     </ul>
                   </div>
-                  {/* YouTube Dropdown */}
+                  {/* YouTube Dropdown 
                   <div className="dropdown me-2">
                     <button
                       className="btn btn-outline-danger dropdown-toggle"
@@ -141,8 +151,8 @@ const ContactPage = () => {
                         </a>
                       </li>
                     </ul>
-                  </div>
-                  {/* TikTok Dropdown */}
+                  </div>*/}
+                  {/* TikTok Dropdown
                   <div className="dropdown me-2">
                     <button
                       className="btn btn-outline-dark dropdown-toggle"
@@ -185,7 +195,7 @@ const ContactPage = () => {
                         </a>
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
                   {/* Substack Dropdown */}
                   <div className="dropdown">
                     <button
