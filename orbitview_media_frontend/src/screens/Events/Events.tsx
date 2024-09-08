@@ -19,8 +19,8 @@ const events: Event[] = [
   {
     id: 1,
     title: "Decentralized AI Agents: SwarmZero.ai",
-    date: "2024-09-07",
-    time: "10:00 AM - 4:00 PM",
+    date: "2024-09-14",
+    time: "5:00 PM - 7:00 PM",
     location: "Virtual",
     link: "https://lu.ma/vvxujecl",
     description:
