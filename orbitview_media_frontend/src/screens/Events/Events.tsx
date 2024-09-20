@@ -18,11 +18,11 @@ interface Event {
 const events: Event[] = [
   {
     id: 1,
-    title: "Decentralized AI Agents: SwarmZero.ai",
-    date: "2024-09-14",
-    time: "5:00 PM - 7:00 PM",
+    title: "UniView: Orbit of Experiences",
+    date: "2024-09-29",
+    time: "3:00 PM - 5:00 PM",
     location: "Virtual",
-    link: "https://lu.ma/vvxujecl",
+    link: "https://lu.ma/vu67ulul",
     description:
       "Unlock an insider advantage to the future of AI where agents can help automate your tasks or make you earn passive income, while acting autonomously and free from human assistance. ",
   },
@@ -53,7 +53,16 @@ const EventPage: React.FC = () => {
       <main className="container mt-5 poppins">
         <h1 className="text-center mb-4">Upcoming Events</h1>
         <p className="lead text-center">
-          Stay updated with our latest events and workshops
+          ​It's time to ask your most burning questions during the university
+          application season to a group of the most talented university students
+          and high school graduates in Canada. ​Nicholas Chen (Systems Design
+          Engineering @ University of Waterloo), ​Dima Alzidan (Global Political
+          Studies @ York University), ​Hanz Po (Computer Science @ University of
+          Waterloo). ​More alumni may come, so stay tuned! ​Amidst the
+          university application season in Canada, gain insider information on
+          ​navigating high school pain points, ​how to stand out in admissions,
+          the application journey, ​alumni journey ​and so much more! See you
+          there!
         </p>
         <div className="row">
           {events.map((event) => (
