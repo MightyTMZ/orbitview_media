@@ -2,7 +2,7 @@ import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
 import FAQs from "../../components/FAQs/FAQs";
 import OVM_logo from "../../assets/OrbitView_Media-removebg-preview.png";
-import "../../fonts/Poppins.css"
+import "../../fonts/Poppins.css";
 import "./LandingPage.css";
 import { useNavigate } from "react-router-dom";
 
@@ -24,11 +24,16 @@ const LandingPage = () => {
           <h1 className="display-4" id="main-heading">
             OrbitView Media
           </h1>
-          <p className="lead poppins-thin">
-            Turbocharging ideas and actions!
-          </p>
+          <p className="lead poppins-thin">Turbocharging ideas and actions!</p>
           <img src={OVM_logo} alt="OrbitView Media logo" height={100} />
-          <button className="btn poppins" id="register-btn" style={{ fontSize: "1.25rem" }}>Register for upcoming events</button>
+          <button
+            className="btn poppins"
+            id="register-btn"
+            onClick={() => (window.location.href = "/#events")}
+            style={{ fontSize: "1.25rem" }}
+          >
+            Register for upcoming events
+          </button>
 
           {/* Main Content with Icons */}
           <div className="content-box container mt-5">
