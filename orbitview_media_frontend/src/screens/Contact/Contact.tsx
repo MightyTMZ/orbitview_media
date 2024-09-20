@@ -29,7 +29,7 @@ const ContactPage = () => {
                   <li className="mb-2">
                     <i className="bi bi-envelope"></i>
                     <a
-                      href="mailto:contact@orbitviewmedia.com"
+                      href="mailto:admin@orbitviewmedia.com"
                       className="ms-2 text-decoration-none text-dark"
                     >
                       admin@orbitviewmedia.com{" "}
@@ -43,7 +43,7 @@ const ContactPage = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      North York, Toronto, Canada
+                      Toronto, Canada
                     </a>
                   </li>
                 </ul>
