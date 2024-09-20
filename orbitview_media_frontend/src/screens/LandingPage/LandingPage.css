@@ -1,6 +1,12 @@
 /* LandingPage.css */
 
 /* Full-page animated gradient */
+#register-btn {
+  background: #8C9DAF  ;
+  border: 2px solid #001f33;
+  font-family: "Poppins", sans-serif;
+}
+
 .landing-page {
   height: auto;
   background: linear-gradient(
