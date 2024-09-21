@@ -1,6 +1,6 @@
 import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
-import FAQs from "../../components/FAQs/FAQs";
+import PartnersWidget from "../../components/Partners/Partners";
 import OVM_logo from "../../assets/OrbitView_Media-removebg-preview.png";
 import "../../fonts/Poppins.css";
 import "./LandingPage.css";
@@ -19,8 +19,7 @@ const LandingPage = () => {
 
   return (
     <>
-      <NavBar />
-      <main className="landing-page">
+      <NavBar />      <main className="landing-page">
         {/* Hero Section */}
         <div className="hero-section text-center">
           <h1 className="display-4" id="main-heading">
@@ -88,7 +87,8 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-        <FAQs />
+        {/* <FAQs /> */}
+        <PartnersWidget/>
       </main>
 
       <Footer></Footer>

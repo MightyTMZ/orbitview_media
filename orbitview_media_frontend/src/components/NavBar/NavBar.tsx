@@ -7,7 +7,7 @@ import OVM_logo from "../../assets/OrbitView_Media-removebg-preview.png";
 const NavBar = () => {
   // let isAuthenticated = localStorage.getItem('isAuthenticated');
   
-  const discordInviteLink = "https://discord.gg/kCKYjVFs5G";
+  const discordInviteLink = "https://discord.gg/3DcBFDxW";
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">

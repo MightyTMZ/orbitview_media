@@ -8,7 +8,7 @@ const OrbitButton: React.FC = () => {
     <button
       className="btn poppins"
       id="register-btn"
-      onClick={() => (window.location.href = "/#events")}
+      onClick={() => (window.location.href = "/#join")}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{ fontSize: "1.25rem" }}
