@@ -6,10 +6,9 @@ import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
 
 const JoinUsPage: React.FC = () => {
-
   let pageName = "Join us";
 
-  document.title = `${pageName} - OrbitView Media`
+  document.title = `${pageName} - OrbitView Media`;
 
   const [firstName, setFirstName] = useState<string>("");
   const [lastName, setLastName] = useState<string>("");
@@ -37,13 +36,12 @@ const JoinUsPage: React.FC = () => {
     setSubmitted(true);
   };
 
-
   return (
     <>
       <NavBar />
       <div className="container join-us-container my-5 poppins">
         <div className="text-center">
-          <h1 className="display-4 mb-4">Join Us</h1>
+          <h1 className="display-4 mb-4">Join our mailing list</h1>
           <p className="lead">
             Stay updated with our latest content, events, and news by signing up
             below.
@@ -99,15 +97,13 @@ const JoinUsPage: React.FC = () => {
                   />
                 </div>
                 <button type="submit" className="btn btn-primary w-100 mt-3">
-                  Join waitlist
+                  Join mailing list
                 </button>
               </form>
             ) : (
               <div className="thank-you-message text-center p-4">
                 <h3>Thank you for signing up!</h3>
-                <p>
-                  You’ll be notified when our amazing new content is released.
-                </p>
+                <p>You’ll be notified during our next release!</p>
               </div>
             )}
           </div>

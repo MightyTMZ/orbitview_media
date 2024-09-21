@@ -4,7 +4,9 @@ import FAQs from "../../components/FAQs/FAQs";
 import OVM_logo from "../../assets/OrbitView_Media-removebg-preview.png";
 import "../../fonts/Poppins.css";
 import "./LandingPage.css";
+import OrbitButton from "../../components/OrbitButton/OrbitButton";
 import { useNavigate } from "react-router-dom";
+import { ReactTyped } from "react-typed"
 
 const LandingPage = () => {
   let pageName = "Home";
@@ -22,18 +24,21 @@ const LandingPage = () => {
         {/* Hero Section */}
         <div className="hero-section text-center">
           <h1 className="display-4" id="main-heading">
-            OrbitView Media
+          <ReactTyped
+                  className="poppins-bold"
+                  strings={[
+                    "ORBITVIEW"
+                  ]}
+                  typeSpeed={50}
+                />
           </h1>
-          <p className="lead poppins-thin">Turbocharging ideas and actions!</p>
-          <img src={OVM_logo} alt="OrbitView Media logo" height={100} />
-          <button
-            className="btn poppins"
-            id="register-btn"
-            onClick={() => (window.location.href = "/#events")}
-            style={{ fontSize: "1.25rem" }}
-          >
-            Register for upcoming events
-          </button>
+          <p className="lead poppins-thin">
+            The <span style={{ fontWeight: "bold" }}>world's largest hub</span>{" "}
+            for personal, career, and corporate growth and opportunities.
+            <br /> Turbocharging ideas and actions!
+          </p>
+          <img src={OVM_logo} alt="OrbitView Media logo" height={100} /><br/>
+          <OrbitButton />
 
           {/* Main Content with Icons */}
           <div className="content-box container mt-5">

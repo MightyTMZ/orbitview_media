@@ -6,6 +6,8 @@ import OVM_logo from "../../assets/OrbitView_Media-removebg-preview.png";
 
 const NavBar = () => {
   // let isAuthenticated = localStorage.getItem('isAuthenticated');
+  
+  const discordInviteLink = "https://discord.gg/kCKYjVFs5G";
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -32,6 +34,38 @@ const NavBar = () => {
         {/* Navbar links */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto poppins">
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDarkDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Community
+              </a>
+              <ul
+                className="dropdown-menu dropdown-menu-dark"
+                aria-labelledby="navbarDarkDropdownMenuLink"
+              >
+                <li>
+                  <a className="dropdown-item" href={discordInviteLink}>
+                    Discord
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="https://www.linkedin.com/company/orbitview-media/">
+                    LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="/#/events">
+                    Upcoming Events
+                  </a>
+                </li>
+              </ul>
+            </li>
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"

@@ -1,0 +1,7 @@
+#discord-link-alert, #linkedin-link-alert {
+    text-decoration: none;
+}
+
+#discord-link-alert:hover, #linkedin-link-alert:hover {
+    font-weight: bold;
+}
