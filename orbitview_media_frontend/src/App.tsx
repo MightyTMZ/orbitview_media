@@ -11,6 +11,7 @@ import Article from "./components/Article/Article";
 import ContactPage from "./screens/Contact/Contact";
 import EventPage from "./screens/Events/Events";
 import JoinUsPage from "./screens/JoinUsPage/JoinUsPage";
+import JobListings from "./screens/JobListings/JobListings";
 
 
 function App() {
@@ -34,6 +35,8 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/events" element={<EventPage />} />
           <Route path="/join" element={<JoinUsPage />} />
+          <Route path="/jobs" element={<JobListings />} />
+
           {/* 
           <Route path="/activate/:uid/:token" element={<ActivateAccount />} />
           */}

@@ -1,6 +1,12 @@
 import "./NavBar.css";
 import "../../fonts/Poppins.css";
 import OVM_logo from "../../assets/OrbitView_Media-removebg-preview.png";
+import { FaLinkedin } from "react-icons/fa";
+import { FaDiscord } from "react-icons/fa";
+import { CiCalendarDate } from "react-icons/ci";
+import { MdWork } from "react-icons/md";
+
+
 // import AccountInfo from "../AccountInfo/AccountInfo";
 // temporarily shut down for the MVP
 
@@ -51,22 +57,27 @@ const NavBar = () => {
               >
                 <li>
                   <a className="dropdown-item" href={discordInviteLink}>
-                    Discord
+                    Discord <FaDiscord />
                   </a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="https://www.linkedin.com/company/orbitview-media/">
-                    LinkedIn
+                    LinkedIn <FaLinkedin />
                   </a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="/#/events">
-                    Upcoming Events
+                    Upcoming Events <CiCalendarDate/>
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="/#/jobs">
+                    Careers at OrbitView <MdWork/>
                   </a>
                 </li>
               </ul>
             </li>
-            <li className="nav-item dropdown">
+            {/* <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
                 href="#"
@@ -83,7 +94,7 @@ const NavBar = () => {
               >
                 <li>
                   <a className="dropdown-item" href="/#/techonomics">
-                    Techonomics
+                    Techonomics <GrTechnology/>
                   </a>
                 </li>
                 <li>
@@ -97,10 +108,15 @@ const NavBar = () => {
                   </a>
                 </li>
               </ul>
-            </li>
+            </li> */}
             <li className="nav-item">
               <a className="nav-link" href="#events">
                 Events
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#jobs">
+                Jobs
               </a>
             </li>
 
