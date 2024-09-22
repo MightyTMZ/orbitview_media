@@ -1,7 +1,7 @@
 import "./NavBar.css";
 import "../../fonts/Poppins.css";
 import OVM_logo from "../../assets/OrbitView_Media-removebg-preview.png";
-import { FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
 import { CiCalendarDate } from "react-icons/ci";
 import { TbWriting } from "react-icons/tb";
@@ -14,6 +14,7 @@ const NavBar = () => {
   // let isAuthenticated = localStorage.getItem('isAuthenticated');
 
   const discordInviteLink = "https://discord.gg/3DcBFDxW";
+  const instagramLink = "https://www.instagram.com/orbitview_media/";
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -55,6 +56,11 @@ const NavBar = () => {
                 className="dropdown-menu dropdown-menu-dark"
                 aria-labelledby="navbarDarkDropdownMenuLink"
               >
+                <li>
+                  <a className="dropdown-item" href={instagramLink}>
+                    Instagram <FaInstagram />
+                  </a>
+                </li>
                 <li>
                   <a className="dropdown-item" href={discordInviteLink}>
                     Discord <FaDiscord />
