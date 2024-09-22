@@ -21,7 +21,7 @@ const NavBar = () => {
         {/* Logo/Brand */}
         <a className="navbar-brand poppins-bold" href="#">
           <img src={OVM_logo} alt="Logo" className="mr-2" height={45} />
-          <span className="ml-2">OrbitView Media</span>
+          <span className="ml-2">OrbitView</span>
         </a>
 
         {/* Toggle button for mobile */}
