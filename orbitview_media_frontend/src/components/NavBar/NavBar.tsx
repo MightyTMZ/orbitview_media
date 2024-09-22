@@ -1,7 +1,7 @@
 import "./NavBar.css";
 import "../../fonts/Poppins.css";
 import OVM_logo from "../../assets/OrbitView_Media-removebg-preview.png";
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
 import { CiCalendarDate } from "react-icons/ci";
 import { TbWriting } from "react-icons/tb";
@@ -72,6 +72,14 @@ const NavBar = () => {
                     href="https://www.linkedin.com/company/orbitview-media/"
                   >
                     LinkedIn <FaLinkedin />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="dropdown-item"
+                    href="https://www.linkedin.com/company/orbitview-media/"
+                  >
+                    Twitter (X) <FaTwitter />
                   </a>
                 </li>
                 <li>

@@ -49,27 +49,29 @@ const LandingPage = () => {
                 <i className="fas fa-info-circle fa-3x mb-2"></i>
                 <h6>About Us</h6>
               </div>
-              <div
-                className="col-md-2 text-center welcome-widget"
-                onClick={() => navigate("/techonomics")}
-              >
-                <i className="fas fa-chart-line fa-3x mb-2"></i>
-                <h6>Technomics</h6>
-              </div>
-              <div
-                className="col-md-2 text-center welcome-widget"
-                onClick={() => navigate("/pathnetwork")}
-              >
-                <i className="fas fa-project-diagram fa-3x mb-2"></i>{" "}
-                <h6>PathNetwork</h6>
-              </div>
-              <div
-                className="col-md-2 text-center welcome-widget"
-                onClick={() => navigate("/engineering")}
-              >
-                <i className="fas fa-cogs fa-3x mb-2"></i>
-                <h6>Engineering</h6>
-              </div>
+              {/*
+                <div
+                  className="col-md-2 text-center welcome-widget"
+                  onClick={() => navigate("/techonomics")}
+                >
+                  <i className="fas fa-chart-line fa-3x mb-2"></i>
+                  <h6>Technomics</h6>
+                </div>
+                <div
+                  className="col-md-2 text-center welcome-widget"
+                  onClick={() => navigate("/pathnetwork")}
+                >
+                  <i className="fas fa-project-diagram fa-3x mb-2"></i>{" "}
+                  <h6>PathNetwork</h6>
+                </div>
+                <div
+                  className="col-md-2 text-center welcome-widget"
+                  onClick={() => navigate("/engineering")}
+                >
+                  <i className="fas fa-cogs fa-3x mb-2"></i>
+                  <h6>Engineering</h6>
+                </div>
+              */}
               <div
                 className="col-md-2 text-center welcome-widget"
                 onClick={() => navigate("/events")}
