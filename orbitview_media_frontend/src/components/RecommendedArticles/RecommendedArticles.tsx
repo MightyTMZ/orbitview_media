@@ -51,7 +51,6 @@ const RecommendedArticles = () => {
 
   return (
     <>
-      <h2>Other related articles</h2>
       <div className="blog-posts-container">
         <div style={{ height: "50px" }}></div>
         {articles.map((post) => (
