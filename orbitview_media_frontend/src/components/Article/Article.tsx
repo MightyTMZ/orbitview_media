@@ -2,27 +2,26 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./Article.css";
+import RecommendedArticles from "../RecommendedArticles/RecommendedArticles";
 import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
+import JoinUsWidget from "../JoinUsWidget/JoinUsWidget";
 
 const Article: React.FC = () => {
   const { created_at_date, slug } = useParams();
   const [article, setArticle] = useState<any>(null);
   // let articleFound = false;
-  const fetchAddress = `https://orbitviewmedia.pythonanywhere.com/content/articles/${created_at_date}/${slug}/`
+  const fetchAddress = `https://orbitviewmedia.pythonanywhere.com/content/articles/${created_at_date}/${slug}/`;
 
   // console.log(fetchAddress);
 
   useEffect(() => {
-    fetch(
-      fetchAddress,
-      {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    )
+    fetch(fetchAddress, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
@@ -31,7 +30,7 @@ const Article: React.FC = () => {
       })
       .then((data) => {
         setArticle(data);
-        console.log(data)
+        console.log(data);
       })
       .catch((error) => {
         console.error("Error fetching article data:", error);
@@ -56,7 +55,8 @@ const Article: React.FC = () => {
     );
   }
 
- {/* if (!articleFound) {
+  {
+    /* if (!articleFound) {
     return (
       <>
         <NavBar />
@@ -71,7 +71,8 @@ const Article: React.FC = () => {
         <Footer />
       </>
     );
-  }*/}
+  }*/
+  }
 
   let title = article.title;
   let subtitle = article.subtitle;
@@ -81,24 +82,53 @@ const Article: React.FC = () => {
 
   let pageName = `${title}`;
 
+  function formatDate(dateString: string) {
+    const date = new Date(dateString); // Convert the string to a Date object
+
+    const options: Intl.DateTimeFormatOptions = {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    };
+    return date.toLocaleDateString("en-US", options);
+  }
+
   document.title = `${pageName} - OrbitView Media`;
-  console.log(created_at_date)
 
   return (
     <>
       <NavBar />
-      <div className="article-container container mt-4">
+      <div className="article-container container mt-4 poppins">
         {/* Title Section */}
         <header className="article-header">
-          <h1 className="article-title" style={{ color: "black" }}>{title}</h1>
-          <p className="article-subtitle" style={{ color: "black" }}>{subtitle}</p>
-          <p className="mt-4" style={{ color: "black" }}>
-            By{" "}
-            {authors
-              .map((author: any) => `${author.first_name} ${author.last_name}`)
-              .join(", ")}
+          <h1 className="article-title" style={{ color: "black" }}>
+            {title}
+          </h1>
+          <p className="article-subtitle" style={{ color: "black" }}>
+            {subtitle}
           </p>
-          <p className="article-date">Published on {created_at_date}</p>
+          <p className="mt-4" style={{ color: "black" }}>
+            {authors.map((author: any) => (
+              <>
+                <img
+                  src={author.profile_picture_url}
+                  style={{ borderRadius: "50%" }}
+                  alt=""
+                  height="25"
+                />
+                &nbsp;&nbsp;
+                <span style={{ fontSize: "1.2rem", marginBottom: "1.5rem" }}>
+                  {author.first_name} {author.last_name}
+                </span>
+                <br />
+              </>
+            ))}
+          </p>
+          {created_at_date ? (
+            <p className="article-date">{formatDate(created_at_date)}</p>
+          ) : (
+            <p></p>
+          )}
         </header>
 
         {/* Content Section */}
@@ -106,6 +136,13 @@ const Article: React.FC = () => {
           className="article-content"
           dangerouslySetInnerHTML={{ __html: content }}
         ></div>
+        <div style={{ height: "100px" }}></div>
+        <hr />
+        <RecommendedArticles />
+        <div style={{ height: "100px" }}></div>
+        <hr />
+        <JoinUsWidget/>
+        <div style={{ height: "100px" }}></div>
       </div>
       <Footer />
     </>

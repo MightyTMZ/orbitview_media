@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Blog.css"; // Custom CSS for styling
+ 
 
-// Sample blog posts data
 const blogPosts = [
   {
     id: 1,
@@ -34,13 +34,12 @@ const blogPosts = [
 ];
 
 const Blog: React.FC = () => {
+  const [blogs, setBlogs] = useState(null)
+
   return (
     <div className="blog-page">
-      <h1 className="blog-title">OrbitView Media Blog</h1>
-      <p className="blog-intro">
-        Explore the latest insights and trends in technology, economics, career
-        growth, and more.
-      </p>
+      <h1 className="blog-title">Our thoughts and updates </h1>
+      <p className="blog-intro"></p>
 
       <div className="blog-posts-container">
         {blogPosts.map((post) => (
@@ -53,7 +52,8 @@ const Blog: React.FC = () => {
             <div className="blog-post-content">
               <h2 className="blog-post-title">{post.title}</h2>
               <p className="blog-post-meta">
-                By {post.author} | {post.date}
+                By {post.author}
+                {/* For each author map it here with a comma*/} | {post.date}
               </p>
               <p className="blog-post-summary">{post.summary}</p>
               <a href={`/blog/${post.id}`} className="read-more-btn">
