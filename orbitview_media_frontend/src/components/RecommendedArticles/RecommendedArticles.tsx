@@ -51,7 +51,7 @@ const RecommendedArticles = () => {
 
   return (
     <>
-      <div className="blog-posts-container">
+      <div className="blog-posts-container poppins">
         <div style={{ height: "50px" }}></div>
         {articles.map((post) => (
           <div key={post.id} className="blog-post-card">
