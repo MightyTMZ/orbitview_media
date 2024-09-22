@@ -13,7 +13,7 @@ from .serializers import *
 class ArticleList(generics.ListAPIView):
     queryset = Article.objects.all().order_by("-updated_at")
     serializer_class = ArticleSerializer
-    permission_classes = [IsAuthenticated]
+    permission_classes = [] # no authentication requirements for viewing a blog
     filter_backends = [DjangoFilterBackend, SearchFilter]
     search_fields = ['title', 'content', 'category__title', 'authors__first_name', 'authors__last_name']
 
@@ -21,7 +21,7 @@ class ArticleList(generics.ListAPIView):
 class ArticleDetail(generics.RetrieveAPIView):
     queryset = Article.objects.all()
     serializer_class = ArticleSerializer
-    permission_classes = [IsAuthenticated]
+    permission_classes = [] # no authentication requirements for viewing a blog
 
     def get_object(self):
         created_at_date = self.kwargs['created_at_date']
