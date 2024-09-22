@@ -12,9 +12,8 @@ function Footer() {
               OrbitView Media
             </h5>
             <p className="about-para">
-              Our main goal is to push you further towards you goals and action.
-              We primarily focus on the content areas of technology, economics,
-              career development, and professional excellence.
+              The world's largest hub for personal, career, and corporate growth
+              and opportunities. Turbocharging ideas and actions!{" "}
             </p>
           </div>
 
@@ -35,7 +34,17 @@ function Footer() {
             </p>
             <p>
               <a href="#join" className="text-light text-decoration-none">
-                Join Us
+                Subscribe
+              </a>
+            </p>
+            <p>
+              <a href="#jobs" className="text-light text-decoration-none">
+                Jobs and Careers
+              </a>
+            </p>
+            <p>
+              <a href="#blog" className="text-light text-decoration-none">
+                Read our blog!
               </a>
             </p>
           </div>
