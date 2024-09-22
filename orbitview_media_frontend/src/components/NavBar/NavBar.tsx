@@ -4,15 +4,15 @@ import OVM_logo from "../../assets/OrbitView_Media-removebg-preview.png";
 import { FaLinkedin } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
 import { CiCalendarDate } from "react-icons/ci";
+import { TbWriting } from "react-icons/tb";
 import { MdWork } from "react-icons/md";
-
 
 // import AccountInfo from "../AccountInfo/AccountInfo";
 // temporarily shut down for the MVP
 
 const NavBar = () => {
   // let isAuthenticated = localStorage.getItem('isAuthenticated');
-  
+
   const discordInviteLink = "https://discord.gg/3DcBFDxW";
 
   return (
@@ -61,18 +61,27 @@ const NavBar = () => {
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="https://www.linkedin.com/company/orbitview-media/">
+                  <a
+                    className="dropdown-item"
+                    href="https://www.linkedin.com/company/orbitview-media/"
+                  >
                     LinkedIn <FaLinkedin />
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/#/events">
-                    Upcoming Events <CiCalendarDate/>
+                  <a className="dropdown-item" href="/#/blog">
+                    Blog <TbWriting />
                   </a>
                 </li>
                 <li>
+                  <a className="dropdown-item" href="/#/events">
+                    Upcoming Events <CiCalendarDate />
+                  </a>
+                </li>
+
+                <li>
                   <a className="dropdown-item" href="/#/jobs">
-                    Careers at OrbitView <MdWork/>
+                    Careers at OrbitView <MdWork />
                   </a>
                 </li>
               </ul>

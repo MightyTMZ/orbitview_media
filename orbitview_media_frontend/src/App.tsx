@@ -12,6 +12,7 @@ import ContactPage from "./screens/Contact/Contact";
 import EventPage from "./screens/Events/Events";
 import JoinUsPage from "./screens/JoinUsPage/JoinUsPage";
 import JobListings from "./screens/JobListings/JobListings";
+import Blog from "./screens/Blog/Blog";
 
 
 function App() {
@@ -42,8 +43,12 @@ function App() {
           */}
           {/* Up until we figure out the SMTP, we cannot do user profiles */}
           <Route
-            path="/articles/:created_at_date/:slug"
+            path="/blog/:created_at_date/:slug"
             element={<Article />}
+          />
+          <Route
+            path="/blog/"
+            element={<Blog />}
           />
         </Routes>
       </Router>
