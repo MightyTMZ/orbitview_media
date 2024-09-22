@@ -40,7 +40,7 @@ class Article(models.Model):
     content = RichTextField()
     preview_content = RichTextField(default="")
     authors = models.ManyToManyField(Author)
-    created_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField(auto_now_add=True, editable=True)
     updated_at = models.DateTimeField(auto_now=True, null=True, blank=True) # to determine if it requires an update, the decision will be made on the frontend and not have to undergo a lot of logic here
     is_published = models.BooleanField(default=False)
     featured_image = models.CharField(max_length=2083, blank=True, null=True)
