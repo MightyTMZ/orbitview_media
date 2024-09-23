@@ -139,7 +139,7 @@ const ContactPage = () => {
                       title="LinkedIn: Jerone Arristan"
                     >
                       <FaLinkedin />
-                    </a>
+                    </a>&nbsp;
                     <a
                       href="tel:+16476086420"
                       className="founder-contact"
