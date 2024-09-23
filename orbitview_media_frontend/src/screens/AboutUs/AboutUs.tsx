@@ -15,8 +15,7 @@ const AboutUs = () => {
               <p>
                 Tom Zhang (left), Jerone Arristan (top-right), and Aurick Anwar
                 (bottom-left) are friends from high school. They realized that
-                the world was undergoing a dramatic shift in how technology,
-                economics, and personal development intersected.
+                the world was undergoing a dramatic shift in how the new and rising generation of people have lost aceess to untapped information that could transform their lives.
                 <br />
                 <br />
                 <h2>Our Traction</h2>
