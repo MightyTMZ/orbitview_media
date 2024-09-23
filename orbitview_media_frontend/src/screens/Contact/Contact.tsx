@@ -3,7 +3,7 @@ import Footer from "../../components/Footer/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Contact.css";
 import "../../fonts/Poppins.css";
-import { FaInstagram, FaLinkedin, FaPhoneAlt, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { CiGlobe } from "react-icons/ci";
 import { SiCalendly } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
