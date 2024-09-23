@@ -3,7 +3,7 @@ import Footer from "../../components/Footer/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Contact.css";
 import "../../fonts/Poppins.css";
-import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaTwitter, FaPhoneAlt } from "react-icons/fa";
 import { CiGlobe } from "react-icons/ci";
 import { SiCalendly } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
@@ -115,14 +115,13 @@ const ContactPage = () => {
                       <CiGlobe />
                     </a>
                     &nbsp;
-                    {/* <a
+                    <a
                       href="tel:+14372476482"
                       className="founder-contact"
                       title="Phone: Tom Zhang"
                     >
                       <FaPhoneAlt />
                     </a>
-                    &nbsp; */}
                   </li>
                   <li>
                     Jerone Arristan{" "}
@@ -140,6 +139,13 @@ const ContactPage = () => {
                       title="LinkedIn: Jerone Arristan"
                     >
                       <FaLinkedin />
+                    </a>
+                    <a
+                      href="tel:+16476086420"
+                      className="founder-contact"
+                      title="Phone: Jerone Arristan"
+                    >
+                      <FaPhoneAlt />
                     </a>
                   </li>
                   <li>
