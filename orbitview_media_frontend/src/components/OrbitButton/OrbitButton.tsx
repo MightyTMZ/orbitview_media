@@ -13,7 +13,7 @@ const OrbitButton: React.FC = () => {
       onMouseLeave={() => setHovered(false)}
       style={{ fontSize: "1.25rem" }}
     >
-      {hovered ? "Launch yourself into orbit today!" : "Get Started"}
+      {hovered ? "Launch yourself into orbit today!" : "Go for launch?"}
     </button>
   );
 };

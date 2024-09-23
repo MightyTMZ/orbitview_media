@@ -4,13 +4,10 @@ import SwarmZero from "../../assets/swarmzero.webp"
 
 const partners = [
   { id: 1, name: "SwarmZero.ai", url: "https://swarmzero.ai/", logo: SwarmZero },
-  { id: 2, name: "Partner 2", url: "", logo: "/path/to/logo2.png" },
-  { id: 3, name: "Partner 3", url: "", logo: "/path/to/logo3.png" },
-  { id: 4, name: "Partner 4", url: "", logo: "/path/to/logo4.png" },
-  { id: 5, name: "Partner 5", url: "", logo: "/path/to/logo5.png" },
-  { id: 5, name: "Partner 5", url: "", logo: "/path/to/logo5.png" },
-  { id: 5, name: "Partner 5", url: "", logo: "/path/to/logo5.png" },
-  { id: 5, name: "Partner 5", url: "", logo: "/path/to/logo5.png" },
+  { id: 2, name: "", url: "", logo: "" },
+  { id: 3, name: "", url: "", logo: "" },
+  { id: 4, name: "", url: "", logo: "" },
+  { id: 5, name: "", url: "", logo: "" },
 ];
 
 const PartnersWidget: React.FC = () => {

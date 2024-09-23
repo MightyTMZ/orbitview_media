@@ -5,17 +5,18 @@ import OVM_logo from "../../assets/OrbitView_Media-removebg-preview.png";
 import "../../fonts/Poppins.css";
 import "./LandingPage.css";
 import OrbitButton from "../../components/OrbitButton/OrbitButton";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { ReactTyped } from "react-typed"
+import AboutUs from "../AboutUs/AboutUs";
 
 const LandingPage = () => {
   let pageName = "Home";
 
   document.title = `${pageName} - OrbitView Media`;
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const faqs = document.getElementById("faqs");
+  // const faqs = document.getElementById("faqs");
 
   return (
     <>
@@ -39,16 +40,16 @@ const LandingPage = () => {
           <img src={OVM_logo} alt="OrbitView Media logo" height={100} /><br/>
           <OrbitButton />
 
-          {/* Main Content with Icons */}
+          {/* Main Content with Icons
           <div className="content-box container mt-5">
             <div className="row justify-content-center">
-              <div
+              {/*<div
                 className="col-md-2 text-center welcome-widget"
                 onClick={() => faqs?.scrollIntoView({ behavior: "smooth" })}
               >
                 <i className="fas fa-info-circle fa-3x mb-2"></i>
                 <h6>About Us</h6>
-              </div>
+              </div>*/}
               {/*
                 <div
                   className="col-md-2 text-center welcome-widget"
@@ -71,7 +72,7 @@ const LandingPage = () => {
                   <i className="fas fa-cogs fa-3x mb-2"></i>
                   <h6>Engineering</h6>
                 </div>
-              */}
+             
               <div
                 className="col-md-2 text-center welcome-widget"
                 onClick={() => navigate("/events")}
@@ -87,9 +88,11 @@ const LandingPage = () => {
                 <h6>Join Us Today!</h6>
               </div>
             </div>
-          </div>
+          </div> */}
+          <div className="mt-3"></div>
         </div>
         {/* <FAQs /> */}
+        <AboutUs/>
         <PartnersWidget/>
       </main>
 

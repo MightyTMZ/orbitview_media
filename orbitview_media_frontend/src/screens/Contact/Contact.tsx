@@ -48,10 +48,10 @@ const ContactPage = () => {
                   </li>
                 </ul>
               </div>
-              <h3 className="text-dark mt-5">Follow Us</h3>
+              {/*<h3 className="text-dark mt-5">Follow Us</h3>
               <p className="mb-4">Stay connected with us on social media:</p>
               <div className="d-flex justify-content-center">
-                {/* Instagram Dropdown */}
+                 Instagram Dropdown 
                 <div className="dropdown me-2">
                   <button
                     className="btn btn-outline-primary dropdown-toggle"
@@ -73,10 +73,14 @@ const ContactPage = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        OrbitView Media (main)
+                        OrbitView Media
                       </a>
                     </li>
-                    <li>
+                  </ul>*/}
+
+                  
+
+                    {/*<li>
                       <a
                         className="dropdown-item"
                         href="https://www.instagram.com/orbitviewtechonomics"
@@ -108,7 +112,7 @@ const ContactPage = () => {
                     </li>
                   </ul>
                 </div>
-                {/* YouTube Dropdown 
+                 YouTube Dropdown 
                   <div className="dropdown me-2">
                     <button
                       className="btn btn-outline-danger dropdown-toggle"
@@ -196,7 +200,7 @@ const ContactPage = () => {
                       </li>
                     </ul>
                   </div> */}
-                {/* Substack Dropdown */}
+                {/* Substack Dropdown 
                 <div className="dropdown">
                   <button
                     className="btn btn-outline-secondary dropdown-toggle"
@@ -241,13 +245,12 @@ const ContactPage = () => {
                         OrbitView Pathways
                       </a>
                     </li>
-                  </ul>
+                  </ul>*/}
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
+    
       <Footer />
     </>
   );

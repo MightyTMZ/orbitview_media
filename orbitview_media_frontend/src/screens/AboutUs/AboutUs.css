@@ -1,0 +1,166 @@
+/* General Styling */
+section {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h2 {
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  color: #001f33;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("hero-image.jpg") center/cover no-repeat;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero-content p {
+  font-size: 1.4rem;
+  margin-top: 15px;
+}
+
+.hero .btn {
+  margin-top: 25px;
+  background-color: #00aaff;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.hero .btn:hover {
+  background-color: #005f80;
+  transform: translateY(-3px);
+}
+
+/* Row Layout */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  max-width: 380px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.column img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.column:hover {
+  transform: translateY(-5px);
+}
+
+.column.left,
+.column.right {
+  text-align: left;
+}
+
+/* Centered Section */
+.centered-section {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 60px 40px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+}
+
+blockquote {
+  font-size: 1.8rem;
+  font-style: italic;
+  color: #007bff;
+  margin: 30px 0;
+  line-height: 1.8;
+  border-left: 5px solid #007bff;
+  padding-left: 20px;
+}
+
+/* Masthead (Optional Styling for Specific Elements) */
+.masthead {
+  border-radius: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  height: 150px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #001f33;
+  color: #fff;
+  margin-top: 40px;
+  font-size: 1rem;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+footer a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #007bff;
+}
+
+/* Additional Styling for Responsiveness */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .only-this-component {
+    flex-direction: column;
+  }
+
+  .column {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+}
