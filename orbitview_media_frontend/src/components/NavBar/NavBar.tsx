@@ -77,7 +77,7 @@ const NavBar = () => {
                 <li>
                   <a
                     className="dropdown-item"
-                    href="https://www.linkedin.com/company/orbitview-media/"
+                    href="https://x.com/OrbitViewMedia"
                   >
                     Twitter (X) <FaTwitter />
                   </a>
