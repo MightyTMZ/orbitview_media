@@ -20,16 +20,27 @@ const events: Event[] = [
     id: 1,
     title: "UniView: Orbit of Experiences",
     date: "2024-09-29",
-    time: "3:00 PM - 5:00 PM",
+    time: "3:00 PM - 5:00 PM EST",
     location: "Virtual",
     link: "https://lu.ma/vu67ulul",
-    description:
-      `​It's time to ask your most burning questions during the university application season to a group of the most talented university students and high school graduates in Canada. ​Nicholas Chen (Systems Design Engineering @ University of Waterloo), ​Dima Alzidan (Global Political Studies @ York University), ​Hanz Po (Computer Science @ University of
+    description: `​It's time to ask your most burning questions during the university application season to a group of the most talented university students and high school graduates in Canada. ​Nicholas Chen (Systems Design Engineering @ University of Waterloo), ​Dima Alzidan (Global Political Studies @ York University), ​Hanz Po (Computer Science @ University of
           Waterloo). ​More alumni may come, so stay tuned! ​Amidst the
           university application season in Canada, gain insider information on
           ​navigating high school pain points, ​how to stand out in admissions,
           the application journey, ​alumni journey ​and so much more! See you
           there!`,
+  },
+  {
+    id: 2,
+    title:
+      "The Future of Work in Blockchain: Career and Opportunities for Growth",
+    date: "2024-09-28",
+    time: "11:00 AM EST",
+    location: "Virtual",
+    link: "https://community.owujupe.com/#contacts-1",
+    description: `In collaboration with Owujupe, visioning a world where everyone has equal access to financial resources. Featuring top speakers in the blockchain space: 
+    Henry Onyebuchi (Founder & CTO Juggevault Finance), Athika Fatima (Technical Incubation Manage at Quantum Leap Labs), Jerry Qian (Co-Founder & CTO Bitcoin Bay Toronto), Halima Abubakar (Founder Luminair)
+`,
   },
 ];
 
