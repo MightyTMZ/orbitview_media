@@ -14,6 +14,14 @@ const ContactPage = () => {
 
   document.title = `${pageName} - OrbitView Media`;
 
+  const founder_links = document.getElementsByClassName("founder-contact")
+  
+  for (let i = 0; i < founder_links.length; i++){
+    if (founder_links[i].tagName === "A") {
+      const link = founder_links[i] as HTMLAnchorElement;
+      link.target = "_blank";
+  }  }
+
   return (
     <>
       <NavBar />
