@@ -37,7 +37,11 @@ const Article: React.FC = () => {
       });
   }, []);
 
-  document.title = `${article.title} - OrbitView Media`;
+  if (article) {
+    document.title = `${article.title} - OrbitView Media`;
+  } else {
+    document.title = "Not Found - OrbitView Media";
+  }
 
   if (!article) {
     // articleFound = false;
