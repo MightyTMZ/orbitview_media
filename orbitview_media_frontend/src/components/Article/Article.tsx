@@ -37,6 +37,8 @@ const Article: React.FC = () => {
       });
   }, []);
 
+  document.title = `${article.title} - OrbitView Media`;
+
   if (!article) {
     // articleFound = false;
     return (

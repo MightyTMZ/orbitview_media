@@ -3,6 +3,10 @@ import NavBar from "../../components/NavBar/NavBar";
 import RecommendedArticles from "../../components/RecommendedArticles/RecommendedArticles";
 
 const Blog: React.FC = () => {
+
+  document.title = "Blog - OrbitView Media"
+
+
   return (
     <>
       <NavBar />
