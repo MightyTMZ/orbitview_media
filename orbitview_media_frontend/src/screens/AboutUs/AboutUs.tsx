@@ -1,7 +1,7 @@
 import "./AboutUs.css";
 import masthead from "../../assets/OrbitView Media Inc. masthead (1).png";
 import "../../fonts/Poppins.css";
-import businessboard from "../../assets/9d7dbc5c-3636-4154-84fa-d1bba74796cd.webp"
+// import businessboard from "../../assets/9d7dbc5c-3636-4154-84fa-d1bba74796cd.webp";
 
 const AboutUs = () => {
   return (
@@ -15,7 +15,9 @@ const AboutUs = () => {
               <p>
                 Tom Zhang (left), Jerone Arristan (top-right), and Aurick Anwar
                 (bottom-left) are friends from high school. They realized that
-                the world was undergoing a dramatic shift in how the new and rising generation of people have lost aceess to untapped information that could transform their lives.
+                the world was undergoing a dramatic shift in how the new and
+                rising generation of people have lost aceess to untapped
+                information that could transform their lives.
                 <br />
                 <br />
                 <h2>Our Traction</h2>
@@ -52,15 +54,10 @@ const AboutUs = () => {
                     seminars.
                   </li>
                   <li>
-                    <strong>Developing</strong> "OrbitView", an app that merges
-                    the professional value of LinkedIn with TikTok's engaging
-                    content to help students who find traditional networks too
-                    stiff and social media too distracting. OrbitView is where
-                    you build your professional identity without feeling like
-                    you are out of place. We are creating a space that is
-                    professional, engaging, and perfectly suited for the next
-                    generation of workers. This is the future of professional
-                    networking—one that is dynamic, relatable, and accessible.
+                    <strong>Developing</strong> "OrbitView", An ultra-immersive
+                    3D professional networking platform, autonomous AI
+                    networking for you, and a content hub that transforms
+                    knowledge absorption into an experience rather than a chore.
                   </li>
                   <li>
                     <strong>Collaborating</strong> with industry experts to
@@ -81,14 +78,12 @@ const AboutUs = () => {
         <div className="container">
           {/* <h2 style={{ color: "black" }}>Our Mission</h2> */}
           <blockquote>
-            "To equip individuals and firms with actionable insights and
-            cutting-edge innovation, driving real-world growth and measurable
-            impact. We are here to deliver results that matter."
+            "Turning your network into an orbit"
           </blockquote>
         </div>
       </section>
 
-      <section id="what-we-do">
+      {/*<section id="what-we-do">
         <div className="container">
           <h2>What We Do</h2>
           <div className="row only-this-component">
@@ -116,8 +111,8 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-
-      <section id="our-story">
+*/}
+     {/*<section id="our-story">
         <div className="container">
           <h2>Our Story</h2>
           <div className="row only-this-component">
@@ -131,10 +126,9 @@ const AboutUs = () => {
                 bring these insights to the real world where they can be used.
               </p>
             </div>
-            
           </div>
         </div>
-      </section>
+      </section>*/} 
     </>
   );
 };

@@ -32,12 +32,11 @@ const LandingPage = () => {
             />
           </h1>
           <p className="lead poppins-thin">
-            Pushing the bounds by building an ultra-immersive 3D professional
-            networking platform, autonomous AI networking for you, and a content
-            hub that transforms knowledge absorption into an experience rather
-            than a chore.
+            An ultra-immersive 3D professional networking platform, autonomous
+            AI networking for you, and a content hub that transforms knowledge
+            absorption into an experience rather than a chore.
             <br />
-            Turning your network of individuals to an "orbit" or individuals!
+            Turning your network of individuals to an "orbit" of like-minded individuals!
           </p>
           <img src={OVM_logo} alt="OrbitView Media logo" height={100} />
           <br />
