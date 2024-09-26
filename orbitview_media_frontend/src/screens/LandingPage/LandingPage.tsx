@@ -6,7 +6,7 @@ import "../../fonts/Poppins.css";
 import "./LandingPage.css";
 import OrbitButton from "../../components/OrbitButton/OrbitButton";
 // import { useNavigate } from "react-router-dom";
-import { ReactTyped } from "react-typed"
+import { ReactTyped } from "react-typed";
 import AboutUs from "../AboutUs/AboutUs";
 
 const LandingPage = () => {
@@ -20,24 +20,27 @@ const LandingPage = () => {
 
   return (
     <>
-      <NavBar />      <main className="landing-page">
+      <NavBar />{" "}
+      <main className="landing-page">
         {/* Hero Section */}
         <div className="hero-section text-center">
           <h1 className="display-4" id="main-heading">
-          <ReactTyped
-                  className="poppins-bold"
-                  strings={[
-                    "ORBITVIEW"
-                  ]}
-                  typeSpeed={50}
-                />
+            <ReactTyped
+              className="poppins-bold"
+              strings={["ORBITVIEW"]}
+              typeSpeed={50}
+            />
           </h1>
           <p className="lead poppins-thin">
-            The <span style={{ fontWeight: "bold" }}>world's largest hub</span>{" "}
-            for personal, career, and corporate growth and opportunities.
-            <br /> Turbocharging ideas and actions!
+            Pushing the bounds by building an ultra-immersive 3D professional
+            networking platform, autonomous AI networking for you, and a content
+            hub that transforms knowledge absorption into an experience rather
+            than a chore.
+            <br />
+            Turning your network of individuals to an "orbit" or individuals!
           </p>
-          <img src={OVM_logo} alt="OrbitView Media logo" height={100} /><br/>
+          <img src={OVM_logo} alt="OrbitView Media logo" height={100} />
+          <br />
           <OrbitButton />
 
           {/* Main Content with Icons
@@ -50,7 +53,7 @@ const LandingPage = () => {
                 <i className="fas fa-info-circle fa-3x mb-2"></i>
                 <h6>About Us</h6>
               </div>*/}
-              {/*
+          {/*
                 <div
                   className="col-md-2 text-center welcome-widget"
                   onClick={() => navigate("/techonomics")}
@@ -92,10 +95,9 @@ const LandingPage = () => {
           <div className="mt-3"></div>
         </div>
         {/* <FAQs /> */}
-        <AboutUs/>
-        <PartnersWidget/>
+        <AboutUs />
+        <PartnersWidget />
       </main>
-
       <Footer></Footer>
     </>
   );
