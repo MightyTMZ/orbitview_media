@@ -49,6 +49,10 @@ const RecommendedArticles = () => {
       });
   }, []);
 
+  function truncateDate(dateString: string) {
+    return dateString.slice(0, 10);
+  }
+
   return (
     <>
       <div className="blog-posts-container poppins">
@@ -61,7 +65,14 @@ const RecommendedArticles = () => {
               className="blog-post-image"
             />
             <div className="blog-post-content">
-              <h2 className="blog-post-title">{post.title}</h2>
+              <h2 className="blog-post-title">
+                <a
+                  href={`#blog/${truncateDate(post.created_at)}/${post.slug}`}
+                  style={{ textDecoration: "none" }}
+                >
+                  {post.title}
+                </a>
+              </h2>
               <p className="blog-post-meta">
                 <p className="mt-4" style={{ color: "black" }}>
                   {post.authors.map((author: any) => (
