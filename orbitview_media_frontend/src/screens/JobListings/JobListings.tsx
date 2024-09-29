@@ -47,6 +47,8 @@ const jobs = [
 
 ];
 
+document.title = "Careers - OrbitView"
+
 const JobListings: React.FC = () => {
   return (
     <>

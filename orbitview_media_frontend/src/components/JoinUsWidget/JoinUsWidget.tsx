@@ -10,7 +10,7 @@ import { FaLinkedin } from "react-icons/fa";
 const JoinUsWidget: React.FC = () => {
   let pageName = "Join us";
 
-  document.title = `${pageName} - OrbitView Media`;
+  document.title = `${pageName} - OrbitView`;
 
   const DiscordLink = "https://discord.gg/3DcBFDxW";
   const LinkedInLink = "https://www.linkedin.com/company/orbitview-media/";

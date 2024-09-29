@@ -38,9 +38,9 @@ const Article: React.FC = () => {
   }, []);
 
   if (article) {
-    document.title = `${article.title} - OrbitView Media`;
+    document.title = `${article.title} - OrbitView`;
   } else {
-    document.title = "Not Found - OrbitView Media";
+    document.title = "Not Found - OrbitView";
   }
 
   if (!article) {
@@ -99,7 +99,7 @@ const Article: React.FC = () => {
     return date.toLocaleDateString("en-US", options);
   }
 
-  document.title = `${pageName} - OrbitView Media`;
+  document.title = `${pageName} - OrbitView`;
 
   return (
     <>

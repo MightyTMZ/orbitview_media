@@ -5,7 +5,7 @@ import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
 import { CiCalendarDate } from "react-icons/ci";
 import { TbWriting } from "react-icons/tb";
-import { MdWork } from "react-icons/md";
+import { MdEventAvailable, MdWork } from "react-icons/md";
 
 // import AccountInfo from "../AccountInfo/AccountInfo";
 // temporarily shut down for the MVP
@@ -98,6 +98,11 @@ const NavBar = () => {
                     Opportuntities at OrbitView <MdWork />
                   </a>
                 </li>
+                <li>
+                  <a className="dropdown-item" href="/#/events">
+                    Events <MdEventAvailable />
+                  </a>
+                </li>
               </ul>
             </li>
             {/* <li className="nav-item dropdown">
@@ -132,11 +137,6 @@ const NavBar = () => {
                 </li>
               </ul>
             </li> */}
-            <li className="nav-item">
-              <a className="nav-link" href="#events">
-                Events
-              </a>
-            </li>
             <li className="nav-item">
               <a className="nav-link" href="#jobs">
                 Jobs

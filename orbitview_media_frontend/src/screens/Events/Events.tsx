@@ -47,7 +47,7 @@ const events: Event[] = [
 const EventPage: React.FC = () => {
   let pageName = "Events";
 
-  document.title = `${pageName} - OrbitView Media`;
+  document.title = `${pageName} - OrbitView`;
 
   const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
 

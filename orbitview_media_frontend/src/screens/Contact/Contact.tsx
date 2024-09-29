@@ -12,7 +12,7 @@ import { TbMail, TbWriting } from "react-icons/tb";
 const ContactPage = () => {
   let pageName = "Contact";
 
-  document.title = `${pageName} - OrbitView Media`;
+  document.title = `${pageName} - OrbitView`;
 
   const founder_links = document.getElementsByClassName("founder-contact")
   

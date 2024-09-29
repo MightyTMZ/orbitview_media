@@ -12,7 +12,7 @@ import AboutUs from "../AboutUs/AboutUs";
 const LandingPage = () => {
   let pageName = "Home";
 
-  document.title = `${pageName} - OrbitView Media`;
+  document.title = `${pageName} - OrbitView`;
 
   // const navigate = useNavigate();
 
