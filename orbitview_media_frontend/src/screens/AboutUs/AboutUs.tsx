@@ -27,7 +27,7 @@ const AboutUs = () => {
                     agents
                   </li>
                   <li>
-                    Co-authoring book projected with{" "}
+                    Co-authoring book project with{" "}
                     <strong>Y Combinator</strong> GTM Partner on Ollama, a
                     cutting edge tool to run large language models (LLMs)
                   </li>
@@ -41,12 +41,12 @@ const AboutUs = () => {
                 <h2>In the process of:</h2>
                 <ul>
                   <li>
-                    <strong>Launching</strong> our own podcast series, featuring
-                    interviews with leaders in tech, economics, and innovation.
+                    <strong>Launching</strong> our own podcast series, <i>Innovator's View</i>, featuring
+                    conversations with leaders in tech, economics, and innovation.
                   </li>
                   <li>
                     <strong>Developing</strong> a subscription-based newsletter
-                    with exclusive content and industry insights.
+                    with exclusive and insider-expert content and industry insights.
                   </li>
                   <li>
                     <strong>Organizing</strong> virtual and in-person events,
