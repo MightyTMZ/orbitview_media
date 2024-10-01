@@ -13,7 +13,7 @@ import { MdEventAvailable, MdWork } from "react-icons/md";
 const NavBar = () => {
   // let isAuthenticated = localStorage.getItem('isAuthenticated');
 
-  const discordInviteLink = "https://discord.gg/3DcBFDxW";
+  const discordInviteLink = "https://discord.gg/kCKYjVFs5G";
   const instagramLink = "https://www.instagram.com/orbitview_media/";
 
   return (
