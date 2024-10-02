@@ -14,7 +14,7 @@ const NavBar = () => {
   // let isAuthenticated = localStorage.getItem('isAuthenticated');
 
   const discordInviteLink = "https://discord.gg/kCKYjVFs5G";
-  const instagramLink = "https://www.instagram.com/orbitview_media/";
+  const instagramLink = "https://www.instagram.com/orbitview_/";
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
