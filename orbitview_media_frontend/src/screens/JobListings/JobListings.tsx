@@ -3,6 +3,9 @@ import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
 import "./JobListings.css";
 
+import { useState, useEffect, Fragment } from "react";
+import Spinner from "../../components/Spinner/Spinner";
+
 const jobs = [
   {
     id: 1,
@@ -199,44 +202,60 @@ const jobs = [
 document.title = "Careers - OrbitView";
 
 const JobListings: React.FC = () => {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // This timeout represents a loading period, e.g., waiting for assets to load.
+    const loadTimeout = setTimeout(() => {
+      setLoading(false); // Set loading to false after 2 seconds (or when an API finishes)
+    }, 1000); // Adjust the delay time as needed
+
+    // Cleanup function to clear timeout if component unmounts
+    return () => clearTimeout(loadTimeout);
+  }, []);
+
+
   return (
     <>
-      <NavBar />
-      <div className="job-listings-screen poppins">
-        <h1 className="job-listings-title">Available roles</h1>
-        <p className="job-listings-intro">
-          Explore our current job and role openings and be part of OrbitView.
-          <br />
-          Pay and compensation will be based piece-rated and effort based.
-          Interested in applying? Email{" "}
-          <a
-            href="mailto:admin@orbitviewmedia.com"
-            style={{ textDecoration: "none" }}
-          >
-            admin@orbitviewmedia.com
-          </a>
-        </p>
-        <div className="job-listings-container">
-          {jobs.map((job) => (
-            <div key={job.id} className="job-card">
-              <h2 className="job-title">{job.title}</h2>
-              <p className="job-location">
-                <strong>Location:</strong> {job.location}
-              </p>
-              <p className="job-description">{job.description}</p>
-              <a
-                href={job.applyLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="apply-btn"
-              >
-                Apply Now
-              </a>
-            </div>
-          ))}
+      {loading ? <Spinner/> : <Fragment>
+        <NavBar />
+        <div className="job-listings-screen poppins">
+          <h1 className="job-listings-title">Available roles</h1>
+          <p className="job-listings-intro">
+            Explore our current job and role openings and be part of OrbitView.
+            <br />
+            Pay and compensation will be based piece-rated and effort based.
+            Interested in applying? Email{" "}
+            <a
+              href="mailto:admin@orbitviewmedia.com"
+              style={{ textDecoration: "none" }}
+            >
+              admin@orbitviewmedia.com
+            </a>
+          </p>
+          <div className="job-listings-container">
+            {jobs.map((job) => (
+              <div key={job.id} className="job-card">
+                <h2 className="job-title">{job.title}</h2>
+                <p className="job-location">
+                  <strong>Location:</strong> {job.location}
+                </p>
+                <p className="job-description">{job.description}</p>
+                <a
+                  href={job.applyLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="apply-btn"
+                >
+                  Apply Now
+                </a>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-      <Footer />
+        <Footer />
+      </Fragment>}
     </>
   );
 };
