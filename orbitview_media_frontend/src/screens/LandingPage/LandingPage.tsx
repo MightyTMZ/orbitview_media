@@ -1,13 +1,13 @@
 import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
-import PartnersWidget from "../../components/Partners/Partners";
+// import PartnersWidget from "../../components/Partners/Partners";
 import OVM_logo from "../../assets/OrbitView_Media-removebg-preview.png";
 import "../../fonts/Poppins.css";
 import "./LandingPage.css";
 import OrbitButton from "../../components/OrbitButton/OrbitButton";
 // import { useNavigate } from "react-router-dom";
 import { ReactTyped } from "react-typed";
-import AboutUs from "../AboutUs/AboutUs";
+// import AboutUs from "../AboutUs/AboutUs";
 
 import { useState, Fragment, useEffect } from "react";
 import Spinner from "../../components/Spinner/Spinner";
