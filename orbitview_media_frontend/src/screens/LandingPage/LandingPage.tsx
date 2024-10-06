@@ -116,6 +116,7 @@ const LandingPage = () => {
             {/* <FAQs /> 
             <AboutUs />
             <PartnersWidget />*/}
+            <div style={{ height: "100px" }}></div>
           </main>
           <Footer></Footer>
         </Fragment>
