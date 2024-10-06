@@ -12,8 +12,11 @@ function Footer() {
               OrbitView Media
             </h5>
             <p className="about-para">
-              The world's largest hub for personal, career, and corporate growth
-              and opportunities. Turbocharging ideas and actions!{" "}
+              Pioneering the future of professional networking and innovation.
+              We’ve combined the optimal aspects of social media, AR/VR
+              technology, and immersive learning to create a platform that goes
+              beyond traditional boundaries, one for knowledge, immersion, and
+              growth for the upcoming innovators, entrepreneurs, and leaders.
             </p>
           </div>
 

@@ -209,7 +209,7 @@ const JobListings: React.FC = () => {
     // This timeout represents a loading period, e.g., waiting for assets to load.
     const loadTimeout = setTimeout(() => {
       setLoading(false); // Set loading to false after 2 seconds (or when an API finishes)
-    }, 1000); // Adjust the delay time as needed
+    }, 2000); // Adjust the delay time as needed
 
     // Cleanup function to clear timeout if component unmounts
     return () => clearTimeout(loadTimeout);
