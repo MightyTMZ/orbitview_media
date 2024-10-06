@@ -29,7 +29,7 @@ const RecommendedArticles = () => {
     return timestamp.split("T")[0];
   }
 
-  function formatDate(dateString) {
+  function formatDate(dateString: string) {
     // Create an array of month names
     const months = [
         "January", "February", "March", "April", "May", "June", 
