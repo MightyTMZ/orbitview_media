@@ -9,7 +9,7 @@ function Footer() {
           {/* Company Info Section */}
           <div className="col-md-4 col-lg-4 col-xl-3 mx-auto mt-3 poppins">
             <h5 className="text-uppercase mb-4 font-weight-bold">
-              OrbitView Media
+              OrbitView
             </h5>
             <p className="about-para">
               Pioneering the future of professional networking and innovation.

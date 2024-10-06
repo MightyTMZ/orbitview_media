@@ -29,6 +29,32 @@ const RecommendedArticles = () => {
     return timestamp.split("T")[0];
   }
 
+  function formatDate(dateString) {
+    // Create an array of month names
+    const months = [
+        "January", "February", "March", "April", "May", "June", 
+        "July", "August", "September", "October", "November", "December"
+    ];
+    
+    // Split the input date string into an array
+    const [year, month, day] = dateString.split("-");
+    
+    // Determine the correct suffix for the day
+    const suffix = (day: any) => {
+        const dayNum = parseInt(day, 10);
+        if (dayNum > 3 && dayNum < 21) return 'th'; // Covers 11th to 13th
+        switch (dayNum % 10) {
+            case 1: return 'st';
+            case 2: return 'nd';
+            case 3: return 'rd';
+            default: return 'th';
+        }
+    };
+
+    // Construct the formatted date
+    return `${months[parseInt(month, 10) - 1]} ${day}${suffix(day)}, ${year}`;
+}
+
   useEffect(() => {
     // Fetch articles from the API
     fetch("https://orbitviewmedia.pythonanywhere.com/content/articles/all/")
@@ -94,6 +120,7 @@ const RecommendedArticles = () => {
                   ))}{" "}
                 </p>{" "}
               </p>
+              <p>{formatDate(extractDate(post.created_at))}</p>
               <p className="blog-post-summary">{post.subtitle}</p>
               <a
                 href={`/#blog/${extractDate(post.created_at)}/${post.slug}`}
