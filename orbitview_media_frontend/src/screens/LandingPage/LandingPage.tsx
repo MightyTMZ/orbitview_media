@@ -113,9 +113,9 @@ const LandingPage = () => {
             </div> */}
               <div className="mt-3"></div>
             </div>
-            {/* <FAQs /> */}
+            {/* <FAQs /> 
             <AboutUs />
-            <PartnersWidget />
+            <PartnersWidget />*/}
           </main>
           <Footer></Footer>
         </Fragment>
