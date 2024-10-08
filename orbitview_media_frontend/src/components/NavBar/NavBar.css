@@ -1,20 +1,96 @@
+/* General navbar styling */
 .navbar {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  background-color: #000d20; /* Changed navbar background color */
 }
 
-.navbar-brand {
-  font-weight: bold;
+/* Ensure items wrap when overflowing */
+.navbar-nav {
+  flex-wrap: wrap;
 }
 
-.nav-link {
+/* Top row styling - normal dropdowns */
+.top-nav .nav-link {
   margin-right: 20px;
-  color: rgba(255, 255, 255, 0.8) !important;
+  color: #fff !important; /* Changed text color to white */
+}
+
+.top-nav .nav-link:hover {
+  color: #007bff !important; /* Hover color */
+}
+
+.dropdown-menu {
+  background-color: #fff;
+  color: #333;
+}
+
+.dropdown-menu-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Bottom row styling - mega dropdowns */
+.bottom-nav .nav-link {
+  margin-right: 10px;
+  color: #fff !important; /* Changed text color to white */
+}
+
+.bottom-nav .nav-link:hover {
+  color: #007bff !important; /* Hover color */
+}
+
+/* Mega Menu */
+.mega-menu {
+  width: 600px;
+  padding: 20px;
+}
+
+.mega-menu .row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mega-menu h5 {
+  font-weight: bold;
+  color: #fff; /* Header text color for mega menu */
+}
+
+.mega-menu .dropdown-item {
+  color: rgba(255, 255, 255, 0.8); /* Slightly lighter text */
   transition: color 0.3s ease;
 }
 
-.nav-link:hover {
-  color: #fff !important;
+.mega-menu .dropdown-item:hover {
+  color: #fff;
+}
+
+/* Flex-wrap for nav items to make sure they don't overflow */
+.nav-item {
+  flex: 0 1 auto;
+  max-width: 200px; /* Limit the max width of each nav item */
+}
+
+.navbar-nav .nav-link {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  /*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28 255, 255, 255 ,0.5 %29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); */
+  
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-color: #fff; /* Toggler icon color */
+}
+
+.navbar-brand img {
+  height: 45px;
 }
 
 .navbar-nav .nav-item:last-child .nav-link {
