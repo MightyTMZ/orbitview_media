@@ -88,7 +88,7 @@ function Footer() {
         <div className="row mt-5 poppins-bold">
           <div className="col-md-12 text-center ">
             <p className="text-light copyright">
-              &copy; {new Date().getFullYear()} OrbitView Media. All rights
+              &copy; {new Date().getFullYear()} OrbitView. All rights
               reserved.
             </p>
           </div>

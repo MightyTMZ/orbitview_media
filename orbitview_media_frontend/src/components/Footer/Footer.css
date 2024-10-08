@@ -23,6 +23,19 @@ a {
 
 .about-para {
   text-align: left;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .about-para {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) {
+  .about-para {
+    font-size: 16px;
+    text-align: left;
+  }
 }
 
 .social-logo {
