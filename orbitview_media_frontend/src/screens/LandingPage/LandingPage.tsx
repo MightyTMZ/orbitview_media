@@ -51,13 +51,10 @@ const LandingPage = () => {
                 />
               </h1>
               <p className="lead poppins-thin">
-                An ultra-immersive 3D professional networking platform,
-                autonomous AI networking for you, and a content hub that
-                transforms knowledge absorption into an experience rather than a
-                chore.
-                <br />
-                Turning your network of individuals to an "orbit" of like-minded
-                individuals!
+                OrbitView is offering innovative solutions that redefine how you
+                connect, learn, and grow. From matching tools to personalized
+                insights in capital markets, our platform provides individuals,
+                families, and businesses to engage and grow meaningfully.
               </p>
               <img src={OVM_logo} alt="OrbitView Media logo" height={100} />
               <br />
