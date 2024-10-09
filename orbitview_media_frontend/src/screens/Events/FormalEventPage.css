@@ -1,0 +1,35 @@
+.banner {
+  background: url("../../assets/orbitview_banner.png");
+  background-size: cover; /* Ensures the background image covers the entire element */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  border-top: 1.5px solid white;
+}
+
+.event-banner-heading {
+    color: white;
+    margin-left: 15%;
+}
+
+.event-card {
+    border: 1px solid #ddd; /* Add a subtle border */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.2s; /* Animation on hover */
+}
+
+.event-card:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+
+@media (max-width: 768px) {
+    .event-banner-heading {
+      margin-left: 10%;
+    }
+  }
+
+@media (max-width: 334px) {
+.event-banner-heading {
+    margin-left: 5%;
+}
+}

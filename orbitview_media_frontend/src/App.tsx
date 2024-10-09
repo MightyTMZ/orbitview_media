@@ -13,6 +13,7 @@ import EventPage from "./screens/Events/Events";
 import JoinUsPage from "./screens/JoinUsPage/JoinUsPage";
 import JobListings from "./screens/JobListings/JobListings";
 import Blog from "./screens/Blog/Blog";
+import FormalEventPage from "./screens/Events/FormalEventPage";
 
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
           <Route path="/signup" element={<SignUpPage />} />
           <Route path="/user/profile" element={<EditProfile />} /> */}
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/events" element={<EventPage />} />
+          <Route path="/events" element={<FormalEventPage />} />
           <Route path="/join" element={<JoinUsPage />} />
           <Route path="/jobs" element={<JobListings />} />
 
