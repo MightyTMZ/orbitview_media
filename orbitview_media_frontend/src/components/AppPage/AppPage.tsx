@@ -35,7 +35,7 @@ const AppPage = (props: Props) => {
           <NavBar />
           <div className="banner poppins">
             <h1 className="pt-4 page-banner-heading">{props.title}</h1>
-            <div className="page-banner-heading" style={{ height: "5px", width: "40%", background: "#fbffff" }}></div>
+            <div className="page-banner-heading" style={{ height: "5px", width: "40%", background: "#314aba" }}></div>
             {props.about ? (
               <p className="pt-3 page-banner-paragraph">{props.about}</p>
 

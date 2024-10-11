@@ -1,13 +1,23 @@
 import "./NavBar.css";
 import OVM_logo from "../../assets/OrbitView_Media-removebg-preview.png";
 import { FaSearch } from "react-icons/fa";
-import { FaRegUserCircle } from "react-icons/fa"; // individuals
-import { MdEnergySavingsLeaf, MdFamilyRestroom } from "react-icons/md"; // families
-import { PiStudent } from "react-icons/pi"; // students
-import { FaUniversity } from "react-icons/fa"; // academic institutions
-import { RiGovernmentFill } from "react-icons/ri"; // university
+// import { FaRegUserCircle } from "react-icons/fa"; // individuals
+// import { MdEnergySavingsLeaf, MdFamilyRestroom } from "react-icons/md"; // families
+// import { PiStudent } from "react-icons/pi"; // students
+// import { FaUniversity } from "react-icons/fa"; // academic institutions
+// import { RiGovernmentFill } from "react-icons/ri"; // university
+import Links from "../../Links";
 
 const NavBar = () => {
+  const productsAndServices = Links.productsAndServices;
+  const solutions = Links.solutions;
+  const resourceCenter = Links.resourceCenter;
+  const newsRoom = Links.newsRoom;
+  const investorInformation = Links.investInformation;
+  const aboutUs = Links.aboutUs;
+  const community = Links.community;
+  const support = Links.support;
+
   return (
     <nav
       className="navbar navbar-expand-md sticky-top"
@@ -58,39 +68,28 @@ const NavBar = () => {
                 <div className="row megadropdown-row">
                   <div className="col-md-4 has-right-margin-row">
                     <h5>OrbitView Premium</h5>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="/">
                       Basic Premium
                     </a>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="/">
                       Pro Premium
                     </a>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="/">
                       Executive Premium
                     </a>
                   </div>
                   <div className="col-md-4">
                     <h5>Other</h5>
-                    <a className="dropdown-item" href="#">
-                      Quiztrepreneur
-                    </a>
-                    <a className="dropdown-item" href="#">
-                      Techonomics
-                    </a>
-                    <a className="dropdown-item" href="#">
-                      OrbitView Nexus
-                    </a>
-                    <a className="dropdown-item" href="#">
-                      StarFindr AI
-                    </a>
-                    <a className="dropdown-item" href="#">
-                      MarketSentinel AI
-                    </a>
-                    <a className="dropdown-item" href="#">
-                      PitchBot AI
-                    </a>
-                    <a className="dropdown-item" href="#">
-                      AutoPilot
-                    </a>
+
+                    {productsAndServices.map((product) => (
+                      <a
+                        key={product.id}
+                        className="dropdown-item"
+                        href={product.endpoint}
+                      >
+                        {product.title}
+                      </a>
+                    ))}
                   </div>
                   {/* Add more columns if necessary */}
                 </div>
@@ -100,7 +99,7 @@ const NavBar = () => {
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
-                href="#"
+                href="/"
                 id="solutionsDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -109,21 +108,15 @@ const NavBar = () => {
                 Solutions
               </a>
               <ul className="dropdown-menu" aria-labelledby="solutionsDropdown">
-              <a className="dropdown-item" href="#">
-                      For Individuals <FaRegUserCircle />
-                    </a>
-                    <a className="dropdown-item" href="#">
-                      For Families <MdFamilyRestroom />
-                    </a>
-                    <a className="dropdown-item" href="#">
-                      For Students <PiStudent />
-                    </a>
-                    <a className="dropdown-item" href="#">
-                      For Businesses <FaUniversity />
-                    </a>
-                    <a className="dropdown-item" href="#">
-                      For Governments <RiGovernmentFill />
-                    </a>
+                {solutions.map((segment) => (
+                  <a
+                    key={segment.id}
+                    className="dropdown-item"
+                    href={segment.endpoint}
+                  >
+                    For {segment.title}
+                  </a>
+                ))}
               </ul>
 
               {/*<div
@@ -240,7 +233,7 @@ const NavBar = () => {
               >
                 <li className="dropdown-submenu">
                   <a
-                    href="#"
+                    href="/"
                     className="dropdown-item"
                     id="aiSubmenu"
                     role="button"
@@ -251,87 +244,87 @@ const NavBar = () => {
                   </a>
                   {/*<ul className="dropdown-menu" aria-labelledby="aiSubmenu" style={{ width: "auto" }}>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="/">
                         NLP
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="/">
                         Computer Vision
                       </a>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="/">
                         Recommendation Systems
                       </a>
                     </li>
                   </ul>*/}
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/">
                     Machine Learning
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/">
                     Internet of Things (IoT)
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/">
                     Cloud Computing
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/">
                     Business Management
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/">
                     Business Operations
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/">
                     Quantum Computing
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/">
                     Edge AI and Computing
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/">
                     Cybersecurity
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/">
                     Cloud Computing
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/">
                     Financial Services
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
-                    Sustainable AI <MdEnergySavingsLeaf/>
+                  <a className="dropdown-item" href="/">
+                    Sustainable AI
                   </a>
                 </li>
               </ul>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#contact">
+              <a className="nav-link" href="/contact">
                 Contact
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#search">
+              <a className="nav-link" href="/search">
                 <FaSearch />
               </a>
             </li>
@@ -349,36 +342,13 @@ const NavBar = () => {
                 Resource Center
               </a>
               <ul className="dropdown-menu" aria-labelledby="resourceDropdown">
-                <li>
-                  <a href="#" className="dropdown-item">
-                    Careers
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Technical Articles
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Intellectual Property
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    White Papers
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Blog{" "}
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Podcasts{" "}
-                  </a>
-                </li>
+                {resourceCenter.map((resource) => (
+                  <li key={resource.id}>
+                    <a href={resource.endpoint} className="dropdown-item">
+                      {resource.title}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </li>
             <li className="nav-item dropdown">
@@ -393,57 +363,13 @@ const NavBar = () => {
                 Investor Info
               </a>
               <ul className="dropdown-menu" aria-labelledby="investorDropdown">
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Understanding OrbitView
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Our Strengths
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Financial Results
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Events{" "}
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Announcements{" "}
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Regulatory News{" "}
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Financial Calendar{" "}
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Covering Analysts{" "}
-                    {/* Hire people from Morgan Stanley, JPMorgan, Barclays, Bank of America, Goldman Sachs */}
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Corporate Governance{" "}
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    FAQs{" "}
-                  </a>
-                </li>
+                {investorInformation.map((investor) => (
+                  <li key={investor.id}>
+                    <a href={investor.endpoint} className="dropdown-item">
+                      {investor.title}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </li>
             <li className="nav-item dropdown">
@@ -458,41 +384,13 @@ const NavBar = () => {
                 News Room
               </a>
               <ul className="dropdown-menu" aria-labelledby="newsDropdown">
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Press Releases
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    In the News
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Events
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Webinars and Videos
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Blog
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Podcasts
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Newsletters
-                  </a>
-                </li>
+                {newsRoom.map((news) => (
+                  <li key={news.id}>
+                    <a href={news.endpoint} className="dropdown-item">
+                      {news.title}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </li>
             <li className="nav-item dropdown">
@@ -507,36 +405,13 @@ const NavBar = () => {
                 About Us
               </a>
               <ul className="dropdown-menu" aria-labelledby="aboutDropdown">
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Company
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Partnerships
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Leadership
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Awards
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Environmental, Social, and Governance
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    End Markets
-                  </a>
-                </li>
+                {aboutUs.map((about) => (
+                  <li key={about.id}>
+                    <a href={about.endpoint} className="dropdown-item">
+                      {about.title}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </li>
             <li className="nav-item dropdown">
@@ -551,31 +426,13 @@ const NavBar = () => {
                 Community{" "}
               </a>
               <ul className="dropdown-menu" aria-labelledby="aboutDropdown">
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Events
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Hackathons and Competitions
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Ambassadors and Launch Program
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Collaborations
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Orbit Web Framework
-                  </a>
-                </li>
+                {community.map((community) => (
+                  <li key={community.id}>
+                    <a href={community.endpoint} className="dropdown-item">
+                      {community.title}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </li>
             <li className="nav-item dropdown">
@@ -590,41 +447,13 @@ const NavBar = () => {
                 Support{" "}
               </a>
               <ul className="dropdown-menu" aria-labelledby="aboutDropdown">
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Help Center
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Product Documentations
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Community Support
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Legal
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Compliance Information
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Terms of Service
-                  </a>
-                </li>
+                {support.map((support) => (
+                  <li key={support.id}>
+                    <a href={support.endpoint} className="dropdown-item">
+                      {support.title}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </li>
           </ul>

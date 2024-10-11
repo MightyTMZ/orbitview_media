@@ -7,7 +7,7 @@ import Spinner from "../../components/Spinner/Spinner";
 
 const Blog: React.FC = () => {
 
-  document.title = "Blog - OrbitView Media"
+  document.title = "Blog - OrbitView"
 
   const [loading, setLoading] = useState(true);
 

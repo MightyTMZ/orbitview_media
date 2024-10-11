@@ -16,6 +16,7 @@ import MarketSentinel from "./screens/ProductsAndServices/OrbitViewSentinel";
 import SpaceView from "./screens/ProductsAndServices/SpaceView";
 import StarFindr from "./screens/ProductsAndServices/StarFindr";
 import AutoCommander from "./screens/ProductsAndServices/AutoCommander";
+import OrbitViewPremium from "./screens/ProductsAndServices/OrbitViewPremium";
 // import AppPage from "./components/AppPage/AppPage";
 
 function App() {
@@ -67,6 +68,7 @@ function App() {
           <Route path="/spaceview" element={<SpaceView/>}></Route>
           <Route path="/starfindr" element={<StarFindr/>}></Route>
           <Route path="/autocommander" element={<AutoCommander/>}></Route>
+          <Route path="/premium" element={<OrbitViewPremium/>}></Route>
         </Routes>
       </Router>
     </>

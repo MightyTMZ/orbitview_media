@@ -6,7 +6,7 @@ import OrbitButton from "../../components/OrbitButton/OrbitButton";
 
 const ComingSoon = () => {
 
-  const exploreJobsEndpoint = "/#jobs"
+  const exploreJobsEndpoint = "/jobs"
 
 
   return (
@@ -46,7 +46,7 @@ const ComingSoon = () => {
           </a>
         </div>
         <p className="pt-4 coming-soon-message">
-        Want to join our team? Explore our current openings <a href="/#jobs">here</a>
+        Do you want to join our team? Explore our current opportunities <a href={exploreJobsEndpoint} target="_blank" style={{ textDecoration: "none" }}>here</a>
       </p>
       </div>
     </div>

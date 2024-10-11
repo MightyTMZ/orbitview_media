@@ -1,6 +1,6 @@
 import "./Footer.css";
 import "../../fonts/Poppins.css";
-import Links from "../Links";
+import Links from "../../Links";
 // import { FaRegUserCircle } from "react-icons/fa"; // individuals
 // import { MdFamilyRestroom } from "react-icons/md"; // families
 // import { PiStudent } from "react-icons/pi"; // students

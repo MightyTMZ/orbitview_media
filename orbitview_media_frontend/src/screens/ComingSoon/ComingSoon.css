@@ -51,6 +51,7 @@
 .social-media-icons {
   display: flex;
   gap: 15px; /* Space between icons */
+  font-size: 32px;
 }
 
 .social-icon img {
