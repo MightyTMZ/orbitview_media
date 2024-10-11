@@ -9,12 +9,12 @@ import Article from "./components/Article/Article";
 // import ActivateAccount from "./screens/ActivateAccount/ActivateAccount";
 // import EditProfile from "./components/EditProfile/EditProfile";
 import ContactPage from "./screens/Contact/Contact";
-import EventPage from "./screens/Events/Events";
+// import EventPage from "./screens/Events/Events";
 import JoinUsPage from "./screens/JoinUsPage/JoinUsPage";
 import JobListings from "./screens/JobListings/JobListings";
 import Blog from "./screens/Blog/Blog";
 import FormalEventPage from "./screens/Events/FormalEventPage";
-import AppPage from "./components/AppPage/AppPage";
+// import AppPage from "./components/AppPage/AppPage";
 
 function App() {
 

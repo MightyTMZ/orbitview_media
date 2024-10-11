@@ -25,11 +25,8 @@ function Footer() {
           <div className="col-md-4 col-lg-4 col-xl-3 mx-auto mt-3 poppins">
             <h5 className="text-uppercase mb-4 font-weight-bold">OrbitView</h5>
             <p className="about-para">
-              Pioneering the future of professional networking and innovation.
-              We’ve combined the optimal aspects of social media, AR/VR
-              technology, and immersive learning to create a platform that goes
-              beyond traditional boundaries, one for knowledge, immersion, and
-              growth for the upcoming innovators, entrepreneurs, and leaders.
+              All-in-one platform for innovative solutions from matching tools
+              to real-time insights in capital markets.
             </p>
           </div>
 
