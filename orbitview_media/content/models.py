@@ -32,6 +32,12 @@ class Article(models.Model):
     @property
     def created_at_date(self):
         return self.created_at.date()
+    
+    TYPES_OF_ARTICLES = [
+        ("B", "Blog"),
+        ("TA", "Technical Article"),
+        ("WP", "White Paper"),
+    ]   
 
     title = models.CharField(max_length=255, unique=True)
     # Since slug comes from title, the slug must also be unique
@@ -44,8 +50,8 @@ class Article(models.Model):
     updated_at = models.DateTimeField(auto_now=True, null=True, blank=True) # to determine if it requires an update, the decision will be made on the frontend and not have to undergo a lot of logic here
     is_published = models.BooleanField(default=False)
     featured_image = models.CharField(max_length=2083, blank=True, null=True)
-
-    # along with the Substack, Medium, or other APIs, users can read articles on our main website
+    label = models.CharField(max_length=5, choices=TYPES_OF_ARTICLES, default="B")
+    # We will default each article to a blog
 
     def __str__(self) -> str:
         return self.title
@@ -59,4 +65,3 @@ class Article(models.Model):
     def save(self, force_insert: bool = ..., force_update: bool = ..., using: str | None = ..., update_fields: Iterable[str] | None = ...) -> None:
         self.slug = slugify(self.title)
         super(Article, self).save()
-

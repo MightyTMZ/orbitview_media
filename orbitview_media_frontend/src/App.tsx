@@ -17,6 +17,9 @@ import FormalEventPage from "./screens/Events/FormalEventPage";
 import AppPage from "./components/AppPage/AppPage";
 
 function App() {
+
+  // const para = `this is a vert lfksjhgfkjgfsh g lkfh hef  f hskf hsf  fhgsfhs kffshkfh fh fl slfhwl fsdk  sek skj `
+
   return (
     <>
       <Router>
@@ -41,7 +44,7 @@ function App() {
           {/*<Route
             path="/test"
             element={
-              <AppPage title={"Hello"}>
+              <AppPage title={"Hello"} about={para}>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Voluptatem debitis necessitatibus eius. Sit, ab alias esse
