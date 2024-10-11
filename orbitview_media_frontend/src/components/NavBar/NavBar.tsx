@@ -15,7 +15,7 @@ const NavBar = () => {
     >
       <div className="container">
         {/* Logo */}
-        <a className="navbar-brand poppins-bold" href="#">
+        <a className="navbar-brand poppins-bold" href="/">
           <img src={OVM_logo} alt="Logo" className="mr-2" height={45} />
         </a>
 

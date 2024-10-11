@@ -61,7 +61,7 @@ const LandingPage = () => {
               <OrbitButton
                 text="Get Started"
                 hoverText="Launch into orbit today!"
-                endpoint="/#join"
+                endpoint="/join"
               />
               {/* Main Content with Icons
             <div className="content-box container mt-5">

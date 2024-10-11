@@ -1,4 +1,4 @@
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; 
 import LandingPage from "./screens/LandingPage/LandingPage";
 import Article from "./components/Article/Article";
 // import LoginPage from "./screens/Login/LoginPage";
@@ -12,6 +12,10 @@ import JobListings from "./screens/JobListings/JobListings";
 import Blog from "./screens/Blog/Blog";
 import FormalEventPage from "./screens/Events/FormalEventPage";
 import OrbitViewNexus from "./screens/ProductsAndServices/OrbitViewNexus";
+import MarketSentinel from "./screens/ProductsAndServices/OrbitViewSentinel";
+import SpaceView from "./screens/ProductsAndServices/SpaceView";
+import StarFindr from "./screens/ProductsAndServices/StarFindr";
+import AutoCommander from "./screens/ProductsAndServices/AutoCommander";
 // import AppPage from "./components/AppPage/AppPage";
 
 function App() {
@@ -59,6 +63,10 @@ function App() {
           <Route path="/blog/:created_at_date/:slug" element={<Article />} />
           <Route path="/blog/" element={<Blog />} />
           <Route path="/nexus" element={<OrbitViewNexus/>}></Route>
+          <Route path="/sentinel" element={<MarketSentinel/>}></Route>
+          <Route path="/spaceview" element={<SpaceView/>}></Route>
+          <Route path="/starfindr" element={<StarFindr/>}></Route>
+          <Route path="/autocommander" element={<AutoCommander/>}></Route>
         </Routes>
       </Router>
     </>

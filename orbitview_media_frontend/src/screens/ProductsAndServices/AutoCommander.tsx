@@ -1,7 +1,7 @@
 import AppPage from "../../components/AppPage/AppPage";
 import ComingSoon from "../ComingSoon/ComingSoon";
 
-const SpaceView = () => {
+const AutoCommander = () => {
   const name = "AutoCommander";
   const pageTitle = "AutoCommander"
   const description = `AutoCommander is an AI-driven automation and optimization platform designed for 
@@ -18,4 +18,4 @@ const SpaceView = () => {
   );
 };
 
-export default SpaceView;
+export default AutoCommander;
