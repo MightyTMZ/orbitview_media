@@ -361,6 +361,11 @@ const NavBar = () => {
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
+                    Intellectual Property
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
                     White Papers
                   </a>
                 </li>
