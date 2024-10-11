@@ -8,14 +8,8 @@ class ArticleAdmin(admin.ModelAdmin):
     list_display = [
         "title", 
         "created_at", 
-        'is_published'
+        'is_published',
         "featured_image"
-    ]
-
-    list_editable = [
-        "title", 
-        "created_at", 
-        "featured_at"
     ]
 
 admin.site.register(Author)
