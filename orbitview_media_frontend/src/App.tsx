@@ -14,7 +14,7 @@ import JoinUsPage from "./screens/JoinUsPage/JoinUsPage";
 import JobListings from "./screens/JobListings/JobListings";
 import Blog from "./screens/Blog/Blog";
 import FormalEventPage from "./screens/Events/FormalEventPage";
-
+import AppPage from "./components/AppPage/AppPage";
 
 function App() {
   return (
@@ -38,19 +38,25 @@ function App() {
           <Route path="/events" element={<FormalEventPage />} />
           <Route path="/join" element={<JoinUsPage />} />
           <Route path="/jobs" element={<JobListings />} />
+          {/*<Route
+            path="/test"
+            element={
+              <AppPage title={"Hello"}>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatem debitis necessitatibus eius. Sit, ab alias esse
+                  sunt ducimus blanditiis illo!
+                </p>
+              </AppPage>
+            }
+          />*/}
 
           {/* 
           <Route path="/activate/:uid/:token" element={<ActivateAccount />} />
           */}
           {/* Up until we figure out the SMTP, we cannot do user profiles */}
-          <Route
-            path="/blog/:created_at_date/:slug"
-            element={<Article />}
-          />
-          <Route
-            path="/blog/"
-            element={<Blog />}
-          />
+          <Route path="/blog/:created_at_date/:slug" element={<Article />} />
+          <Route path="/blog/" element={<Blog />} />
         </Routes>
       </Router>
     </>
