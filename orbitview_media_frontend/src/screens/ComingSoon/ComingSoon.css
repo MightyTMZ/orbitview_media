@@ -1,0 +1,64 @@
+.coming-soon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #f8f9fa; /* Light background color */
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.coming-soon-title {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  color: #333; /* Dark text color */
+}
+
+.coming-soon-message {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555; /* Medium text color */
+}
+
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta-button {
+  background-color: #007bff; /* Primary button color */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.social-media-text {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.social-media-icons {
+  display: flex;
+  gap: 15px; /* Space between icons */
+}
+
+.social-icon img {
+  width: 30px; /* Icon size */
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.social-icon img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}

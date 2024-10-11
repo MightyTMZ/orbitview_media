@@ -1,19 +1,27 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import './OrbitButton.css';
 
-const OrbitButton: React.FC = () => {
+
+interface Props {
+  text: string;
+  hoverText: string;
+  endpoint: string;
+}
+
+
+const OrbitButton = (props: Props) => {
   const [hovered, setHovered] = useState(false);
 
   return (
     <button
       className="btn poppins"
       id="register-btn"
-      onClick={() => (window.location.href = "/#join")}
+      onClick={() => (window.location.href = `${props.endpoint}`)}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{ fontSize: "1.25rem" }}
     >
-      {hovered ? "Launch yourself into orbit today!" : "Be the first to use it"}
+      {hovered ? `${props.hoverText}` : `${props.text}`}
     </button>
   );
 };

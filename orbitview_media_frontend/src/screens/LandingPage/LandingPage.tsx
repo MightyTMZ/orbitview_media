@@ -1,7 +1,7 @@
 import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
 // import PartnersWidget from "../../components/Partners/Partners";
-import OVM_logo from "../../assets/OrbitView_Media-removebg-preview.png";
+import OrbitViewLogo from "../../assets/OrbitView_Media-removebg-preview.png";
 import "../../fonts/Poppins.css";
 import "./LandingPage.css";
 import OrbitButton from "../../components/OrbitButton/OrbitButton";
@@ -56,9 +56,13 @@ const LandingPage = () => {
                 insights in capital markets, our platform provides individuals,
                 families, and businesses to engage and grow meaningfully.
               </p>
-              <img src={OVM_logo} alt="OrbitView Media logo" height={100} />
+              <img src={OrbitViewLogo} alt="OrbitView logo" height={100} />
               <br />
-              <OrbitButton />
+              <OrbitButton
+                text="Get Started"
+                hoverText="Launch into orbit today!"
+                endpoint="/#join"
+              />
               {/* Main Content with Icons
             <div className="content-box container mt-5">
               <div className="row justify-content-center">

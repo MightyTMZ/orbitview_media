@@ -3,14 +3,19 @@ import Spinner from "../Spinner/Spinner";
 import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
 import "./AppPage.css";
+import "../../fonts/Poppins.css";
 
 interface Props {
   title: string;
   about?: string;
+  pageTitle: string;
   children: ReactNode;
 }
 
 const AppPage = (props: Props) => {
+
+  document.title = `${props.pageTitle} - OrbitView`
+
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -28,7 +33,7 @@ const AppPage = (props: Props) => {
       ) : (
         <>
           <NavBar />
-          <div className="banner">
+          <div className="banner poppins">
             <h1 className="pt-4 page-banner-heading">{props.title}</h1>
             <div className="page-banner-heading" style={{ height: "5px", width: "40%", background: "#fbffff" }}></div>
             {props.about ? (

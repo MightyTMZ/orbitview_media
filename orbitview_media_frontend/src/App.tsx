@@ -1,8 +1,5 @@
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import LandingPage from "./screens/LandingPage/LandingPage";
-import TechonomicsLandingPage from "./screens/Techonomics/Techonomics";
-import PathwaysLandingPage from "./screens/Pathways/Pathways";
-import EngineeringLandingPage from "./components/Engineering/Engineering";
 import Article from "./components/Article/Article";
 // import LoginPage from "./screens/Login/LoginPage";
 // import SignUpPage from "./screens/SignUp/SignUpPage";
@@ -14,6 +11,7 @@ import JoinUsPage from "./screens/JoinUsPage/JoinUsPage";
 import JobListings from "./screens/JobListings/JobListings";
 import Blog from "./screens/Blog/Blog";
 import FormalEventPage from "./screens/Events/FormalEventPage";
+import OrbitViewNexus from "./screens/ProductsAndServices/OrbitViewNexus";
 // import AppPage from "./components/AppPage/AppPage";
 
 function App() {
@@ -31,10 +29,10 @@ function App() {
         ></link>
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/techonomics" element={<TechonomicsLandingPage />} />
+          {/*<Route path="/techonomics" element={<TechonomicsLandingPage />} />
           <Route path="/pathnetwork" element={<PathwaysLandingPage />} />
           <Route path="/engineering" element={<EngineeringLandingPage />} />
-          {/*<Route path="/login" element={<LoginPage />} />
+          <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignUpPage />} />
           <Route path="/user/profile" element={<EditProfile />} /> */}
           <Route path="/contact" element={<ContactPage />} />
@@ -60,6 +58,7 @@ function App() {
           {/* Up until we figure out the SMTP, we cannot do user profiles */}
           <Route path="/blog/:created_at_date/:slug" element={<Article />} />
           <Route path="/blog/" element={<Blog />} />
+          <Route path="/nexus" element={<OrbitViewNexus/>}></Route>
         </Routes>
       </Router>
     </>
