@@ -10,11 +10,11 @@ const productAndServices = [
 ];
 
 const solutions = [
-  { id: 1, title: "Individuals", endpoint: "/" },
-  { id: 2, title: "Families", endpoint: "/" },
-  { id: 3, title: "Students", endpoint: "/" },
-  { id: 4, title: "Businesses", endpoint: "/" },
-  { id: 5, title: "Government", endpoint: "/" },
+  { id: 1, title: "Individuals", endpoint: "/solutions/individuals" },
+  { id: 2, title: "Families", endpoint: "/solutions/families" },
+  { id: 3, title: "Students", endpoint: "/solutions/students" },
+  { id: 4, title: "Businesses", endpoint: "/solutions/businesses" },
+  { id: 5, title: "Government", endpoint: "/solutions/governments" },
 ];
 
 const resourceCenter = [

@@ -3,11 +3,8 @@ import "../../fonts/Poppins.css";
 import { FaInstagramSquare, FaLinkedin, FaTwitter } from "react-icons/fa";
 import OrbitButton from "../../components/OrbitButton/OrbitButton";
 
-
 const ComingSoon = () => {
-
-  const exploreJobsEndpoint = "/jobs"
-
+  const exploreJobsEndpoint = "/jobs";
 
   return (
     <div className="coming-soon-container poppins">
@@ -17,7 +14,11 @@ const ComingSoon = () => {
       </p>
 
       <div className="cta-container">
-        <OrbitButton text="Join Waitlist" hoverText="It takes 30 seconds" endpoint="/#join"/>
+        <OrbitButton
+          text="Join Waitlist"
+          hoverText="It takes 30 seconds"
+          endpoint="/join"
+        />
         <p className="mt-3 social-media-text">Follow us for updates:</p>
         <div className="social-media-icons">
           <a
@@ -26,7 +27,7 @@ const ComingSoon = () => {
             rel="noopener noreferrer"
             className="social-icon"
           >
-            <FaTwitter/>
+            <FaTwitter />
           </a>
           <a
             href="https://linkedin.com"
@@ -34,7 +35,7 @@ const ComingSoon = () => {
             rel="noopener noreferrer"
             className="social-icon"
           >
-            <FaLinkedin/>
+            <FaLinkedin />
           </a>
           <a
             href="https://instagram.com"
@@ -42,12 +43,19 @@ const ComingSoon = () => {
             rel="noopener noreferrer"
             className="social-icon"
           >
-            <FaInstagramSquare/>
+            <FaInstagramSquare />
           </a>
         </div>
         <p className="pt-4 coming-soon-message">
-        Do you want to join our team? Explore our current opportunities <a href={exploreJobsEndpoint} target="_blank" style={{ textDecoration: "none" }}>here</a>
-      </p>
+          Do you want to join our team? Explore our current opportunities{" "}
+          <a
+            href={exploreJobsEndpoint}
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
+            here
+          </a>
+        </p>
       </div>
     </div>
   );

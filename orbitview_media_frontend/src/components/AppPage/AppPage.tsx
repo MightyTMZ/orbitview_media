@@ -13,8 +13,7 @@ interface Props {
 }
 
 const AppPage = (props: Props) => {
-
-  document.title = `${props.pageTitle} - OrbitView`
+  document.title = `${props.pageTitle} - OrbitView`;
 
   const [loading, setLoading] = useState(true);
 
@@ -35,11 +34,14 @@ const AppPage = (props: Props) => {
           <NavBar />
           <div className="banner poppins">
             <h1 className="pt-4 page-banner-heading">{props.title}</h1>
-            <div className="page-banner-heading" style={{ height: "5px", width: "40%", background: "#314aba" }}></div>
+            <div className="page-banner-heading cool-page-div">
+              <div className="light-animation"></div>
+            </div>
             {props.about ? (
               <p className="pt-3 page-banner-paragraph">{props.about}</p>
-
-            ) : (<></>)}
+            ) : (
+              <></>
+            )}
           </div>
           <main>{props.children}</main>
           <Footer />

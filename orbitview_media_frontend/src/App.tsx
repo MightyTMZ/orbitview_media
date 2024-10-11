@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; 
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LandingPage from "./screens/LandingPage/LandingPage";
 import Article from "./components/Article/Article";
 // import LoginPage from "./screens/Login/LoginPage";
@@ -17,10 +17,14 @@ import SpaceView from "./screens/ProductsAndServices/SpaceView";
 import StarFindr from "./screens/ProductsAndServices/StarFindr";
 import AutoCommander from "./screens/ProductsAndServices/AutoCommander";
 import OrbitViewPremium from "./screens/ProductsAndServices/OrbitViewPremium";
+import SolutionsIndividuals from "./components/Solutions/SolutionsIndvidual";
+import SolutionsFamilies from "./components/Solutions/SolutionsFamilies";
+import SolutionsStudents from "./components/Solutions/SolutionsStudents";
+import SolutionsBusinesses from "./components/Solutions/SolutionsBusinesses";
+import SolutionsGovernments from "./components/Solutions/SolutionsGovernments";
 // import AppPage from "./components/AppPage/AppPage";
 
 function App() {
-
   // const para = `this is a vert lfksjhgfkjgfsh g lkfh hef  f hskf hsf  fhgsfhs kffshkfh fh fl slfhwl fsdk  sek skj `
 
   return (
@@ -63,12 +67,32 @@ function App() {
           {/* Up until we figure out the SMTP, we cannot do user profiles */}
           <Route path="/blog/:created_at_date/:slug" element={<Article />} />
           <Route path="/blog/" element={<Blog />} />
-          <Route path="/nexus" element={<OrbitViewNexus/>}></Route>
-          <Route path="/sentinel" element={<MarketSentinel/>}></Route>
-          <Route path="/spaceview" element={<SpaceView/>}></Route>
-          <Route path="/starfindr" element={<StarFindr/>}></Route>
-          <Route path="/autocommander" element={<AutoCommander/>}></Route>
-          <Route path="/premium" element={<OrbitViewPremium/>}></Route>
+          <Route path="/nexus" element={<OrbitViewNexus />}></Route>
+          <Route path="/sentinel" element={<MarketSentinel />}></Route>
+          <Route path="/spaceview" element={<SpaceView />}></Route>
+          <Route path="/starfindr" element={<StarFindr />}></Route>
+          <Route path="/autocommander" element={<AutoCommander />}></Route>
+          <Route path="/premium" element={<OrbitViewPremium />}></Route>
+          <Route
+            path="/solutions/individuals"
+            element={<SolutionsIndividuals />}
+          ></Route>
+          <Route
+            path="/solutions/families"
+            element={<SolutionsFamilies />}
+          ></Route>
+          <Route
+            path="/solutions/students"
+            element={<SolutionsStudents />}
+          ></Route>
+          <Route
+            path="/solutions/businesses"
+            element={<SolutionsBusinesses />}
+          ></Route>
+          <Route
+            path="/solutions/governments"
+            element={<SolutionsGovernments />}
+          ></Route>
         </Routes>
       </Router>
     </>
