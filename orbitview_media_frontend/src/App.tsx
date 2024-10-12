@@ -27,6 +27,7 @@ import { FinancialCalendar, FinancialResults, OurStrengths, UnderstandingOrbitVi
 import FAQs from "./components/FAQs/FAQs";
 import { Company, Leadership, Partnerships } from "./screens/AboutUs/NewAboutUs";
 import { CommunitySupport, Competitions, ComplianceInformation, PrivacyPolicy, ProductDocumentation, TermsOfService } from "./screens/Community/Community";
+import { TechnicalArticles, WhitePapers } from "./screens/WrittenContent/WhitePapers/TemporaryConfiguration";
 
 
 // import AppPage from "./components/AppPage/AppPage";
@@ -118,6 +119,8 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />}></Route>
           <Route path="/compliance-information" element={<ComplianceInformation />}></Route>
           <Route path="/terms-of-service" element={<TermsOfService />}></Route>
+          <Route path="/white-papers" element={<WhitePapers />}></Route>
+          <Route path="/technical-articles" element={<TechnicalArticles />}></Route>
         </Routes>
       </Router>
     </>
