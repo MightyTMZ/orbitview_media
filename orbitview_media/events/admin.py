@@ -1,3 +1,13 @@
 from django.contrib import admin
+from .models import *
 
-# Register your models here.
+
+class LocationInline(admin.StackedInline):
+    model = Location
+    extra = 2
+
+
+@admin.register(Event)
+class EventAdmin(admin.ModelAdmin):
+
+    inlines = [LocationInline]

@@ -1,4 +1,5 @@
 from django.db import models
+from ckeditor.fields import RichTextField
 
 
 class Event(models.Model):
@@ -8,7 +9,10 @@ class Event(models.Model):
     """location_url1 = models.CharField(max_length=2083) # e.g. you have a Google Maps link
     location_url2 = models.CharField(max_length=2083, null=True, blank=True) # e.g. you have a IOS Maps link
     location_url3 = models.CharField(max_length=2083, null=True, blank=True) # e.g. you have a Google Maps link"""
-    description = models.TextField()
+    description = RichTextField()
+
+    def __str__(self) -> str:
+        return f"{self.title} - {self.date.date()}"
 
 
 class Location(models.Model):
