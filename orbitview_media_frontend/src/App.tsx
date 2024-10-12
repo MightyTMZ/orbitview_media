@@ -8,7 +8,8 @@ import Article from "./components/Article/Article";
 import ContactPage from "./screens/Contact/Contact";
 // import EventPage from "./screens/Events/Events";
 import JoinUsPage from "./screens/JoinUsPage/JoinUsPage";
-import JobListings from "./screens/JobListings/JobListings";
+import JobListingsFeed from "./screens/JobListings/JobListings";
+import JobDetail from "./screens/JobListings/JobListingDetail";
 import Blog from "./screens/WrittenContent/Blog/Blog";
 import FormalEventPage from "./screens/Events/FormalEventPage";
 import OrbitViewNexus from "./screens/ProductsAndServices/OrbitViewNexus";
@@ -55,7 +56,9 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/events" element={<FormalEventPage />} />
           <Route path="/join" element={<JoinUsPage />} />
-          <Route path="/jobs" element={<JobListings />} />
+          <Route path="/careers" element={<JobListingsFeed />} />
+          <Route path="/careers/:slug" element={<JobDetail />} />
+
           {/*<Route
             path="/test"
             element={

@@ -18,7 +18,7 @@ const solutions = [
 ];
 
 const resourceCenter = [
-  { id: 1, title: "Careers", endpoint: "/jobs" },
+  { id: 1, title: "Careers", endpoint: "/careers" },
   { id: 2, title: "Technical Articles", endpoint: "/technical-articles" },
   { id: 3, title: "White Papers", endpoint: "/white-papers" },
   { id: 4, title: "Blog", endpoint: "/blog" },
