@@ -3,6 +3,9 @@ import masthead from "../../assets/OrbitView Media Inc. masthead (1).png";
 import "../../fonts/Poppins.css";
 // import businessboard from "../../assets/9d7dbc5c-3636-4154-84fa-d1bba74796cd.webp";
 
+
+// OLD COPY
+
 const AboutUs = () => {
   return (
     <>

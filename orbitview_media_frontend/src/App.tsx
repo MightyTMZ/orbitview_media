@@ -22,6 +22,13 @@ import SolutionsFamilies from "./components/Solutions/SolutionsFamilies";
 import SolutionsStudents from "./components/Solutions/SolutionsStudents";
 import SolutionsBusinesses from "./components/Solutions/SolutionsBusinesses";
 import SolutionsGovernments from "./components/Solutions/SolutionsGovernments";
+import { InTheNews, Newsletters, PressRelease, WebinarsAndVideo } from "./screens/NewsRoom/NewsRoom";
+import { FinancialCalendar, FinancialResults, OurStrengths, UnderstandingOrbitView } from "./screens/InvestorInfo/InvestorInfo";
+import FAQs from "./components/FAQs/FAQs";
+import { Company, Leadership, Partnerships } from "./screens/AboutUs/NewAboutUs";
+import { CommunitySupport, Competitions, ComplianceInformation, PrivacyPolicy, ProductDocumentation, TermsOfService } from "./screens/Community/Community";
+
+
 // import AppPage from "./components/AppPage/AppPage";
 
 function App() {
@@ -93,6 +100,23 @@ function App() {
             path="/solutions/governments"
             element={<SolutionsGovernments />}
           ></Route>
+          <Route path="/press-releases" element={<PressRelease />}></Route>
+          <Route path="/in-the-news" element={<InTheNews />}></Route>
+          <Route path="/media" element={<WebinarsAndVideo />}></Route>
+          <Route path="/newsletters" element={<Newsletters />}></Route>
+          <Route path="/understanding-orbitview" element={<UnderstandingOrbitView />}></Route>
+          <Route path="/our-strengths" element={<OurStrengths />}></Route>
+          <Route path="/financial-results" element={<FinancialResults />}></Route>
+          <Route path="/financial-calendar" element={<FinancialCalendar />}></Route>
+          <Route path="/frequently-asked-questions" element={<FAQs />}></Route>
+          <Route path="/company" element={<Company />}></Route>
+          <Route path="/partnerships" element={<Partnerships />}></Route>
+          <Route path="/leadership" element={<Leadership />}></Route>
+          <Route path="/product-documentation" element={<ProductDocumentation />}></Route>
+          <Route path="/community-support" element={<CommunitySupport />}></Route>
+          <Route path="/privacy-policy" element={<PrivacyPolicy />}></Route>
+          <Route path="/compliance-information" element={<ComplianceInformation />}></Route>
+          <Route path="/terms-of-service" element={<TermsOfService />}></Route>
         </Routes>
       </Router>
     </>

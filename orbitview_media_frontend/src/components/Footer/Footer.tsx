@@ -141,8 +141,7 @@ function Footer() {
               </p>
             ))}
           </div>
-          {/* Social Media Links 
-          <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3" id="social-media-links">
             <h5 className="text-uppercase mb-4 font-weight-bold poppins connect-with-us">
               Connect with Us
             </h5>
@@ -163,14 +162,14 @@ function Footer() {
               <i className="fab fa-twitter"></i>
             </a>
             <a
-              href="https://www.linkedin.com/company/orbitview-media/"
+              href="https://www.linkedin.com/company/orbitview/"
               target="_blank"
               rel="noopener noreferrer"
               className="social-logo text-light"
             >
               <i className="fab fa-linkedin"></i>
             </a>
-          </div>*/}
+          </div>
         </div>
 
         {/* Copyright */}

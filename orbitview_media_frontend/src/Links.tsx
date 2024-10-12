@@ -18,60 +18,60 @@ const solutions = [
 ];
 
 const resourceCenter = [
-  { id: 1, title: "Careers", endpoint: "/" },
-  { id: 2, title: "Technical Articles", endpoint: "/" },
-  { id: 3, title: "White Papers", endpoint: "/" },
-  { id: 4, title: "Blog", endpoint: "/" },
-  { id: 5, title: "Podcasts", endpoint: "/" },
+  { id: 1, title: "Careers", endpoint: "/jobs" },
+  { id: 2, title: "Technical Articles", endpoint: "/technical-articles" },
+  { id: 3, title: "White Papers", endpoint: "/white-papers" },
+  { id: 4, title: "Blog", endpoint: "/blog" },
+  { id: 5, title: "Podcasts", endpoint: "/podcasts" },
 ];
 
 const newsRoom = [
-  { id: 1, title: "Press Releases", endpoint: "/" },
-  { id: 2, title: "In the News", endpoint: "/" },
-  { id: 3, title: "Events", endpoint: "/" },
-  { id: 4, title: "Webinars and Videos", endpoint: "/" },
-  { id: 5, title: "Blog", endpoint: "/" },
-  { id: 6, title: "Podcasts", endpoint: "/" },
-  { id: 7, title: "Newsletters", endpoint: "/" },
+  { id: 1, title: "Press Releases", endpoint: "/press-releases" },
+  { id: 2, title: "In the News", endpoint: "/in-the-news" },
+  { id: 3, title: "Events", endpoint: "/events" },
+  { id: 4, title: "Webinars and Videos", endpoint: "/media" },
+  { id: 5, title: "Blog", endpoint: "/blog" },
+  { id: 6, title: "Podcasts", endpoint: "/podcasts" },
+  { id: 7, title: "Newsletters", endpoint: "/newsletters" },
 ];
 
 const investorInformation = [
-  { id: 1, title: "Understanding OrbitView", endpoint: "/" },
-  { id: 2, title: "Our Strengths", endpoint: "/" },
-  { id: 3, title: "Financial Results", endpoint: "/" },
-  { id: 4, title: "Events", endpoint: "/" },
-  { id: 5, title: "Announcements", endpoint: "/" },
-  { id: 6, title: "Financial Calendar", endpoint: "/" },
-  { id: 7, title: "Covering Analysts", endpoint: "/" },
-  { id: 8, title: "Corporate Governance", endpoint: "/" },
-  { id: 9, title: "FAQs", endpoint: "/" },
+  { id: 1, title: "Understanding OrbitView", endpoint: "/understanding-orbitview" },
+  { id: 2, title: "Our Strengths", endpoint: "/our-strengths" },
+  { id: 3, title: "Financial Results", endpoint: "/financial-results" },
+  { id: 4, title: "Events", endpoint: "/events" },
+  { id: 5, title: "Announcements", endpoint: "/announcements" },
+  { id: 6, title: "Financial Calendar", endpoint: "/financial-calendar" },
+  { id: 7, title: "Covering Analysts", endpoint: "/covering-analysts" },
+  { id: 8, title: "Corporate Governance", endpoint: "/corporate-governance" },
+  { id: 9, title: "FAQs", endpoint: "/faqs" },
 ];
 
 const aboutUs = [
-  { id: 1, title: "Company", endpoint: "/" },
-  { id: 2, title: "Partnerships", endpoint: "/" },
-  { id: 3, title: "Leadership", endpoint: "/" },
-  { id: 4, title: "Webinars and Videos", endpoint: "/" },
-  { id: 5, title: "Blog", endpoint: "/" },
-  { id: 6, title: "Podcasts", endpoint: "/" },
+  { id: 1, title: "Company", endpoint: "/company" },
+  { id: 2, title: "Partnerships", endpoint: "/partnerships" },
+  { id: 3, title: "Leadership", endpoint: "/leadership" },
+  { id: 4, title: "Webinars and Videos", endpoint: "/media" },
+  { id: 5, title: "Blog", endpoint: "/blog" },
+  { id: 6, title: "Podcasts", endpoint: "/podcasts" },
 ];
 
 const community = [
-  { id: 1, title: "Events", endpoint: "/" },
-  { id: 2, title: "Hackathons and Competitions", endpoint: "/" },
-  { id: 3, title: "Ambassadors and Launch Program", endpoint: "/" },
-  { id: 4, title: "Collaboration", endpoint: "/" },
-  { id: 5, title: "OrbitView Web Framework", endpoint: "/" },
+  { id: 1, title: "Events", endpoint: "/events" },
+  { id: 2, title: "Hackathons and Competitions", endpoint: "/competitions" },
+  { id: 3, title: "Ambassadors and Launch Program", endpoint: "/programs" },
+  { id: 4, title: "Collaboration", endpoint: "/collaboration" },
+  { id: 5, title: "OrbitView Web Framework", endpoint: "/web-framework" },
 ];
 
 const support = [
-  { id: 1, title: "Help Center", endpoint: "/" },
-  { id: 2, title: "Product Documentations", endpoint: "/" },
-  { id: 3, title: "Community Support", endpoint: "/" },
-  { id: 4, title: "Social Media", endpoint: "/" },
-  { id: 5, title: "Privacy Policy", endpoint: "/" },
-  { id: 6, title: "Compliance Information", endpoint: "/" },
-  { id: 7, title: "Terms of Service", endpoint: "/" },
+  { id: 1, title: "Help Center", endpoint: "/help-center" },
+  { id: 2, title: "Product Documentations", endpoint: "/product-documentation" },
+  { id: 3, title: "Community Support", endpoint: "/community-support" },
+  // { id: 4, title: "Social Media", endpoint: "/" },
+  { id: 5, title: "Privacy Policy", endpoint: "/privacy-policy" },
+  { id: 6, title: "Compliance Information", endpoint: "/compliance-information" },
+  { id: 7, title: "Terms of Service", endpoint: "/terms-of-service" },
 ];
 
 const Links = {
