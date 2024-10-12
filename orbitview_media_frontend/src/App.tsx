@@ -9,7 +9,7 @@ import ContactPage from "./screens/Contact/Contact";
 // import EventPage from "./screens/Events/Events";
 import JoinUsPage from "./screens/JoinUsPage/JoinUsPage";
 import JobListings from "./screens/JobListings/JobListings";
-import Blog from "./screens/Blog/Blog";
+import Blog from "./screens/WrittenContent/Blog/Blog";
 import FormalEventPage from "./screens/Events/FormalEventPage";
 import OrbitViewNexus from "./screens/ProductsAndServices/OrbitViewNexus";
 import MarketSentinel from "./screens/ProductsAndServices/OrbitViewSentinel";

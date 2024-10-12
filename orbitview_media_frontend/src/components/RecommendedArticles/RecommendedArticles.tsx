@@ -19,6 +19,7 @@ interface Article {
   updated_at: string;
   is_published: boolean;
   featured_image: string;
+  label: string;
 }
 
 const RecommendedArticles = () => {
@@ -75,6 +76,7 @@ const RecommendedArticles = () => {
   useEffect(() => {
     // Fetch articles from the API
     fetch("https://orbitviewmedia.pythonanywhere.com/content/articles/all/")
+    // change this to a specific endpoint where only blogs are present (use ORM query)
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);

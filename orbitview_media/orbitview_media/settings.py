@@ -26,13 +26,13 @@ load_dotenv()
 SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["orbitviewmedia.pythonanywhere.com"]
+ALLOWED_HOSTS = ["orbitviewmedia.pythonanywhere.com", "127.0.0.1"]
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # Add your frontend origin here
-    "https://orbitview-media.vercel.app",  # Add your frontend origin here
+    "https://orbitview.vercel.app",  # Add your frontend origin here
     "https://orbitviewmedia.com",  # Add your frontend origin here
 ]
 
@@ -47,14 +47,14 @@ CORS_ALLOW_METHODS = [
     "PUT",
 ]
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+"""EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.mailgun.org'
 EMAIL_PORT = os.getenv("EMAIL_PORT")
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER")
 EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD")
 MAILGUN_API_KEY = os.getenv("MAILGUN_API_KEY")
-MAILGUN_DOMAIN = os.getenv("MAILGUN_DOMAIN")
+MAILGUN_DOMAIN = os.getenv("MAILGUN_DOMAIN")"""
 
 
 # Application definition

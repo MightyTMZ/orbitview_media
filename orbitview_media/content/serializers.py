@@ -6,6 +6,7 @@ class AuthorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Author
         fields = [
+            'id',
             'first_name',
             'last_name', 
             'profile_picture_url'
@@ -19,6 +20,7 @@ class ArticleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Article
         fields = [
+            'id',
             'title',
             'slug',
             'subtitle',
@@ -26,8 +28,9 @@ class ArticleSerializer(serializers.ModelSerializer):
             'content',
             'created_at',
             'updated_at',
-            'is_published',  # used to adjust the visibility to the users
-            'featured_image'
+            'is_published',
+            'featured_image',
+            'label',
         ]
 
 
@@ -35,6 +38,7 @@ class AnnoucementSerializer(serializers.ModelSerializer):
     class Meta:
         model = Article
         fields = [
+            'id',
             'title',
             'cover_img',
             'description',
@@ -50,6 +54,7 @@ class PreviewArticleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Article
         fields = [
+            'id',
             'title',
             'slug',
             'subtitle',

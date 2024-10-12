@@ -23,6 +23,7 @@ class Author(models.Model):
     first_name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)
     profile_picture_url = models.CharField(max_length=2083)
+    # tie this to a user in the future (polymorphism)
 
     def __str__(self) -> str:
         return f"{self.first_name} {self.last_name}"
@@ -41,7 +42,7 @@ class Article(models.Model):
 
     title = models.CharField(max_length=255, unique=True)
     # Since slug comes from title, the slug must also be unique
-    subtitle = models.CharField(max_length=355, default="") # derived idea from Substack
+    subtitle = models.CharField(max_length=355, default="")
     slug = models.SlugField(default="-", editable=False, max_length=250)
     content = RichTextField()
     preview_content = RichTextField(default="")
