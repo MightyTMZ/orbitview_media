@@ -103,6 +103,7 @@ function App() {
           <Route path="/press-releases" element={<PressRelease />}></Route>
           <Route path="/in-the-news" element={<InTheNews />}></Route>
           <Route path="/media" element={<WebinarsAndVideo />}></Route>
+          <Route path="/competitions" element={<Competitions />}></Route>
           <Route path="/newsletters" element={<Newsletters />}></Route>
           <Route path="/understanding-orbitview" element={<UnderstandingOrbitView />}></Route>
           <Route path="/our-strengths" element={<OurStrengths />}></Route>
