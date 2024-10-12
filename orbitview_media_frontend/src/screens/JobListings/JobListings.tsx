@@ -71,7 +71,7 @@ const JobListingsFeed: React.FC = () => {
               {convertEmploymentLevel(job.experience_level)}
             </p>
             <p>Posted on: {new Date(job.posted_on).toLocaleDateString()}</p>
-            <div className="tags">
+            {/*<div className="tags">
               {job.tags.map((tag, index) => (
                 <span key={index} className="job-tag mb-1">
                   {tag.title}
@@ -80,10 +80,10 @@ const JobListingsFeed: React.FC = () => {
                       we can unlimited tags, but it will
                       cause info clutter/overload
                   
-                  */}
+                  
                 </span>
               ))}
-            </div>
+            </div>*/}
             <Link to={`/careers/${job.slug}`} className="view-detail">
               View Details
             </Link>

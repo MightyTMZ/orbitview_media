@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Fragment } from "react";
+import React, { useState, useEffect,  } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../fonts/Poppins.css";
 import "./JoinUsPage.css";
@@ -7,14 +7,15 @@ import Footer from "../../components/Footer/Footer";
 import { FaDiscord } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Spinner from "../../components/Spinner/Spinner";
+import OrbitButton from "../../components/OrbitButton/OrbitButton";
 
 const JoinUsPage: React.FC = () => {
   let pageName = "Join us";
 
   document.title = `${pageName} - OrbitView`;
 
-  const DiscordLink = "https://discord.gg/3DcBFDxW";
-  const LinkedInLink = "https://www.linkedin.com/company/orbitview-media/";
+  // const DiscordLink = "https://discord.gg/3DcBFDxW";
+  // const LinkedInLink = "https://www.linkedin.com/company/orbitview-media/";
 
   const [firstName, setFirstName] = useState<string>("");
   const [lastName, setLastName] = useState<string>("");
@@ -59,11 +60,11 @@ const JoinUsPage: React.FC = () => {
       {loading ? (
         <Spinner />
       ) : (
-        <Fragment>
+        <>
           <NavBar />
           <div className="container join-us-container my-5 poppins">
             <div className="text-center">
-              <h1 className="display-4 mb-4">
+              {/*h1 className="display-4 mb-4">
                 Join our communities for <strong>FREE</strong>
               </h1>
               <p className="community-link">
@@ -77,9 +78,9 @@ const JoinUsPage: React.FC = () => {
                 <a href={LinkedInLink} style={{ textDecoration: "none" }}>
                   OrbitView Media (LinkedIn)
                 </a>
-              </p>
-              <hr />
-              <h1 className="display-4 mb-4 mt-5">Join our mailing list</h1>
+              </p>*/}
+              
+              <h1 className="display-4 mb-4 mt-5">Join our waiting list</h1>
               <p className="lead">
                 Stay updated with our latest content, events, and news by
                 signing up below.
@@ -145,13 +146,14 @@ const JoinUsPage: React.FC = () => {
                   <div className="thank-you-message text-center p-4">
                     <h3>Thank you for signing up!</h3>
                     <p>You’ll be notified during our next release!</p>
+                    <OrbitButton text="Explore Further" hoverText="Explore Further" endpoint="/"/>
                   </div>
                 )}
               </div>
             </div>
           </div>
           <Footer />
-        </Fragment>
+        </>
       )}
     </>
   );

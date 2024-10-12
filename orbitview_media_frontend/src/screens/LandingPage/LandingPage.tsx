@@ -55,8 +55,9 @@ const LandingPage = () => {
                 connect, learn, and grow. From matching tools to personalized
                 insights in capital markets, our platform provides individuals,
                 families, and businesses to engage and grow meaningfully.
+                
               </p>
-              <img src={OrbitViewLogo} alt="OrbitView logo" height={100} />
+              <img src={OrbitViewLogo} alt="OrbitView logo" height={250} />
               <br />
               <OrbitButton
                 text="Get Started"

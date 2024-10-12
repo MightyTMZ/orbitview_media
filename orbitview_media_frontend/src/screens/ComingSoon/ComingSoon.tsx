@@ -22,7 +22,7 @@ const ComingSoon = () => {
         <p className="mt-3 social-media-text">Follow us for updates:</p>
         <div className="social-media-icons">
           <a
-            href="https://twitter.com"
+            href="https://x.com/OrbitViewMedia"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
@@ -30,7 +30,7 @@ const ComingSoon = () => {
             <FaTwitter />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/company/orbitview/"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
@@ -38,7 +38,7 @@ const ComingSoon = () => {
             <FaLinkedin />
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/orbitview_/"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
