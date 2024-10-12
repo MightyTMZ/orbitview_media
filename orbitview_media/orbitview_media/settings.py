@@ -67,6 +67,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'django_filters',
     'djoser',
     'corsheaders',
     'ckeditor',
@@ -74,7 +75,8 @@ INSTALLED_APPS = [
     'content',
     'events',
     'subscriptions',
-    'users'
+    'careers',
+    'users',
 ]
 
 AUTH_USER_MODEL = 'users.CustomUser'

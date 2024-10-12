@@ -5,6 +5,9 @@ from ckeditor.fields import RichTextField
 class JobTag(models.Model):
     title = models.CharField(max_length=255)
 
+    def __str__(self) -> str:
+        return self.title
+
 
 class Job(models.Model):
 
@@ -21,7 +24,7 @@ class Job(models.Model):
     benefits = RichTextField()
     employment_type = models.CharField(max_length=2, choices=EMPLOYMENT_TYPES)
     salary_description = RichTextField() # Here we describe what the salary structure will be (e.g. minimum, maximum, piece-rate, etc.)
-    location = models.CharField()
+    location = models.CharField(max_length=255)
     is_active = models.BooleanField(default=True)
     posted_on = models.DateTimeField(auto_now_add=True)
     application_deadline = models.DateTimeField(null=True, blank=True)  # Deadline for applications
@@ -36,11 +39,11 @@ class Job(models.Model):
 
 class JobApplication(models.Model):
     job = models.ForeignKey(Job, on_delete=models.CASCADE)
-    first_name = models.CharField(max_length=255)
-    last_name = models.CharField(max_length=255)
-    email = models.EmailField(max_length=2083)
-    linkedin_profile_url = models.CharField(max_length=2083)
-    additional_info = RichTextField(max_length=2083)
+    first_name = models.CharField(max_length=255) # check this field on the frontend and make sure you give the user the option to save this info in the browser
+    last_name = models.CharField(max_length=255) # check this field on the frontend and make sure you give the user the option to save this email info in the browser
+    email = models.EmailField()  # check this field on the frontend and make sure you give the user the option to save their email info in the browser
+    linkedin_profile_url = models.CharField(max_length=2083) # check this field on the frontend and make sure you give the user the option to save this info in the browser
+    additional_info = RichTextField() # check this field for the max characters on the frontend
     submitted_time = models.DateTimeField(auto_now_add=True)
 
     def __str__(self) -> str:
