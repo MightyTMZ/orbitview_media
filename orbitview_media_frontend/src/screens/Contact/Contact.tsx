@@ -63,7 +63,7 @@ const ContactPage = () => {
                         <TbMail /> Email:{" "}
                         <strong>admin@orbitviewmedia.com</strong> <br />
                         <FaInstagram /> Instagram:{" "}
-                        <a href="https://instagram.com/orbitview_media">
+                        <a href="https://instagram.com/orbitview_">
                           <strong>@orbitview_</strong>
                         </a>
                         <br />
@@ -73,7 +73,7 @@ const ContactPage = () => {
                         </a>
                         <br />
                         <FaLinkedin /> LinkedIn:{" "}
-                        <a href="https://www.linkedin.com/company/orbitview-media/">
+                        <a href="https://www.linkedin.com/company/orbitview/">
                           <strong>OrbitView Media</strong>
                         </a>
                         <br />
