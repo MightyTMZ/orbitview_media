@@ -23,3 +23,6 @@ class WaitlistMember(models.Model):
     first_name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255, null=True, blank=True)
     email = models.EmailField(unique=True)
+
+    def __str__(self) -> str:
+        return self.email
