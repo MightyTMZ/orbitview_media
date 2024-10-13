@@ -2,6 +2,7 @@ import "./ComingSoon.css";
 import "../../fonts/Poppins.css";
 import { FaInstagramSquare, FaLinkedin, FaTwitter } from "react-icons/fa";
 import OrbitButton from "../../components/OrbitButton/OrbitButton";
+import Links from "../../Links";
 
 const ComingSoon = () => {
   const exploreJobsEndpoint = "/jobs";
@@ -22,7 +23,7 @@ const ComingSoon = () => {
         <p className="mt-3 social-media-text">Follow us for updates:</p>
         <div className="social-media-icons">
           <a
-            href="https://x.com/OrbitViewMedia"
+            href={`${Links.socialMedia.twitter}`}
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
@@ -30,7 +31,7 @@ const ComingSoon = () => {
             <FaTwitter />
           </a>
           <a
-            href="https://www.linkedin.com/company/orbitview/"
+            href={`${Links.socialMedia.linkedin}`}
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
@@ -38,7 +39,7 @@ const ComingSoon = () => {
             <FaLinkedin />
           </a>
           <a
-            href="https://www.instagram.com/orbitview_/"
+            href={`${Links.socialMedia.instagram}`}
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"

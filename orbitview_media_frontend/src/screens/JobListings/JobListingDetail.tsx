@@ -211,7 +211,7 @@ const JobDetail: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:8000/careers/jobs/${slug}/`)
+    fetch(`${Links.backendServerAddress}/careers/jobs/${slug}/`)
       .then((res) => res.json())
       .then((data) => {
         setJob(data);

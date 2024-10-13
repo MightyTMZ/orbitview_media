@@ -4,6 +4,7 @@ import "./JobListings.css";
 import Spinner from "../../components/Spinner/Spinner";
 import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
+import Links from "../../Links";
 
 interface Job {
   id: number;
@@ -20,9 +21,10 @@ const JobListingsFeed: React.FC = () => {
   const [jobs, setJobs] = useState<Job[]>([]);
   const [loading, setLoading] = useState(true);
 
+
   useEffect(() => {
     // Fetch job listings from the API
-    fetch("http://127.0.0.1:8000/careers/jobs/")
+    fetch(`${Links.backendServerAddress}/careers/jobs/`)
       .then((res) => res.json())
       .then((data) => {
         setJobs(data);

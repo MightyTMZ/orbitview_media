@@ -1,3 +1,8 @@
+const backendServerAddress = "https://orbitviewmedia.pythonanywhere.com/";
+const instagram = "https://www.instagram.com/orbitview_/";
+const twitter = "https://x.com/OrbitViewMedia";
+const linkedin = "https://www.linkedin.com/company/orbitview/"
+
 const productAndServices = [
   { id: 1, title: "OrbitView Premium", endpoint: "/premium" },
   { id: 2, title: "Quiztrepreneur", endpoint: "https://quiztrepreneur.vercel.app/" },
@@ -75,6 +80,12 @@ const support = [
 ];
 
 const Links = {
+  backendServerAddress: backendServerAddress,
+  socialMedia: {
+    instagram: instagram,
+    twitter: twitter, 
+    linkedin: linkedin
+  },
   productsAndServices: productAndServices,
   solutions: solutions,
   resourceCenter: resourceCenter,

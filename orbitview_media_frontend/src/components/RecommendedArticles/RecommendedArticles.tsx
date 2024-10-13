@@ -1,5 +1,6 @@
 import { useState, useEffect, Fragment } from "react";
 import Spinner from "../Spinner/Spinner";
+import Links from "../../Links";
 import "./RecomendedArticles.css";
 
 interface Author {
@@ -75,8 +76,8 @@ const RecommendedArticles = () => {
 
   useEffect(() => {
     // Fetch articles from the API
-    fetch("https://orbitviewmedia.pythonanywhere.com/content/articles/all/")
-    // change this to a specific endpoint where only blogs are present (use ORM query)
+    fetch(`${Links.backendServerAddress}/content/articles/all/`)
+      // change this to a specific endpoint where only blogs are present (use ORM query)
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
