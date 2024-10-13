@@ -23,13 +23,37 @@ import SolutionsFamilies from "./components/Solutions/SolutionsFamilies";
 import SolutionsStudents from "./components/Solutions/SolutionsStudents";
 import SolutionsBusinesses from "./components/Solutions/SolutionsBusinesses";
 import SolutionsGovernments from "./components/Solutions/SolutionsGovernments";
-import { InTheNews, Newsletters, PressRelease, WebinarsAndVideo } from "./screens/NewsRoom/NewsRoom";
-import { FinancialCalendar, FinancialResults, OurStrengths, UnderstandingOrbitView } from "./screens/InvestorInfo/InvestorInfo";
+import Search from "./components/Search/Search";
+import {
+  InTheNews,
+  Newsletters,
+  PressRelease,
+  WebinarsAndVideo,
+} from "./screens/NewsRoom/NewsRoom";
+import {
+  FinancialCalendar,
+  FinancialResults,
+  OurStrengths,
+  UnderstandingOrbitView,
+} from "./screens/InvestorInfo/InvestorInfo";
 import FAQs from "./components/FAQs/FAQs";
-import { Company, Leadership, Partnerships } from "./screens/AboutUs/NewAboutUs";
-import { CommunitySupport, Competitions, ComplianceInformation, PrivacyPolicy, ProductDocumentation, TermsOfService } from "./screens/Community/Community";
-import { TechnicalArticles, WhitePapers } from "./screens/WrittenContent/WhitePapers/TemporaryConfiguration";
-
+import {
+  Company,
+  Leadership,
+  Partnerships,
+} from "./screens/AboutUs/NewAboutUs";
+import {
+  CommunitySupport,
+  Competitions,
+  ComplianceInformation,
+  PrivacyPolicy,
+  ProductDocumentation,
+  TermsOfService,
+} from "./screens/Community/Community";
+import {
+  TechnicalArticles,
+  WhitePapers,
+} from "./screens/WrittenContent/WhitePapers/TemporaryConfiguration";
 
 // import AppPage from "./components/AppPage/AppPage";
 
@@ -84,6 +108,7 @@ function App() {
           <Route path="/starfindr" element={<StarFindr />}></Route>
           <Route path="/autocommander" element={<AutoCommander />}></Route>
           <Route path="/premium" element={<OrbitViewPremium />}></Route>
+          <Route path="/search" element={<Search />}></Route>
           <Route
             path="/solutions/individuals"
             element={<SolutionsIndividuals />}
@@ -109,21 +134,42 @@ function App() {
           <Route path="/media" element={<WebinarsAndVideo />}></Route>
           <Route path="/competitions" element={<Competitions />}></Route>
           <Route path="/newsletters" element={<Newsletters />}></Route>
-          <Route path="/understanding-orbitview" element={<UnderstandingOrbitView />}></Route>
+          <Route
+            path="/understanding-orbitview"
+            element={<UnderstandingOrbitView />}
+          ></Route>
           <Route path="/our-strengths" element={<OurStrengths />}></Route>
-          <Route path="/financial-results" element={<FinancialResults />}></Route>
-          <Route path="/financial-calendar" element={<FinancialCalendar />}></Route>
+          <Route
+            path="/financial-results"
+            element={<FinancialResults />}
+          ></Route>
+          <Route
+            path="/financial-calendar"
+            element={<FinancialCalendar />}
+          ></Route>
           <Route path="/frequently-asked-questions" element={<FAQs />}></Route>
           <Route path="/company" element={<Company />}></Route>
           <Route path="/partnerships" element={<Partnerships />}></Route>
           <Route path="/leadership" element={<Leadership />}></Route>
-          <Route path="/product-documentation" element={<ProductDocumentation />}></Route>
-          <Route path="/community-support" element={<CommunitySupport />}></Route>
+          <Route
+            path="/product-documentation"
+            element={<ProductDocumentation />}
+          ></Route>
+          <Route
+            path="/community-support"
+            element={<CommunitySupport />}
+          ></Route>
           <Route path="/privacy-policy" element={<PrivacyPolicy />}></Route>
-          <Route path="/compliance-information" element={<ComplianceInformation />}></Route>
+          <Route
+            path="/compliance-information"
+            element={<ComplianceInformation />}
+          ></Route>
           <Route path="/terms-of-service" element={<TermsOfService />}></Route>
           <Route path="/white-papers" element={<WhitePapers />}></Route>
-          <Route path="/technical-articles" element={<TechnicalArticles />}></Route>
+          <Route
+            path="/technical-articles"
+            element={<TechnicalArticles />}
+          ></Route>
         </Routes>
       </Router>
     </>

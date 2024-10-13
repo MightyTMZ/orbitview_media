@@ -2,9 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./JobListings.css";
 import Spinner from "../../components/Spinner/Spinner";
-import NavBar from "../../components/NavBar/NavBar";
-import Footer from "../../components/Footer/Footer";
 import Links from "../../Links";
+import AppPage from "../../components/AppPage/AppPage";
 
 interface Job {
   id: number;
@@ -61,8 +60,7 @@ const JobListingsFeed: React.FC = () => {
   };
 
   return (
-    <>
-      <NavBar />
+    <AppPage title="Available Jobs and Opportunities" pageTitle="Careers">
       <div className="job-listings container poppins">
         {jobs.map((job) => (
           <div className="job-card" key={job.id}>
@@ -92,8 +90,7 @@ const JobListingsFeed: React.FC = () => {
           </div>
         ))}
       </div>
-      <Footer />
-    </>
+    </AppPage>
   );
 };
 
