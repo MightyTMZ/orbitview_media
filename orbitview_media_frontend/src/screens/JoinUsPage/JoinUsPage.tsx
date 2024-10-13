@@ -4,8 +4,6 @@ import "../../fonts/Poppins.css";
 import "./JoinUsPage.css";
 import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
-import { FaDiscord } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
 import Spinner from "../../components/Spinner/Spinner";
 import OrbitButton from "../../components/OrbitButton/OrbitButton";
 
