@@ -269,7 +269,7 @@ const JobDetail: React.FC = () => {
     setSubmittedApplication(true);
 
     // Submit the form data to the backend
-    fetch(`http://127.0.0.1:8000/careers/jobs/${slug}/apply/`, {
+    fetch(`${Links.backendServerAddress}/careers/jobs/${slug}/apply/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
