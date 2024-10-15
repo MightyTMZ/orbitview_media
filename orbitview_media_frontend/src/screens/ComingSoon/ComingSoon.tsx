@@ -5,7 +5,7 @@ import OrbitButton from "../../components/OrbitButton/OrbitButton";
 import Links from "../../Links";
 
 const ComingSoon = () => {
-  const exploreJobsEndpoint = "/jobs";
+  const exploreJobsEndpoint = "/careers";
 
   return (
     <div className="coming-soon-container poppins">
