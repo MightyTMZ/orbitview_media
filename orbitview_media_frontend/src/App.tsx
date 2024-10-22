@@ -37,11 +37,7 @@ import {
   UnderstandingOrbitView,
 } from "./screens/InvestorInfo/InvestorInfo";
 import FAQs from "./components/FAQs/FAQs";
-import {
-  Company,
-  Leadership,
-  Partnerships,
-} from "./screens/AboutUs/NewAboutUs";
+import { Company, Partnerships } from "./screens/AboutUs/NewAboutUs";
 import {
   CommunitySupport,
   Competitions,
@@ -54,6 +50,7 @@ import {
   TechnicalArticles,
   WhitePapers,
 } from "./screens/WrittenContent/WhitePapers/TemporaryConfiguration";
+import Leadership from "./screens/AboutUs/Leadership";
 
 // import AppPage from "./components/AppPage/AppPage";
 

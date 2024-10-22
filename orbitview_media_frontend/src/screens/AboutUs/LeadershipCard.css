@@ -1,0 +1,27 @@
+.leadership-card {
+  border-radius: 10px;
+}
+
+.leadership-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.leadership-card-img-top {
+  height: 250px;
+  border-radius: 10px 10px 0 0;
+}
+
+.leadership-card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.leadership-card-text {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.leadership-card-body {
+  padding: 1.5rem;
+}

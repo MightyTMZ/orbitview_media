@@ -23,14 +23,14 @@ export const Partnerships = () => {
   );
 };
 
-export const Leadership = () => {
-  const title = "Our Thought Leaders";
-  const pageTitle = "Leadership";
+// export const Leadership = () => {
+  // const title = "Our Thought Leaders";
+  // const pageTitle = "Leadership";
 
-  return (
-    <AppPage title={title} pageTitle={pageTitle}>
-      <ComingSoon></ComingSoon>
-    </AppPage>
-  );
-};
+  // return (
+    // <AppPage title={title} pageTitle={pageTitle}>
+      // <ComingSoon></ComingSoon>
+    // </AppPage>
+  // );
+// };
 
