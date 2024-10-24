@@ -1,6 +1,7 @@
 import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
 import Spinner from "../../components/Spinner/Spinner";
+import { Helmet } from "react-helmet";
 import "./FormalEventPage.css";
 
 import { useState, useEffect, Fragment } from "react";
@@ -98,6 +99,17 @@ const FormalEventPage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{`${pageName} - OrbitView`}</title>
+        <meta
+          name="description"
+          content="View the events hosted by OrbitView"
+        />
+        <meta
+          name="keywords"
+          content="Events, interact, world-class"
+        />
+      </Helmet>
       {loading ? (
         <Spinner />
       ) : (

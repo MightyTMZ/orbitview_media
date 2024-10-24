@@ -11,6 +11,7 @@ import { ReactTyped } from "react-typed";
 
 import { useState, Fragment, useEffect } from "react";
 import Spinner from "../../components/Spinner/Spinner";
+import { Helmet } from "react-helmet";
 
 const LandingPage = () => {
   let pageName = "Home";
@@ -35,6 +36,19 @@ const LandingPage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{pageName} - OrbitView</title>
+        <meta
+          name="description"
+          content="OrbitView is offering innovative solutions that redefine how you connect, learn, and grow. From matching tools to personalized insights in capital markets, our platform provides individuals, families, and businesses to engage and grow meaningfully."
+        />
+        <meta
+          name="keywords"
+          content="OrbitView, ai, technology, capital markets, learning, innovation, business solutions"
+        />
+        <meta name="author" content="OrbitView" />
+        <link rel="canonical" href="https://orbitview.vercel.app" />
+      </Helmet>
       {loading ? (
         <Spinner />
       ) : (
@@ -51,11 +65,9 @@ const LandingPage = () => {
                 />
               </h1>
               <p className="lead poppins-thin">
-                OrbitView is offering innovative solutions that redefine how you
-                connect, learn, and grow. From matching tools to personalized
-                insights in capital markets, our platform provides individuals,
-                families, and businesses to engage and grow meaningfully.
-                
+                OrbitView is a unified tech platform for learning new skills,
+                connecting with others, and pushing you to gain real-world
+                experience—all at the same time. 
               </p>
               <img src={OrbitViewLogo} alt="OrbitView logo" height={250} />
               <br />

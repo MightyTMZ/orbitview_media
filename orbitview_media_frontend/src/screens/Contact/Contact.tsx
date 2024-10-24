@@ -8,6 +8,7 @@ import { CiGlobe } from "react-icons/ci";
 import { SiCalendly } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
 import { TbMail, TbWriting } from "react-icons/tb";
+import Helmet from "react-helmet";
 
 import { useState, Fragment, useEffect } from "react";
 import Spinner from "../../components/Spinner/Spinner";
@@ -17,13 +18,14 @@ const ContactPage = () => {
 
   document.title = `${pageName} - OrbitView`;
 
-  const founder_links = document.getElementsByClassName("founder-contact")
-  
-  for (let i = 0; i < founder_links.length; i++){
+  const founder_links = document.getElementsByClassName("founder-contact");
+
+  for (let i = 0; i < founder_links.length; i++) {
     if (founder_links[i].tagName === "A") {
       const link = founder_links[i] as HTMLAnchorElement;
       link.target = "_blank";
-  }  }
+    }
+  }
 
   const [loading, setLoading] = useState(true);
 
@@ -39,161 +41,178 @@ const ContactPage = () => {
 
   return (
     <>
-      {loading? <Spinner/> : <Fragment>
-        <NavBar />
-        <div className="contact-page-container poppins">
-          <div className="container text-center mt-5">
-            <h1 className="mb-4 display-4 text-primary poppins">Contact us</h1>
-            <p className="mb-5 text-left">
-              We are open to any one interested in getting in touch with us.
-              Whether you are an interested partner, investor, venture capitalist,
-              interested intern/employee, content creator, do not be afraid to
-              contact us! There are no bad questions or requests
-            </p>
-            <div className="row justify-content-center">
-              <div className="col-lg-6 col-md-8">
-                <div className="contact-info mb-4">
-                  <ul className="list-unstyled text-start">
-                    <li className="mb-2">
-                      <i className="bi bi-envelope"></i>
-                      <a
-                        href="mailto:admin@orbitviewmedia.com"
-                        className="ms-2 text-decoration-none text-dark"
-                      >
-                        <TbMail /> Email:{" "}
-                        <strong>admin@orbitviewmedia.com</strong> <br />
-                        <FaInstagram /> Instagram:{" "}
-                        <a href="https://instagram.com/orbitview_">
-                          <strong>@orbitview_</strong>
+      <Helmet>
+        <title>{`${pageName} - OrbitView`}</title>
+        <meta
+          name="description"
+          content="Contact us if you have any inquiries regarding OrbitView"
+        />
+        <meta
+          name="keywords"
+          content="Contact us, email, calendar, inquiries, business"
+        />
+      </Helmet>
+      {loading ? (
+        <Spinner />
+      ) : (
+        <Fragment>
+          <NavBar />
+          <div className="contact-page-container poppins">
+            <div className="container text-center mt-5">
+              <h1 className="mb-4 display-4 text-primary poppins">
+                Contact us
+              </h1>
+              <p className="mb-5 text-left">
+                We are open to any one interested in getting in touch with us.
+                Whether you are an interested partner, investor, venture
+                capitalist, interested intern/employee, content creator, do not
+                be afraid to contact us! There are no bad questions or requests
+              </p>
+              <div className="row justify-content-center">
+                <div className="col-lg-6 col-md-8">
+                  <div className="contact-info mb-4">
+                    <ul className="list-unstyled text-start">
+                      <li className="mb-2">
+                        <i className="bi bi-envelope"></i>
+                        <a
+                          href="mailto:admin@orbitviewmedia.com"
+                          className="ms-2 text-decoration-none text-dark"
+                        >
+                          <TbMail /> Email:{" "}
+                          <strong>admin@orbitviewmedia.com</strong> <br />
+                          <FaInstagram /> Instagram:{" "}
+                          <a href="https://instagram.com/orbitview_">
+                            <strong>@orbitview_</strong>
+                          </a>
+                          <br />
+                          <FaTwitter /> Twitter (X):{" "}
+                          <a href="https://x.com/OrbitViewMedia">
+                            <strong>@OrbitViewMedia</strong>
+                          </a>
+                          <br />
+                          <FaLinkedin /> LinkedIn:{" "}
+                          <a href="https://www.linkedin.com/company/orbitview/">
+                            <strong>OrbitView Media</strong>
+                          </a>
+                          <br />
+                          <TbWriting /> Blog:{" "}
+                          <a href="/#blog">
+                            <strong>OrbitView</strong>
+                          </a>
                         </a>
-                        <br />
-                        <FaTwitter /> Twitter (X):{" "}
-                        <a href="https://x.com/OrbitViewMedia">
-                          <strong>@OrbitViewMedia</strong>
+                      </li>
+                      <li className="mb-2">
+                        <i className="bi bi-geo-alt"></i>
+                        <a
+                          href="https://www.google.com/maps/place/OrbitView+Media"
+                          className="ms-2 text-decoration-none text-dark"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Toronto, Canada
                         </a>
-                        <br />
-                        <FaLinkedin /> LinkedIn:{" "}
-                        <a href="https://www.linkedin.com/company/orbitview/">
-                          <strong>OrbitView Media</strong>
+                      </li>
+                    </ul>
+                    <hr />
+                    <ul className="list-unstyled text-start">
+                      <li>
+                        Tom Zhang &nbsp;&nbsp;{" "}
+                        <a
+                          href="tom.zhang.career@hotmail.com"
+                          className="founder-contact"
+                          title="Email: Tom Zhang"
+                        >
+                          <MdEmail />
                         </a>
-                        <br />
-                        <TbWriting /> Blog:{" "}
-                        <a href="/#blog">
-                          <strong>OrbitView</strong>
+                        &nbsp;
+                        <a
+                          href="https://www.linkedin.com/in/tom-zhang-485341274/"
+                          className="founder-contact"
+                          title="LinkedIn: Tom Zhang"
+                        >
+                          <FaLinkedin />
                         </a>
-                      </a>
-                    </li>
-                    <li className="mb-2">
-                      <i className="bi bi-geo-alt"></i>
-                      <a
-                        href="https://www.google.com/maps/place/OrbitView+Media"
-                        className="ms-2 text-decoration-none text-dark"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Toronto, Canada
-                      </a>
-                    </li>
-                  </ul>
-                  <hr />
-                  <ul className="list-unstyled text-start">
-                    <li>
-                      Tom Zhang &nbsp;&nbsp;{" "}
-                      <a
-                        href="tom.zhang.career@hotmail.com"
-                        className="founder-contact"
-                        title="Email: Tom Zhang"
-                      >
-                        <MdEmail />
-                      </a>
-                      &nbsp;
-                      <a
-                        href="https://www.linkedin.com/in/tom-zhang-485341274/"
-                        className="founder-contact"
-                        title="LinkedIn: Tom Zhang"
-                      >
-                        <FaLinkedin />
-                      </a>
-                      &nbsp;
-                      <a
-                        href="https://twitter.com/OrbitTommyZ"
-                        className="founder-contact"
-                        title="Twitter (X): Tom Zhang"
-                      >
-                        <FaTwitter />
-                      </a>
-                      &nbsp;
-                      <a
-                        href="https://calendly.com/tom-zhang-career"
-                        className="founder-contact"
-                        title="Calendly: Tom Zhang"
-                      >
-                        <SiCalendly />
-                      </a>
-                      &nbsp;
-                      <a
-                        href="https://tomzhang.vercel.app/#/connect-with-me"
-                        className="founder-contact"
-                        title="Website: Tom Zhang"
-                      >
-                        <CiGlobe />
-                      </a>
-                      &nbsp;
-                      <a
-                        href="tel:+14372476482"
-                        className="founder-contact"
-                        title="Phone: Tom Zhang"
-                      >
-                        <FaPhoneAlt />
-                      </a>
-                    </li>
-                    <li>
-                      Jerone Arristan{" "}
-                      <a
-                        href="jeronearristan@gmail.com"
-                        className="founder-contact"
-                        title="Email: Jerone Arristan"
-                      >
-                        <MdEmail />
-                      </a>
-                      &nbsp;
-                      <a
-                        href="https://www.linkedin.com/in/jerone-arristan-376636212/"
-                        className="founder-contact"
-                        title="LinkedIn: Jerone Arristan"
-                      >
-                        <FaLinkedin />
-                      </a>&nbsp;
-                      <a
-                        href="tel:+16476086420"
-                        className="founder-contact"
-                        title="Phone: Jerone Arristan"
-                      >
-                        <FaPhoneAlt />
-                      </a>
-                    </li>
-                    <li>
-                      Aurick Anwar{" "}
-                      <a
-                        href="aurickanwar2260biga@gmail.com"
-                        className="founder-contact"
-                        title="Email: Aurick Anwar"
-                      >
-                        <MdEmail />
-                      </a>
-                      &nbsp;
-                      <a
-                        href="https://www.linkedin.com/in/aurick-anwar/"
-                        className="founder-contact"
-                        title="LinkedIn: Aurick Anwar"
-                      >
-                        <FaLinkedin />
-                      </a>
-                      &nbsp;
-                    </li>
-                  </ul>
-                </div>
-                {/*<h3 className="text-dark mt-5">Follow Us</h3>
+                        &nbsp;
+                        <a
+                          href="https://twitter.com/OrbitTommyZ"
+                          className="founder-contact"
+                          title="Twitter (X): Tom Zhang"
+                        >
+                          <FaTwitter />
+                        </a>
+                        &nbsp;
+                        <a
+                          href="https://calendly.com/tom-zhang-career"
+                          className="founder-contact"
+                          title="Calendly: Tom Zhang"
+                        >
+                          <SiCalendly />
+                        </a>
+                        &nbsp;
+                        <a
+                          href="https://tomzhang.vercel.app/#/connect-with-me"
+                          className="founder-contact"
+                          title="Website: Tom Zhang"
+                        >
+                          <CiGlobe />
+                        </a>
+                        &nbsp;
+                        <a
+                          href="tel:+14372476482"
+                          className="founder-contact"
+                          title="Phone: Tom Zhang"
+                        >
+                          <FaPhoneAlt />
+                        </a>
+                      </li>
+                      <li>
+                        Jerone Arristan{" "}
+                        <a
+                          href="jeronearristan@gmail.com"
+                          className="founder-contact"
+                          title="Email: Jerone Arristan"
+                        >
+                          <MdEmail />
+                        </a>
+                        &nbsp;
+                        <a
+                          href="https://www.linkedin.com/in/jerone-arristan-376636212/"
+                          className="founder-contact"
+                          title="LinkedIn: Jerone Arristan"
+                        >
+                          <FaLinkedin />
+                        </a>
+                        &nbsp;
+                        <a
+                          href="tel:+16476086420"
+                          className="founder-contact"
+                          title="Phone: Jerone Arristan"
+                        >
+                          <FaPhoneAlt />
+                        </a>
+                      </li>
+                      <li>
+                        Aurick Anwar{" "}
+                        <a
+                          href="aurickanwar2260biga@gmail.com"
+                          className="founder-contact"
+                          title="Email: Aurick Anwar"
+                        >
+                          <MdEmail />
+                        </a>
+                        &nbsp;
+                        <a
+                          href="https://www.linkedin.com/in/aurick-anwar/"
+                          className="founder-contact"
+                          title="LinkedIn: Aurick Anwar"
+                        >
+                          <FaLinkedin />
+                        </a>
+                        &nbsp;
+                      </li>
+                    </ul>
+                  </div>
+                  {/*<h3 className="text-dark mt-5">Follow Us</h3>
                 <p className="mb-4">Stay connected with us on social media:</p>
                 <div className="d-flex justify-content-center">
                    Instagram Dropdown
@@ -222,7 +241,7 @@ const ContactPage = () => {
                         </a>
                       </li>
                     </ul>*/}
-                {/*<li>
+                  {/*<li>
                         <a
                           className="dropdown-item"
                           href="https://www.instagram.com/orbitviewtechonomics"
@@ -298,7 +317,7 @@ const ContactPage = () => {
                         </li>
                       </ul>
                     </div>*/}
-                {/* TikTok Dropdown
+                  {/* TikTok Dropdown
                     <div className="dropdown me-2">
                       <button
                         className="btn btn-outline-dark dropdown-toggle"
@@ -342,7 +361,7 @@ const ContactPage = () => {
                         </li>
                       </ul>
                     </div> */}
-                {/* Substack Dropdown
+                  {/* Substack Dropdown
                   <div className="dropdown">
                     <button
                       className="btn btn-outline-secondary dropdown-toggle"
@@ -388,12 +407,13 @@ const ContactPage = () => {
                         </a>
                       </li>
                     </ul>*/}
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <Footer />
-      </Fragment>}
+          <Footer />
+        </Fragment>
+      )}
     </>
   );
 };

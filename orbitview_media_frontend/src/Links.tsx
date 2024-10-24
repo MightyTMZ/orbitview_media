@@ -7,11 +7,11 @@ const productAndServices = [
   { id: 1, title: "OrbitView Premium", endpoint: "/premium" },
   { id: 2, title: "Quiztrepreneur", endpoint: "https://quiztrepreneur.vercel.app/" },
   { id: 3, title: "Techonomics", endpoint: "https://techonomics.vercel.app/" },
-  { id: 4, title: "OrbitView Nexus", endpoint: "/nexus" },
-  { id: 5, title: "StarFindr", endpoint: "/starfindr" },
-  { id: 6, title: "MarketSentinel", endpoint: "/sentinel" },
-  { id: 7, title: "SpaceView", endpoint: "/spaceview" },
-  { id: 8, title: "AutoCommander", endpoint: "/autocommander" },
+  // { id: 4, title: "OrbitView Nexus", endpoint: "/nexus" },
+  // { id: 5, title: "StarFindr", endpoint: "/starfindr" },
+  // { id: 6, title: "MarketSentinel", endpoint: "/sentinel" },
+  // { id: 7, title: "SpaceView", endpoint: "/spaceview" },
+  // { id: 8, title: "AutoCommander", endpoint: "/autocommander" },
 ];
 
 const solutions = [

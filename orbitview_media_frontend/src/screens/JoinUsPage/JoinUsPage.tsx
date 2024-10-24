@@ -1,4 +1,4 @@
-import React, { useState, useEffect,  } from "react";
+import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../fonts/Poppins.css";
 import "./JoinUsPage.css";
@@ -6,6 +6,7 @@ import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
 import Spinner from "../../components/Spinner/Spinner";
 import OrbitButton from "../../components/OrbitButton/OrbitButton";
+import { Helmet } from "react-helmet";
 
 const JoinUsPage: React.FC = () => {
   let pageName = "Join us";
@@ -55,6 +56,18 @@ const JoinUsPage: React.FC = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{`${pageName} - OrbitView`}</title>
+        <meta
+          name="description"
+          content="Join our waiting list to stay updated with OrbitView's latest content, events, and news."
+        />
+        <meta
+          name="keywords"
+          content="Join us, waiting list, OrbitView, updates, events, news"
+        />
+      </Helmet>
+
       {loading ? (
         <Spinner />
       ) : (
@@ -77,7 +90,7 @@ const JoinUsPage: React.FC = () => {
                   OrbitView Media (LinkedIn)
                 </a>
               </p>*/}
-              
+
               <h1 className="display-4 mb-4 mt-5">Join our waiting list</h1>
               <p className="lead">
                 Stay updated with our latest content, events, and news by
@@ -144,7 +157,11 @@ const JoinUsPage: React.FC = () => {
                   <div className="thank-you-message text-center p-4">
                     <h3>Thank you for signing up!</h3>
                     <p>You’ll be notified during our next release!</p>
-                    <OrbitButton text="Explore Further" hoverText="Explore Further" endpoint="/"/>
+                    <OrbitButton
+                      text="Explore Further"
+                      hoverText="Explore Further"
+                      endpoint="/"
+                    />
                   </div>
                 )}
               </div>

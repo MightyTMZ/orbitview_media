@@ -12,12 +12,12 @@ import JobListingsFeed from "./screens/JobListings/JobListings";
 import JobDetail from "./screens/JobListings/JobListingDetail";
 import Blog from "./screens/WrittenContent/Blog/Blog";
 import FormalEventPage from "./screens/Events/FormalEventPage";
-import OrbitViewNexus from "./screens/ProductsAndServices/OrbitViewNexus";
-import MarketSentinel from "./screens/ProductsAndServices/OrbitViewSentinel";
-import SpaceView from "./screens/ProductsAndServices/SpaceView";
-import StarFindr from "./screens/ProductsAndServices/StarFindr";
-import AutoCommander from "./screens/ProductsAndServices/AutoCommander";
-import OrbitViewPremium from "./screens/ProductsAndServices/OrbitViewPremium";
+// import OrbitViewNexus from "./screens/ProductsAndServices/OrbitViewNexus";
+// import MarketSentinel from "./screens/ProductsAndServices/OrbitViewSentinel";
+// import SpaceView from "./screens/ProductsAndServices/SpaceView";
+// import StarFindr from "./screens/ProductsAndServices/StarFindr";
+// import AutoCommander from "./screens/ProductsAndServices/AutoCommander";
+// import OrbitViewPremium from "./screens/ProductsAndServices/OrbitViewPremium";
 import SolutionsIndividuals from "./components/Solutions/SolutionsIndvidual";
 import SolutionsFamilies from "./components/Solutions/SolutionsFamilies";
 import SolutionsStudents from "./components/Solutions/SolutionsStudents";
@@ -99,12 +99,12 @@ function App() {
           {/* Up until we figure out the SMTP, we cannot do user profiles */}
           <Route path="/blog/:created_at_date/:slug" element={<Article />} />
           <Route path="/blog/" element={<Blog />} />
-          <Route path="/nexus" element={<OrbitViewNexus />}></Route>
+          {/*<Route path="/nexus" element={<OrbitViewNexus />}></Route>
           <Route path="/sentinel" element={<MarketSentinel />}></Route>
           <Route path="/spaceview" element={<SpaceView />}></Route>
           <Route path="/starfindr" element={<StarFindr />}></Route>
           <Route path="/autocommander" element={<AutoCommander />}></Route>
-          <Route path="/premium" element={<OrbitViewPremium />}></Route>
+          <Route path="/premium" element={<OrbitViewPremium />}></Route> */}
           <Route path="/search" element={<Search />}></Route>
           <Route
             path="/solutions/individuals"

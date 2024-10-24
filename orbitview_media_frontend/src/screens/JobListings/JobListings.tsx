@@ -4,6 +4,7 @@ import "./JobListings.css";
 import Spinner from "../../components/Spinner/Spinner";
 import Links from "../../Links";
 import AppPage from "../../components/AppPage/AppPage";
+import { Helmet } from "react-helmet";
 
 interface Job {
   id: number;
@@ -19,7 +20,6 @@ interface Job {
 const JobListingsFeed: React.FC = () => {
   const [jobs, setJobs] = useState<Job[]>([]);
   const [loading, setLoading] = useState(true);
-
 
   useEffect(() => {
     // Fetch job listings from the API
@@ -60,37 +60,49 @@ const JobListingsFeed: React.FC = () => {
   };
 
   return (
-    <AppPage title="Available Jobs and Opportunities" pageTitle="Careers">
-      <div className="job-listings container poppins">
-        {jobs.map((job) => (
-          <div className="job-card" key={job.id}>
-            <h3>{job.title}</h3>
-            <p>{job.location}</p>
-            <p>
-              {convertEmploymentType(job.employment_type)} -{" "}
-              {convertEmploymentLevel(job.experience_level)}
-            </p>
-            <p>Posted on: {new Date(job.posted_on).toLocaleDateString()}</p>
-            {/*<div className="tags">
-              {job.tags.map((tag, index) => (
-                <span key={index} className="job-tag mb-1">
-                  {tag.title}
-                  {/* have an option for the user to 
-                      view all the tags within this job
-                      we can unlimited tags, but it will
-                      cause info clutter/overload
-                  
-                  
-                </span>
-              ))}
-            </div>*/}
-            <Link to={`/careers/${job.slug}`} className="view-detail">
-              View Details
-            </Link>
-          </div>
-        ))}
-      </div>
-    </AppPage>
+    <>
+      <Helmet>
+        <meta
+          name="description"
+          content="View the latest job listings provided by OrbitView"
+        />
+        <meta
+          name="keywords"
+          content="Jobs, career, "
+        />
+      </Helmet>
+      <AppPage title="Available Jobs and Opportunities" pageTitle="Careers">
+        <div className="job-listings container poppins">
+          {jobs.map((job) => (
+            <div className="job-card" key={job.id}>
+              <h3>{job.title}</h3>
+              <p>{job.location}</p>
+              <p>
+                {convertEmploymentType(job.employment_type)} -{" "}
+                {convertEmploymentLevel(job.experience_level)}
+              </p>
+              <p>Posted on: {new Date(job.posted_on).toLocaleDateString()}</p>
+              {/*<div className="tags">
+                {job.tags.map((tag, index) => (
+                  <span key={index} className="job-tag mb-1">
+                    {tag.title}
+                    {/* have an option for the user to
+                        view all the tags within this job
+                        we can unlimited tags, but it will
+                        cause info clutter/overload
+      
+      
+                  </span>
+                ))}
+              </div>*/}
+              <Link to={`/careers/${job.slug}`} className="view-detail">
+                View Details
+              </Link>
+            </div>
+          ))}
+        </div>
+      </AppPage>
+    </>
   );
 };
 
