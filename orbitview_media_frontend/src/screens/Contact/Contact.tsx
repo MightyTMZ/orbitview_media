@@ -96,7 +96,7 @@ const ContactPage = () => {
                           </a>
                           <br />
                           <TbWriting /> Blog:{" "}
-                          <a href="/#blog">
+                          <a href="/blog">
                             <strong>OrbitView</strong>
                           </a>
                         </a>

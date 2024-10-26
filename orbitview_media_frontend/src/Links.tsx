@@ -70,7 +70,7 @@ const community = [
 ];
 
 const support = [
-  { id: 1, title: "Help Center", endpoint: "/help-center" },
+  { id: 1, title: "Help Center", endpoint: "/" }, // we dont have a help center page yet
   { id: 2, title: "Product Documentations", endpoint: "/product-documentation" },
   { id: 3, title: "Community Support", endpoint: "/community-support" },
   // { id: 4, title: "Social Media", endpoint: "/" },
