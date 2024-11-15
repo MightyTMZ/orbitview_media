@@ -65,7 +65,7 @@ const LandingPage = () => {
                 />
               </h1>
               <p className="lead poppins-thin">
-                OrbitView is a unified tech platform for learning new skills,
+                OrbitView is a unified platform for learning new skills,
                 connecting with others, and pushing you to gain real-world
                 experience—all at the same time. 
               </p>

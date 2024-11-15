@@ -25,8 +25,9 @@ function Footer() {
           <div className="col-md-4 col-lg-4 col-xl-3 mx-auto mt-3 poppins">
             <h5 className="text-uppercase mb-4 font-weight-bold">OrbitView</h5>
             <p className="about-para">
-              All-in-one platform for innovative solutions from matching tools
-              to real-time insights in capital markets.
+              OrbitView is a unified platform for learning new skills,
+              connecting with others, and pushing you to gain real-world
+              experience—all at the same time.
             </p>
           </div>
 
@@ -141,7 +142,10 @@ function Footer() {
               </p>
             ))}
           </div>
-          <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3" id="social-media-links">
+          <div
+            className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3"
+            id="social-media-links"
+          >
             <h5 className="text-uppercase mb-4 font-weight-bold poppins connect-with-us">
               Connect with Us
             </h5>
